@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FAF7F0;
+    color: #141312;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Calligraphic & Glassmorphism Utilities */
+.glass-nav {
+  background: rgba(250, 247, 240, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(229, 152, 58, 0.18);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(20, 19, 18, 0.08);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A46114;
+}
+
+/* Staggered Hero Entrance Animations */
+@keyframes heroFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-hero-eyebrow {
+  animation: heroFadeInUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.15s backwards;
+}
+.animate-hero-title {
+  animation: heroFadeInUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.3s backwards;
+}
+.animate-hero-sub {
+  animation: heroFadeInUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.45s backwards;
+}
+.animate-hero-cta {
+  animation: heroFadeInUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.6s backwards;
+}
+.animate-hero-badge {
+  animation: heroFadeInUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.75s backwards;
+}
+
+/* Ambient Arch Glow & Light Sweep */
+@keyframes archGlowPulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(1.04);
+  }
+}
+
+.animate-arch-glow {
+  animation: archGlowPulse 8s ease-in-out infinite;
+}
+
+@keyframes archLightSweep {
+  0% {
+    transform: translateX(-120%) rotate(25deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.22;
+  }
+  28% {
+    transform: translateX(220%) rotate(25deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(220%) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+.animate-arch-sweep {
+  animation: archLightSweep 14s ease-in-out infinite;
+}
+
+/* Delicate Botanical & Orbital Float */
+@keyframes orbitalFloat {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(2deg) scale(1.02);
+  }
+}
+
+.animate-orbital-float {
+  animation: orbitalFloat 18s ease-in-out infinite;
+}
+
+/* Reduced Motion Safety Override */
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-eyebrow,
+  .animate-hero-title,
+  .animate-hero-sub,
+  .animate-hero-cta,
+  .animate-hero-badge,
+  .animate-arch-glow,
+  .animate-arch-sweep,
+  .animate-orbital-float {
+    animation: none !important;
+    transform: none !important;
+  }
+}

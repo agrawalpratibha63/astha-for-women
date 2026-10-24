@@ -1,0 +1,204 @@
+import React, { useState, useEffect, useRef } from 'react';
+import { ShieldCheck, ArrowRight, QrCode, Heart } from 'lucide-react';
+
+export default function HeroSection({ t, lang = 'en', onRequestGuidance, onSeeOurWork, onOpenDonationQr = () => {} }) {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [videoError, setVideoError] = useState(false);
+  const [mouseOffset, setMouseOffset] = useState({ x: 0, y: 0 });
+  const [isFinePointer, setIsFinePointer] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  
+  const videoRef = useRef(null);
+  const containerRef = useRef(null);
+
+  // Exact public path to user's MP4 video and poster
+  const videoSrc = encodeURI('/assets/Woman_animating_website_hero_seq…_20261019230203.mp4');
+  const posterSrc = '/assets/hero-video-poster.jpg';
+
+  // Check device capabilities
+  useEffect(() => {
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const pointerQuery = window.matchMedia('(pointer: fine)');
+
+    setPrefersReducedMotion(motionQuery.matches);
+    setIsFinePointer(pointerQuery.matches);
+
+    const handleMotionChange = (e) => setPrefersReducedMotion(e.matches);
+    const handlePointerChange = (e) => setIsFinePointer(e.matches);
+
+    motionQuery.addEventListener('change', handleMotionChange);
+    pointerQuery.addEventListener('change', handlePointerChange);
+
+    return () => {
+      motionQuery.removeEventListener('change', handleMotionChange);
+      pointerQuery.removeEventListener('change', handlePointerChange);
+    };
+  }, []);
+
+  // Subtle 3D mouse parallax limited to 4-6 pixels
+  const handleMouseMove = (e) => {
+    if (!isFinePointer || prefersReducedMotion || !containerRef.current) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 8; // -4px to +4px
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * 6; // -3px to +3px
+    setMouseOffset({ x, y });
+  };
+
+  const handleMouseLeave = () => {
+    setMouseOffset({ x: 0, y: 0 });
+  };
+
+  // Attempt auto-playback on mount
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {});
+    }
+  }, []);
+
+  return (
+    <section 
+      ref={containerRef}
+      id="hero"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      className="relative min-h-[88vh] lg:min-h-[94vh] flex items-center overflow-hidden bg-[#FAF7F0]"
+    >
+      {/* 1. Full-Coverage Cinematic 1080p Video Layer with Gentle Micro-Parallax */}
+      <div 
+        className="absolute inset-0 w-full h-full pointer-events-none select-none z-0 overflow-hidden"
+        style={{
+          transform: isFinePointer && !prefersReducedMotion
+            ? `translate3d(${mouseOffset.x}px, ${mouseOffset.y}px, 0) scale(1.02)`
+            : 'none',
+          transition: 'transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)'
+        }}
+      >
+        {!videoError ? (
+          <video
+            ref={videoRef}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            poster={posterSrc}
+            onLoadedData={() => setVideoLoaded(true)}
+            onError={() => setVideoError(true)}
+            className={`w-full h-full object-cover object-[72%_center] sm:object-[68%_center] lg:object-[65%_center] transition-opacity duration-1000 ${
+              videoLoaded ? 'opacity-100' : 'opacity-90'
+            }`}
+          >
+            <source src={videoSrc} type="video/mp4" />
+            <source src="/assets/Woman_animating_website_hero_seq…_20261019230203.mp4" type="video/mp4" />
+            <img 
+              src={posterSrc} 
+              alt="Aastha for Women Hero Cinematic" 
+              className="w-full h-full object-cover object-[68%_center]"
+            />
+          </video>
+        ) : (
+          <img 
+            src={posterSrc} 
+            alt="Aastha for Women Hero Background" 
+            className="w-full h-full object-cover object-[68%_center]"
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = '/images/hero-woman-backdrop-feathered.png';
+            }}
+          />
+        )}
+      </div>
+
+      {/* 2. Atmospheric 3D Depth Layers & Teal Arch Ambient Light Sweep */}
+      {/* Soft ambient teal arch glow */}
+      <div 
+        className="absolute top-1/4 right-[12%] lg:right-[18%] w-80 sm:w-[480px] h-80 sm:h-[480px] rounded-full pointer-events-none z-[1] opacity-40 blur-3xl bg-gradient-to-tr from-teal-500/25 via-amber-200/20 to-transparent mix-blend-soft-light animate-arch-glow" 
+      />
+
+      {/* Restrained light sweep over the architectural arch */}
+      <div className="absolute right-0 top-0 bottom-0 w-1/2 pointer-events-none z-[1] overflow-hidden hidden md:block">
+        <div className="w-48 h-full bg-gradient-to-r from-transparent via-amber-100/30 to-transparent transform -skew-x-12 animate-arch-sweep" />
+      </div>
+
+      {/* 3. Left Scrim Gradient: Guarantees 100% typography contrast across every video frame */}
+      <div 
+        className="absolute inset-0 pointer-events-none z-[2] bg-gradient-to-r from-[#FAF7F0] via-[#FAF7F0]/92 md:via-[#FAF7F0]/75 lg:via-[#FAF7F0]/40 to-transparent" 
+      />
+      <div className="absolute inset-0 pointer-events-none z-[2] bg-gradient-to-t from-[#FAF7F0] via-transparent to-transparent md:hidden" />
+
+      {/* Subtle bottom transition gradient into the next section */}
+      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#FAF7F0] to-transparent pointer-events-none z-[2]" />
+
+      {/* 4. Foreground Content with Staggered Entrance & Opposing Micro-Parallax */}
+      <div 
+        className="container mx-auto px-4 lg:px-8 relative z-10 py-16 lg:py-24"
+        style={{
+          transform: isFinePointer && !prefersReducedMotion
+            ? `translate3d(${-mouseOffset.x * 0.4}px, ${-mouseOffset.y * 0.4}px, 0)`
+            : 'none',
+          transition: 'transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)'
+        }}
+      >
+        <div className="max-w-2xl xl:max-w-3xl flex flex-col items-start text-left">
+          
+          {/* Eyebrow: Gold Accent Line + Red Dot Badge */}
+          <div className="animate-hero-eyebrow flex flex-col items-start">
+            <div className="w-10 h-1 bg-[#B58542] rounded-full mb-6 shadow-xs"></div>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#D9232D] inline-block shadow-xs"></span>
+              <span className="text-xs sm:text-sm font-sans font-bold tracking-[0.18em] text-[#524F4B] uppercase">
+                {t.hero.badge}
+              </span>
+            </div>
+          </div>
+
+          {/* Main Editorial Serif Headline */}
+          <h1 className="animate-hero-title text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-[#141312] tracking-tight leading-[1.15] mb-6 drop-shadow-xs">
+            {t.hero.title}
+          </h1>
+
+          {/* Supportive Subtitle */}
+          <p className="animate-hero-sub text-base sm:text-lg text-[#3D3A37] font-sans font-normal leading-relaxed max-w-xl mb-9">
+            {t.hero.subtitle}
+          </p>
+
+          {/* Action Button Group */}
+          <div className="animate-hero-cta flex flex-wrap items-center gap-4 w-full sm:w-auto">
+            {/* Primary Black Pill Button: Request guidance */}
+            <button
+              onClick={onRequestGuidance}
+              className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-[#141312] hover:bg-neutral-800 focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900 text-white font-sans font-medium text-base shadow-xs hover:shadow-md transition-all transform active:scale-95 cursor-pointer"
+            >
+              {t.hero.ctaPrimary}
+            </button>
+
+            {/* Outlined Button: See our work */}
+            <button
+              onClick={onSeeOurWork}
+              className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white/75 hover:bg-white text-[#141312] font-sans font-medium text-base border border-[#141312]/30 shadow-none hover:shadow-xs transition-all cursor-pointer backdrop-blur-xs"
+            >
+              {t.hero.ctaSecondary}
+            </button>
+
+            {/* Official UPI QR Donation Button */}
+            <button
+              type="button"
+              onClick={onOpenDonationQr}
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#C9A45C]/20 hover:bg-[#C9A45C]/35 text-[#10332F] font-sans font-semibold text-sm sm:text-base border-2 border-[#C9A45C]/60 shadow-xs hover:shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer backdrop-blur-xs group"
+            >
+              <QrCode className="w-5 h-5 text-[#A46114] group-hover:scale-110 transition-transform" />
+              <span>{lang === 'hi' ? 'सहयोग करें (QR कोड)' : lang === 'mr' ? 'सहकार्य / दान (QR कोड)' : 'Donate via QR Code'}</span>
+            </button>
+          </div>
+
+          {/* Confidentiality Reassurance Badge */}
+          <div className="animate-hero-badge mt-8 flex items-center gap-2 text-xs text-[#524F4B] font-sans bg-[#FAF7F0]/85 backdrop-blur-xs px-3.5 py-1.5 rounded-full border border-charcoal/10 shadow-xs">
+            <ShieldCheck className="w-4 h-4 text-emerald-700 shrink-0" />
+            <span>{t.hero.confidentialBadge}</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
