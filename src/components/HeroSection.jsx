@@ -63,7 +63,7 @@ export default function HeroSection({ t, lang = 'en', onRequestGuidance, onSeeOu
       id="hero"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative w-full min-h-[92svh] sm:min-h-[88vh] lg:min-h-[94vh] flex items-center overflow-hidden bg-[#FAF7F0]"
+      className="relative w-full min-h-[92svh] sm:min-h-[88vh] lg:min-h-[94vh] flex items-center overflow-hidden bg-[#FCF8F9]"
     >
       {/* =======================================================================
           1. FULL-BLEED LIVING VIDEO BACKGROUND (Shared mobile & desktop)
@@ -112,12 +112,12 @@ export default function HeroSection({ t, lang = 'en', onRequestGuidance, onSeeOu
 
       {/* 3D Atmospheric Glowing Arch Orb */}
       <div 
-        className="absolute top-1/4 right-[4%] sm:right-[12%] lg:right-[18%] w-64 sm:w-80 lg:w-[480px] h-64 sm:h-80 lg:h-[480px] rounded-full pointer-events-none z-[1] opacity-40 blur-3xl bg-gradient-to-tr from-teal-500/25 via-amber-200/20 to-transparent mix-blend-soft-light animate-arch-glow" 
+        className="absolute top-1/4 right-[4%] sm:right-[12%] lg:right-[18%] w-64 sm:w-80 lg:w-[480px] h-64 sm:h-80 lg:h-[480px] rounded-full pointer-events-none z-[1] opacity-40 blur-3xl bg-gradient-to-tr from-purple-500/20 via-rose-300/25 to-transparent mix-blend-soft-light animate-arch-glow" 
       />
       
       {/* Golden Sunbeam Light Sweep */}
       <div className="absolute right-0 top-0 bottom-0 w-1/2 pointer-events-none z-[1] overflow-hidden">
-        <div className="w-40 sm:w-48 h-full bg-gradient-to-r from-transparent via-amber-100/30 to-transparent transform -skew-x-12 animate-arch-sweep" />
+        <div className="w-40 sm:w-48 h-full bg-gradient-to-r from-transparent via-rose-100/35 to-transparent transform -skew-x-12 animate-arch-sweep" />
       </div>
 
       {/* =======================================================================
@@ -126,12 +126,12 @@ export default function HeroSection({ t, lang = 'en', onRequestGuidance, onSeeOu
          ======================================================================= */}
       {/* Directional scrim: Stronger on left/text side, smoothly transparent on video side */}
       <div 
-        className="absolute inset-0 pointer-events-none z-[2] bg-gradient-to-r from-[#FAF7F0] via-[#FAF7F0]/92 sm:via-[#FAF7F0]/85 md:via-[#FAF7F0]/75 lg:via-[#FAF7F0]/40 to-transparent" 
+        className="absolute inset-0 pointer-events-none z-[2] bg-gradient-to-r from-[#FCF8F9] via-[#FCF8F9]/92 sm:via-[#FCF8F9]/85 md:via-[#FCF8F9]/75 lg:via-[#FCF8F9]/40 to-transparent" 
       />
       
       {/* Mobile top & bottom subtle softening gradient */}
       <div 
-        className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#FAF7F0] via-[#FAF7F0]/70 to-transparent pointer-events-none z-[2]" 
+        className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#FCF8F9] via-[#FCF8F9]/70 to-transparent pointer-events-none z-[2]" 
       />
 
       {/* =======================================================================
@@ -150,7 +150,7 @@ export default function HeroSection({ t, lang = 'en', onRequestGuidance, onSeeOu
           
           {/* Eyebrow Badge */}
           <div className="animate-hero-eyebrow flex flex-col items-start">
-            <div className="w-9 sm:w-10 h-1 bg-[#B58542] rounded-full mb-4 sm:mb-6 shadow-xs"></div>
+            <div className="w-10 sm:w-12 h-1.5 bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] rounded-full mb-4 sm:mb-6 shadow-xs"></div>
             <div className="flex items-center gap-2 mb-3 sm:mb-4">
               <span className="w-2.5 h-2.5 rounded-full bg-[#D9232D] inline-block shadow-xs animate-pulse"></span>
               <span className="text-xs sm:text-sm font-sans font-bold tracking-[0.16em] sm:tracking-[0.18em] text-[#524F4B] uppercase">
@@ -160,12 +160,12 @@ export default function HeroSection({ t, lang = 'en', onRequestGuidance, onSeeOu
           </div>
 
           {/* Main Title */}
-          <h1 className="animate-hero-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#141312] tracking-tight leading-[1.24] sm:leading-[1.2] mb-4 sm:mb-6 drop-shadow-xs max-w-xl lg:max-w-3xl">
+          <h1 className="animate-hero-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#2B1822] tracking-tight leading-[1.24] sm:leading-[1.2] mb-4 sm:mb-6 drop-shadow-xs max-w-xl lg:max-w-3xl">
             {t.hero.title}
           </h1>
 
           {/* Subtitle */}
-          <p className="animate-hero-sub text-sm sm:text-base md:text-lg text-[#3D3A37] font-sans font-normal leading-relaxed max-w-lg lg:max-w-xl mb-6 sm:mb-8 md:mb-9">
+          <p className="animate-hero-sub text-sm sm:text-base md:text-lg text-[#4A3840] font-sans font-normal leading-relaxed max-w-lg lg:max-w-xl mb-6 sm:mb-8 md:mb-9">
             {t.hero.subtitle}
           </p>
 
@@ -173,7 +173,7 @@ export default function HeroSection({ t, lang = 'en', onRequestGuidance, onSeeOu
           <div className="animate-hero-cta flex flex-wrap items-center gap-3 sm:gap-4 w-full sm:w-auto">
             <button
               onClick={onRequestGuidance}
-              className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-[#141312] hover:bg-neutral-800 text-white font-sans font-medium text-sm sm:text-base shadow-xs hover:shadow-md transition-all transform active:scale-95 cursor-pointer flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] hover:from-[#6D28D9] hover:via-[#A21CAF] hover:to-[#E11D48] text-white font-sans font-semibold text-sm sm:text-base shadow-[0_8px_25px_rgba(192,38,211,0.35)] hover:shadow-[0_12px_32px_rgba(244,63,94,0.45)] hover:shadow-lg transition-all transform active:scale-95 cursor-pointer flex items-center justify-center gap-2"
             >
               <span>{t.hero.ctaPrimary}</span>
               <ArrowRight className="w-4 h-4 shrink-0" />
@@ -181,7 +181,7 @@ export default function HeroSection({ t, lang = 'en', onRequestGuidance, onSeeOu
 
             <button
               onClick={onSeeOurWork}
-              className="flex-1 sm:flex-initial px-5 sm:px-7 py-3.5 rounded-xl bg-white/80 hover:bg-white text-[#141312] font-sans font-medium text-sm sm:text-base border border-[#141312]/30 shadow-none hover:shadow-xs transition-all cursor-pointer backdrop-blur-xs flex items-center justify-center"
+              className="flex-1 sm:flex-initial px-5 sm:px-7 py-3.5 rounded-xl bg-white/95 hover:bg-[#FFF5F7] text-[#7A1D36] font-sans font-bold text-sm sm:text-base border border-[#FECDD3] hover:border-[#F43F5E] shadow-2xs hover:shadow-xs transition-all cursor-pointer backdrop-blur-xs flex items-center justify-center"
             >
               {t.hero.ctaSecondary}
             </button>
@@ -189,15 +189,15 @@ export default function HeroSection({ t, lang = 'en', onRequestGuidance, onSeeOu
             <button
               type="button"
               onClick={onOpenDonationQr}
-              className="flex-1 sm:flex-initial px-5 sm:px-6 py-3.5 rounded-xl bg-[#C9A45C]/25 hover:bg-[#C9A45C]/40 text-[#10332F] font-sans font-semibold text-sm sm:text-base border-2 border-[#C9A45C]/70 shadow-xs hover:shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer backdrop-blur-xs active:scale-95 group"
+              className="flex-1 sm:flex-initial px-5 sm:px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#FFF5F7] to-[#FFF7ED] hover:bg-[#FFE4E6] text-[#E11D48] font-sans font-bold text-sm sm:text-base border-2 border-[#FECDD3] hover:border-[#F43F5E] shadow-xs hover:shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer backdrop-blur-xs active:scale-95 group"
             >
-              <QrCode className="w-4 sm:w-5 h-4 sm:h-5 text-[#A46114] group-hover:scale-110 transition-transform shrink-0" />
+              <QrCode className="w-4 sm:w-5 h-4 sm:h-5 text-[#A03859] group-hover:scale-110 transition-transform shrink-0" />
               <span>{donateShortLabel}</span>
             </button>
           </div>
 
           {/* 100% Confidential Shield Pill */}
-          <div className="animate-hero-badge mt-6 sm:mt-8 flex items-center gap-2 text-[11px] sm:text-xs text-[#524F4B] font-sans bg-[#FAF7F0]/90 backdrop-blur-xs px-3.5 py-1.5 rounded-full border border-charcoal/10 shadow-xs">
+          <div className="animate-hero-badge mt-6 sm:mt-8 flex items-center gap-2 text-[11px] sm:text-xs text-[#2E1065] font-sans font-semibold bg-white/95 backdrop-blur-xs px-3.5 py-1.5 rounded-full border border-charcoal/10 shadow-xs">
             <ShieldCheck className="w-4 h-4 text-emerald-700 shrink-0" />
             <span>{t.hero.confidentialBadge}</span>
           </div>

@@ -411,12 +411,12 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
   return (
     <section 
       id="fieldwork" 
-      className="py-16 sm:py-24 bg-[#FAF7F0] relative scroll-mt-20 overflow-hidden text-[#333A36]"
+      className="py-16 sm:py-24 bg-[#FCF8F9] relative scroll-mt-20 overflow-hidden text-[#333A36]"
       aria-label="Aastha Fieldwork Gallery"
     >
       {/* Subtle organic ambient gradients */}
-      <div className="absolute top-0 right-10 w-[500px] h-[500px] rounded-full bg-[#C9A45C]/6 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-10 w-[500px] h-[500px] rounded-full bg-[#123F38]/5 blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-10 w-[500px] h-[500px] rounded-full bg-[#BA5C7B]/6 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-10 w-[500px] h-[500px] rounded-full bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C]/5 blur-3xl pointer-events-none" />
 
       {/* Invisible anchor for nav */}
       <div id="how-we-help" className="scroll-mt-24" />
@@ -428,7 +428,7 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
            ===================================================================== */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
           
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#123F38] font-normal tracking-tight mb-3 leading-snug">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#38152E] font-normal tracking-tight mb-3 leading-snug">
             {strings.heading}
           </h2>
 
@@ -439,12 +439,12 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
           {/* View Mode & Auto-Rotate Controls */}
           <div className="mt-5 flex items-center justify-center gap-3 text-xs">
             {/* View Mode Toggle */}
-            <div className="inline-flex items-center p-0.5 rounded-full bg-white border border-[#C9A45C]/35 shadow-2xs">
+            <div className="inline-flex items-center p-0.5 rounded-full bg-white border border-[#BA5C7B]/35 shadow-2xs">
               <button
                 type="button"
                 onClick={() => setDisplayMode('carousel')}
                 className={`px-3.5 py-1.5 rounded-full font-medium transition-all cursor-pointer ${
-                  displayMode === 'carousel' ? 'bg-[#123F38] text-white shadow-2xs' : 'text-[#333A36]/75 hover:text-[#123F38]'
+                  displayMode === 'carousel' ? 'bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] text-white shadow-2xs' : 'text-[#333A36]/75 hover:text-[#38152E]'
                 }`}
               >
                 {strings.viewCarousel}
@@ -453,7 +453,7 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
                 type="button"
                 onClick={() => setDisplayMode('grid')}
                 className={`px-3.5 py-1.5 rounded-full font-medium transition-all cursor-pointer ${
-                  displayMode === 'grid' ? 'bg-[#123F38] text-white shadow-2xs' : 'text-[#333A36]/75 hover:text-[#123F38]'
+                  displayMode === 'grid' ? 'bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] text-white shadow-2xs' : 'text-[#333A36]/75 hover:text-[#38152E]'
                 }`}
               >
                 {strings.viewGrid}
@@ -465,10 +465,10 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
               <button
                 type="button"
                 onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-[#C9A45C]/25 text-[#333A36]/75 hover:text-[#123F38] transition-colors cursor-pointer text-xs"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-[#BA5C7B]/25 text-[#333A36]/75 hover:text-[#38152E] transition-colors cursor-pointer text-xs"
                 title={isAutoPlaying ? strings.pauseRotate : strings.autoRotate}
               >
-                {isAutoPlaying ? <Pause className="w-3.5 h-3.5 text-[#A46114]" /> : <Play className="w-3.5 h-3.5 text-[#123F38]" />}
+                {isAutoPlaying ? <Pause className="w-3.5 h-3.5 text-[#A03859]" /> : <Play className="w-3.5 h-3.5 text-[#38152E]" />}
                 <span>{isAutoPlaying ? strings.pauseRotate : strings.autoRotate}</span>
               </button>
             )}
@@ -517,7 +517,7 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
                     }}
                     className={`absolute rounded-3xl overflow-hidden cursor-pointer select-none transition-all duration-500 ease-out ${
                       isCenter 
-                        ? 'z-20 shadow-2xl ring-2 ring-[#C9A45C]/50 hover:shadow-3xl' 
+                        ? 'z-20 shadow-2xl ring-2 ring-[#BA5C7B]/50 hover:shadow-3xl' 
                         : 'z-10 shadow-lg hover:opacity-100 hover:scale-[0.92]'
                     }`}
                     style={{
@@ -543,7 +543,7 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
 
                     {/* Top Tag Badge (No Place Names) */}
                     <div className="absolute top-4 right-4 pointer-events-none">
-                      <span className="px-3 py-1 rounded-full bg-[#123F38]/90 text-[#FAF7F0] text-[11px] font-sans font-medium uppercase tracking-wider backdrop-blur-xs border border-[#C9A45C]/40 shadow-xs">
+                      <span className="px-3 py-1 rounded-full bg-gradient-to-r from-[#F43F5E] to-[#FB923C] text-[#FCF8F9] text-[11px] font-sans font-medium uppercase tracking-wider backdrop-blur-xs border border-[#BA5C7B]/40 shadow-xs">
                         {story.tag}
                       </span>
                     </div>
@@ -562,7 +562,7 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
                             {story.date}
                           </span>
 
-                          <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#F7D070] bg-black/40 px-3 py-1 rounded-full backdrop-blur-xs border border-white/10 hover:bg-[#123F38] transition-colors">
+                          <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#F2B3C3] bg-black/40 px-3 py-1 rounded-full backdrop-blur-xs border border-white/10 hover:bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] transition-colors">
                             <span>{strings.exploreStory}</span>
                             <Eye className="w-3.5 h-3.5" />
                           </span>
@@ -583,14 +583,14 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
                 <button
                   type="button"
                   onClick={handlePrev}
-                  className="p-3 rounded-full bg-white border border-[#C9A45C]/35 hover:bg-[#123F38] hover:text-white transition-all text-[#123F38] shadow-xs cursor-pointer active:scale-95"
+                  className="p-3 rounded-full bg-white border border-[#BA5C7B]/35 hover:bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] hover:text-white transition-all text-[#38152E] shadow-xs cursor-pointer active:scale-95"
                   aria-label={strings.prev}
                 >
                   <ChevronLeft className="w-5 h-5" />
                 </button>
 
                 <div className="text-center space-y-0.5">
-                  <span className="font-mono text-xs font-bold text-[#123F38]">
+                  <span className="font-mono text-xs font-bold text-[#38152E]">
                     {String(currentIndex + 1).padStart(2, '0')} / {String(allStories.length).padStart(2, '0')}
                   </span>
                   <p className="text-xs font-serif text-[#333A36]/80 line-clamp-1 max-w-[260px]">
@@ -601,7 +601,7 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
                 <button
                   type="button"
                   onClick={handleNext}
-                  className="p-3 rounded-full bg-white border border-[#C9A45C]/35 hover:bg-[#123F38] hover:text-white transition-all text-[#123F38] shadow-xs cursor-pointer active:scale-95"
+                  className="p-3 rounded-full bg-white border border-[#BA5C7B]/35 hover:bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] hover:text-white transition-all text-[#38152E] shadow-xs cursor-pointer active:scale-95"
                   aria-label={strings.next}
                 >
                   <ChevronRight className="w-5 h-5" />
@@ -617,8 +617,8 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
                     onClick={() => setCurrentIndex(idx)}
                     className={`transition-all duration-300 rounded-full cursor-pointer ${
                       idx === currentIndex 
-                        ? 'w-6 h-2 bg-[#123F38]' 
-                        : 'w-2 h-2 bg-[#C9A45C]/40 hover:bg-[#C9A45C]'
+                        ? 'w-6 h-2 bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C]' 
+                        : 'w-2 h-2 bg-[#BA5C7B]/40 hover:bg-[#BA5C7B]'
                     }`}
                     aria-label={`Go to photo ${idx + 1}`}
                   />
@@ -647,7 +647,7 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
                   setSelectedStory(story);
                   setShowStoryDrawer(false);
                 }}
-                className="group relative bg-white rounded-3xl overflow-hidden border border-[#C9A45C]/30 hover:border-[#C9A45C] shadow-xs hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col justify-between"
+                className="group relative bg-white rounded-3xl overflow-hidden border border-[#BA5C7B]/30 hover:border-[#BA5C7B] shadow-xs hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col justify-between"
               >
                 {/* Image Stage */}
                 <div className="relative w-full aspect-[4/3] overflow-hidden bg-black/5">
@@ -661,26 +661,26 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
 
                   {/* Top Tag Pill (No Place Names) */}
                   <div className="absolute top-3 right-3">
-                    <span className="px-2.5 py-0.5 rounded-full bg-[#123F38]/90 text-[#FAF7F0] text-[10px] font-mono uppercase tracking-wider backdrop-blur-xs border border-[#C9A45C]/40">
+                    <span className="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-[#F43F5E] to-[#FB923C] text-[#FCF8F9] text-[10px] font-mono uppercase tracking-wider backdrop-blur-xs border border-[#BA5C7B]/40">
                       {story.tag}
                     </span>
                   </div>
 
                   {/* Title Overlay */}
                   <div className="absolute bottom-3 left-3 right-3 text-white">
-                    <h3 className="text-base font-serif font-normal leading-snug line-clamp-2 group-hover:text-[#F7D070] transition-colors">
+                    <h3 className="text-base font-serif font-normal leading-snug line-clamp-2 group-hover:text-[#F2B3C3] transition-colors">
                       {story.title}
                     </h3>
                   </div>
                 </div>
 
                 {/* Bottom Strip */}
-                <div className="p-4 flex items-center justify-between text-xs border-t border-[#C9A45C]/20 bg-white">
+                <div className="p-4 flex items-center justify-between text-xs border-t border-[#BA5C7B]/20 bg-white">
                   <span className="text-[#333A36]/65 font-mono text-[11px]">
                     {story.date}
                   </span>
 
-                  <span className="inline-flex items-center gap-1 font-semibold text-[#A46114] group-hover:text-[#123F38] transition-colors">
+                  <span className="inline-flex items-center gap-1 font-semibold text-[#A03859] group-hover:text-[#38152E] transition-colors">
                     <span>{strings.exploreStory}</span>
                     <ChevronRight className="w-3.5 h-3.5" />
                   </span>
@@ -708,12 +708,12 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
             />
 
             {/* Modal Dialog Card */}
-            <div className="relative z-10 w-full max-w-4xl max-h-[90vh] bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col border border-[#C9A45C]/40">
+            <div className="relative z-10 w-full max-w-4xl max-h-[90vh] bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col border border-[#BA5C7B]/40">
               
               {/* Modal Top Bar (No Place Names) */}
-              <div className="px-5 py-3.5 border-b border-[#C9A45C]/20 flex items-center justify-between bg-[#FAF7F0]">
+              <div className="px-5 py-3.5 border-b border-[#BA5C7B]/20 flex items-center justify-between bg-[#FCF8F9]">
                 <div className="flex items-center gap-2 text-xs">
-                  <span className="font-semibold text-[#123F38]">{selectedStory.tag}</span>
+                  <span className="font-semibold text-[#38152E]">{selectedStory.tag}</span>
                   <span className="text-[#333A36]/40">•</span>
                   <span className="text-[#333A36]/70">{selectedStory.date}</span>
                 </div>
@@ -722,7 +722,7 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
                   <button
                     type="button"
                     onClick={() => setShowStoryDrawer(!showStoryDrawer)}
-                    className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white border border-[#C9A45C]/40 text-xs font-semibold text-[#123F38] hover:bg-[#FAF7F0] transition-colors cursor-pointer"
+                    className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white border border-[#BA5C7B]/40 text-xs font-semibold text-[#38152E] hover:bg-[#FCF8F9] transition-colors cursor-pointer"
                   >
                     <span>{showStoryDrawer ? 'Hide Details' : 'Discover Story'}</span>
                     <ChevronRight className={`w-3.5 h-3.5 transition-transform ${showStoryDrawer ? 'rotate-90' : ''}`} />
@@ -782,19 +782,19 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
 
                 {/* Optional Story Details Drawer */}
                 {showStoryDrawer && (
-                  <div className="w-full md:w-80 bg-white p-6 overflow-y-auto space-y-4 border-t md:border-t-0 md:border-l border-[#C9A45C]/30 animate-in slide-in-from-right-3">
+                  <div className="w-full md:w-80 bg-white p-6 overflow-y-auto space-y-4 border-t md:border-t-0 md:border-l border-[#BA5C7B]/30 animate-in slide-in-from-right-3">
                     
-                    <span className="text-[11px] font-mono uppercase tracking-wider text-[#A46114] block">
+                    <span className="text-[11px] font-mono uppercase tracking-wider text-[#A03859] block">
                       {selectedStory.tag}
                     </span>
 
-                    <h4 className="text-lg font-serif text-[#123F38] font-normal leading-snug">
+                    <h4 className="text-lg font-serif text-[#38152E] font-normal leading-snug">
                       {selectedStory.title}
                     </h4>
 
                     {/* What Happened */}
                     <div className="space-y-1 text-xs">
-                      <span className="font-bold text-[#123F38] block">{strings.actionTaken}</span>
+                      <span className="font-bold text-[#38152E] block">{strings.actionTaken}</span>
                       <p className="text-[#333A36]/80 font-light leading-relaxed">
                         {selectedStory.actionTaken}
                       </p>
@@ -802,15 +802,15 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
 
                     {/* Who Was Supported */}
                     <div className="space-y-1 text-xs">
-                      <span className="font-bold text-[#123F38] block">{strings.beneficiaries}</span>
+                      <span className="font-bold text-[#38152E] block">{strings.beneficiaries}</span>
                       <p className="text-[#333A36]/80 font-light leading-relaxed">
                         {selectedStory.beneficiaries}
                       </p>
                     </div>
 
                     {/* Partner */}
-                    <div className="pt-2 border-t border-[#C9A45C]/20 text-[11px] text-[#333A36]/70">
-                      <span className="font-semibold text-[#123F38]">{strings.partner}: </span>
+                    <div className="pt-2 border-t border-[#BA5C7B]/20 text-[11px] text-[#333A36]/70">
+                      <span className="font-semibold text-[#38152E]">{strings.partner}: </span>
                       <span>{selectedStory.partner}</span>
                     </div>
 
@@ -822,7 +822,7 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
                           setSelectedStory(null);
                           onRequestGuidance();
                         }}
-                        className="w-full py-2.5 rounded-full bg-[#123F38] hover:bg-[#1B554C] text-white text-xs font-semibold tracking-wide shadow-xs transition-all cursor-pointer"
+                        className="w-full py-2.5 rounded-full bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] hover:bg-[#501E42] text-white text-xs font-semibold tracking-wide shadow-xs transition-all cursor-pointer"
                       >
                         {strings.requestSupport}
                       </button>
@@ -834,8 +834,8 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
               </div>
 
               {/* Modal Bottom Caption Bar */}
-              <div className="p-4 bg-[#FAF7F0] border-t border-[#C9A45C]/20 flex flex-col sm:flex-row items-center justify-between gap-3">
-                <p className="text-xs font-serif text-[#123F38] font-normal text-center sm:text-left line-clamp-1">
+              <div className="p-4 bg-[#FCF8F9] border-t border-[#BA5C7B]/20 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <p className="text-xs font-serif text-[#38152E] font-normal text-center sm:text-left line-clamp-1">
                   {selectedStory.title}
                 </p>
 
@@ -844,7 +844,7 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
                     <button
                       type="button"
                       onClick={() => setShowStoryDrawer(true)}
-                      className="text-xs font-semibold text-[#A46114] hover:underline cursor-pointer"
+                      className="text-xs font-semibold text-[#A03859] hover:underline cursor-pointer"
                     >
                       Discover Story →
                     </button>

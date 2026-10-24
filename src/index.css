@@ -4,8 +4,8 @@
 
 @layer base {
   body {
-    background-color: #FAF7F0;
-    color: #141312;
+    background-color: #FCFAFD;
+    color: #261623;
     overflow-x: hidden;
   }
 }
@@ -31,14 +31,14 @@
   height: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #F4EFE6;
+  background: #F8EDF2;
 }
 ::-webkit-scrollbar-thumb {
-  background: #C5A059;
+  background: #BA5C7B;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #A46114;
+  background: #A03859;
 }
 
 /* Staggered Hero Entrance Animations */

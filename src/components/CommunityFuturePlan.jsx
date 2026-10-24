@@ -101,7 +101,7 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
       locationTag: currentLang === 'hi' ? '📍 कॉलेज एनएसएस विंग्स • महाराष्ट्र' : currentLang === 'mr' ? '📍 एनएसएस युवक शिबिरे • महाराष्ट्र' : '📍 NSS Youth Chapters • Maharashtra',
       image: '/images/pre-marriage-girls-group.jpg',
       isPoster: false,
-      icon: <Compass className="w-4 h-4 text-[#C9A45C]" />,
+      icon: <Compass className="w-4 h-4 text-[#F43F5E]" />,
       deliverables: currentLang === 'hi' ? [
         'खडकी शिक्षण संस्था के साथ औपचारिक MOU एवं ३००+ बालिकाओं का सशक्तिकरण',
         'सरकारी स्कूलों (Government Schools) में छात्राओं हेतु मानसिक स्वास्थ्य व सुरक्षा परामर्श केंद्र प्रारंभ करना',
@@ -143,7 +143,7 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
       locationTag: currentLang === 'hi' ? '📍 हनुमान नगर • पुणे' : currentLang === 'mr' ? '📍 हनुमान नगर • पुणे' : '📍 Hanuman Nagar • Pune',
       image: '/images/cloud-kitchen-training-poster.jpg',
       isPoster: true,
-      icon: <Building2 className="w-4 h-4 text-[#123F38]" />,
+      icon: <Building2 className="w-4 h-4 text-[#7A1D36]" />,
       deliverables: currentLang === 'hi' ? [
         'वाडरवाडी जैसे स्लम क्षेत्रों में आधुनिक क्लाउड किचन यूनिट्स',
         'औद्योगिक मशीन सिलाई व हस्तशिल्प प्रशिक्षण बैच',
@@ -182,7 +182,7 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
       locationTag: currentLang === 'hi' ? '📍 कडेपूर एवं पश्चिमी महाराष्ट्र' : currentLang === 'mr' ? '📍 कडेपूर व पश्चिम महाराष्ट्र' : '📍 Kadepur & Western Maharashtra',
       image: '/images/kadepur-womens-day.jpg',
       isPoster: false,
-      icon: <TrendingUp className="w-4 h-4 text-[#A46114]" />,
+      icon: <TrendingUp className="w-4 h-4 text-[#FB7185]" />,
       deliverables: currentLang === 'hi' ? [
         'सामुदायिक ब्रांडिंग एवं पर्यावरण अनुकूल पैकेजिंग मार्गदर्शन',
         'पुणे व मुंबई के कार्पोरेट परिसरों में महिला स्टॉल लिंकेज',
@@ -221,7 +221,7 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
       locationTag: currentLang === 'hi' ? '📍 २४x७ हेल्पलाइन: ८८०१०६६००७ • महाराष्ट्र' : currentLang === 'mr' ? '📍 २४x७ हेल्पलाइन: ८८०१०६६००७ • महाराष्ट्र' : '📍 24x7 Helpline: 8801066007 • Maharashtra',
       image: '/images/counselling-helpline-simintini.jpg',
       isPoster: true,
-      icon: <ShieldCheck className="w-4 h-4 text-[#123F38]" />,
+      icon: <ShieldCheck className="w-4 h-4 text-[#7A1D36]" />,
       deliverables: currentLang === 'hi' ? [
         'घरेलू विवादों के संवेदनशील व गरिमापूर्ण समाधान हेतु पुलिस स्टेशनों (Police Stations) में विशेष महिला परामर्श केंद्र शुरू करना',
         'पुणे, सांगली जिला और पश्चिमी महाराष्ट्र में त्वरित संकट निवारण काउंसलर मोबाइल टीम',
@@ -246,12 +246,12 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
   return (
     <section 
       id="updates" 
-      className="py-16 sm:py-24 bg-[#FAF7F0] border-t border-[#C9A45C]/25 relative scroll-mt-20 overflow-hidden text-[#333A36]"
+      className="py-16 sm:py-24 bg-[#FCF8F9] border-t border-[#FECDD3] relative scroll-mt-20 overflow-hidden text-[#333A36]"
       aria-label="Aastha Roadmap 2026-2027"
     >
       {/* Subtle organic ambient gradients */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 rounded-full bg-[#C9A45C]/6 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-1/4 w-96 h-96 rounded-full bg-[#123F38]/5 blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-1/4 w-96 h-96 rounded-full bg-[#BA5C7B]/6 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 w-96 h-96 rounded-full bg-[#38152E]/5 blur-3xl pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -259,37 +259,37 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
             1. SECTION INTRO (Editorial, concise, inviting)
            ===================================================================== */}
         <div className="max-w-2xl mx-auto text-center mb-10 sm:mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#123F38]/5 border border-[#123F38]/15 text-[11px] font-sans font-semibold text-[#123F38] uppercase tracking-[0.2em] mb-3">
-            <Sparkles className="w-3.5 h-3.5 text-[#C9A45C]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#38152E]/5 border border-[#38152E]/15 text-[11px] font-sans font-semibold text-[#7A1D36] uppercase tracking-[0.2em] mb-3">
+            <Sparkles className="w-3.5 h-3.5 text-[#F43F5E]" />
             <span>{s.badge}</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#123F38] font-normal tracking-tight mb-3 leading-snug">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#7A1D36] font-normal tracking-tight mb-3 leading-snug">
             {s.title}
           </h2>
 
-          <p className="text-xs sm:text-sm text-[#333A36]/80 leading-relaxed font-sans font-light">
+          <p className="text-xs sm:text-sm text-[#4A3840] leading-relaxed font-sans font-normal">
             {s.subtitle}
           </p>
         </div>
 
         {/* Flagship Future Goals Callout Banner */}
-        <div className="max-w-4xl mx-auto mb-8 bg-[#123F38]/5 border border-[#C9A45C]/35 rounded-2xl p-4 sm:p-4 text-center shadow-2xs">
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-[13px] font-sans font-medium text-[#123F38]">
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#123F38] text-white text-[10px] font-bold tracking-wider uppercase">
-              <Sparkles className="w-3 h-3 text-[#E0BE76]" />
+        <div className="max-w-4xl mx-auto mb-8 bg-gradient-to-r from-[#FAF5FF] via-[#FFFFFF] to-[#FFF1F2] border border-[#DDD6FE] rounded-2xl p-4 sm:p-4 text-center shadow-2xs">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-[13px] font-sans font-medium text-[#7A1D36]">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] text-white text-[10px] font-bold tracking-wider uppercase shadow-xs">
+              <Sparkles className="w-3 h-3 text-[#EFA7B8]" />
               <span>{currentLang === 'hi' ? 'भावी संकल्प' : currentLang === 'mr' ? 'आगामी संकल्प' : 'EXPANSION GOALS'}</span>
             </span>
             <span className="flex items-center gap-1">
               <span>🏛️</span>
               <span className="font-semibold">{currentLang === 'hi' ? 'पुलिस स्टेशनों में परामर्श केंद्र' : currentLang === 'mr' ? 'पोलिस ठाण्यांमध्ये समुपदेशन केंद्र' : 'Counselling Centres at Police Stations'}</span>
             </span>
-            <span className="text-[#C9A45C]">•</span>
+            <span className="text-[#F43F5E]">•</span>
             <span className="flex items-center gap-1">
               <span>🏫</span>
               <span className="font-semibold">{currentLang === 'hi' ? 'सरकारी स्कूलों में संबल डेस्क' : currentLang === 'mr' ? 'सरकारी शाळांमध्ये समुपदेशन केंद्र' : 'Guidance Desks in Government Schools'}</span>
             </span>
-            <span className="text-[#C9A45C]">•</span>
+            <span className="text-[#F43F5E]">•</span>
             <span className="flex items-center gap-1">
               <span>🤝</span>
               <span className="font-semibold">{currentLang === 'hi' ? 'खडकी शिक्षण संस्था MOU (३००+ छात्राएं)' : currentLang === 'mr' ? 'खडकी शिक्षण संस्था MOU (३००+ विद्यार्थिनी)' : 'MOU with Khadki Shikshan Sanstha (300+ Girls)'}</span>
@@ -302,7 +302,7 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
             2. SCANNABLE 4-PHASE TIMELINE RIBBON (Instant high-level roadmap)
            ===================================================================== */}
         <div className="mb-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-4 p-1.5 sm:p-2 bg-white/90 backdrop-blur-xs rounded-2xl sm:rounded-full border border-[#C9A45C]/30 shadow-2xs">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-4 p-1.5 sm:p-2 bg-white/90 backdrop-blur-xs rounded-2xl sm:rounded-full border border-[#FECDD3] shadow-2xs">
             {phases.map((p, idx) => {
               const isSelected = activePhase === idx;
               return (
@@ -315,8 +315,8 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
                   }}
                   className={`flex items-center gap-2.5 sm:gap-3 px-3 sm:px-4 py-2.5 rounded-xl sm:rounded-full text-left transition-all duration-200 cursor-pointer ${
                     isSelected 
-                      ? 'bg-[#123F38] text-white shadow-xs' 
-                      : 'hover:bg-[#FAF7F0] text-[#333A36]/80 hover:text-[#123F38]'
+                      ? 'bg-[#38152E] text-white shadow-xs' 
+                      : 'hover:bg-[#FCF8F9] text-[#333A36]/80 hover:text-[#7A1D36]'
                   }`}
                   aria-selected={isSelected}
                   role="tab"
@@ -324,8 +324,8 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
                   {/* Number pill */}
                   <span className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center font-mono text-xs font-bold shrink-0 transition-colors ${
                     isSelected 
-                      ? 'bg-[#C9A45C] text-[#123F38]' 
-                      : 'bg-[#FAF7F0] text-[#333A36]/70 border border-[#C9A45C]/30'
+                      ? 'bg-[#BA5C7B] text-[#7A1D36]' 
+                      : 'bg-[#FCF8F9] text-[#333A36]/70 border border-[#FECDD3]'
                   }`}>
                     {p.number}
                   </span>
@@ -333,12 +333,12 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
                   {/* Title & Phase */}
                   <div className="min-w-0 flex-1">
                     <span className={`text-[10px] font-mono uppercase tracking-wider block truncate ${
-                      isSelected ? 'text-[#FAF7F0]/75' : 'text-[#333A36]/50'
+                      isSelected ? 'text-[#FCF8F9]/75' : 'text-[#333A36]/50'
                     }`}>
                       {p.timeline}
                     </span>
                     <span className={`text-xs font-serif font-medium block truncate ${
-                      isSelected ? 'text-white' : 'text-[#123F38]'
+                      isSelected ? 'text-white' : 'text-[#7A1D36]'
                     }`}>
                       {p.shortTitle}
                     </span>
@@ -353,7 +353,7 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
         {/* =====================================================================
             3. FEATURED INITIATIVE SHOWCASE (Balanced, editorial 2-column card)
            ===================================================================== */}
-        <div className="bg-white rounded-3xl border border-[#C9A45C]/35 shadow-xs overflow-hidden transition-all duration-300">
+        <div className="bg-white rounded-3xl border border-[#FECDD3] shadow-xs overflow-hidden transition-all duration-300">
           <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
             
             {/* Left Column: Essential details & direct actions (7 cols) */}
@@ -363,15 +363,15 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
                 
                 {/* Status + Phase Tag */}
                 <div className="flex items-center justify-between gap-2.5 flex-wrap">
-                  <div className="inline-flex items-center gap-2 text-xs font-sans font-semibold text-[#123F38]">
-                    <span className="w-2 h-2 rounded-full bg-[#C9A45C]" />
-                    <span className="uppercase tracking-wider text-[11px] font-mono text-[#A46114]">
+                  <div className="inline-flex items-center gap-2 text-xs font-sans font-semibold text-[#7A1D36]">
+                    <span className="w-2 h-2 rounded-full bg-[#BA5C7B]" />
+                    <span className="uppercase tracking-wider text-[11px] font-mono text-[#FB7185]">
                       {current.label} • {current.timeline}
                     </span>
                   </div>
 
                   <div className="flex items-center gap-2 flex-wrap">
-                    <span className="px-2.5 py-0.5 rounded-full bg-[#FAF7F0] border border-[#C9A45C]/35 text-[#123F38] text-[11px] font-medium">
+                    <span className="px-2.5 py-0.5 rounded-full bg-[#FCF8F9] border border-[#FECDD3] text-[#7A1D36] text-[11px] font-medium">
                       {current.locationTag}
                     </span>
                     <span className="px-2.5 py-0.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] font-medium">
@@ -381,23 +381,23 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
                 </div>
 
                 {/* Main Heading */}
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-serif text-[#123F38] font-normal leading-snug">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-serif text-[#7A1D36] font-normal leading-snug">
                   {current.title}
                 </h3>
 
                 {/* 1-Sentence Plain-Language Summary */}
-                <p className="text-xs sm:text-sm text-[#333A36]/80 leading-relaxed font-sans font-light">
+                <p className="text-xs sm:text-sm text-[#4A3840] leading-relaxed font-sans font-normal">
                   {current.summary}
                 </p>
 
                 {/* Ground Action Deliverables (Clean & Direct - No Figures) */}
                 <div className="pt-2">
-                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#A46114] font-semibold block mb-2">
+                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#FB7185] font-semibold block mb-2">
                     {s.deliverablesPrompt}
                   </span>
-                  <div className="p-3.5 sm:p-4 rounded-2xl bg-[#FAF7F0] border border-[#C9A45C]/25 space-y-2">
+                  <div className="p-3.5 sm:p-4 rounded-2xl bg-[#FCF8F9] border border-[#FECDD3] space-y-2">
                     {current.deliverables.map((del, dIdx) => (
-                      <div key={dIdx} className="flex items-start gap-2.5 text-xs text-[#333A36]/85">
+                      <div key={dIdx} className="flex items-start gap-2.5 text-xs text-[#2B1822] font-medium">
                         <CheckCircle2 className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
                         <span className="leading-relaxed font-sans">{del}</span>
                       </div>
@@ -408,15 +408,15 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
               </div>
 
               {/* Bottom Actions: CTA + Prev / Next */}
-              <div className="pt-4 border-t border-[#C9A45C]/20 flex flex-wrap items-center justify-between gap-4">
+              <div className="pt-4 border-t border-[#BA5C7B]/20 flex flex-wrap items-center justify-between gap-4">
                 
                 <button
                   type="button"
                   onClick={onRequestGuidance}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#123F38] hover:bg-[#1B554C] text-white text-xs font-semibold tracking-wide transition-all shadow-2xs hover:shadow-xs cursor-pointer active:scale-95"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] hover:from-[#6D28D9] hover:via-[#A21CAF] hover:to-[#E11D48] text-white shadow-sm text-xs font-semibold tracking-wide transition-all shadow-2xs hover:shadow-xs cursor-pointer active:scale-95"
                 >
                   <span>{s.partnerBtn}</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-[#C9A45C]" />
+                  <ArrowRight className="w-3.5 h-3.5 text-[#F43F5E]" />
                 </button>
 
                 {/* Phase Steppers */}
@@ -428,7 +428,7 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
                       setActivePhase(prev => Math.max(0, prev - 1));
                       setShowDeliverables(false);
                     }}
-                    className="p-1.5 rounded-full border border-[#C9A45C]/30 hover:bg-[#FAF7F0] disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors text-[#123F38]"
+                    className="p-1.5 rounded-full border border-[#FECDD3] hover:bg-[#FCF8F9] disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors text-[#7A1D36]"
                     aria-label={s.prevPhaseBtn}
                   >
                     <ArrowLeft className="w-3.5 h-3.5" />
@@ -445,7 +445,7 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
                       setActivePhase(prev => Math.min(phases.length - 1, prev + 1));
                       setShowDeliverables(false);
                     }}
-                    className="p-1.5 rounded-full border border-[#C9A45C]/30 hover:bg-[#FAF7F0] disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors text-[#123F38]"
+                    className="p-1.5 rounded-full border border-[#FECDD3] hover:bg-[#FCF8F9] disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition-colors text-[#7A1D36]"
                     aria-label={s.nextPhaseBtn}
                   >
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -459,7 +459,7 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
             {/* Right Column: Authentic Grassroots Photograph / Official Poster (5 cols) */}
             <div className={`lg:col-span-5 relative min-h-[280px] lg:min-h-full overflow-hidden flex items-center justify-center transition-colors duration-300 ${
               current.isPoster 
-                ? 'bg-[#FAF7F0] p-3 sm:p-5 border-t lg:border-t-0 lg:border-l border-[#C9A45C]/25' 
+                ? 'bg-[#FCF8F9] p-3 sm:p-5 border-t lg:border-t-0 lg:border-l border-[#FECDD3]' 
                 : 'bg-black/5'
             }`}>
               {current.isPoster ? (
@@ -512,13 +512,13 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
                   }}
                   className={`p-4 rounded-2xl border transition-all duration-200 cursor-pointer flex flex-col justify-between ${
                     isSelected 
-                      ? 'bg-white border-[#123F38] ring-1 ring-[#123F38] shadow-xs' 
-                      : 'bg-white/60 hover:bg-white border-[#C9A45C]/25 hover:border-[#C9A45C]'
+                      ? 'bg-white border-[#38152E] ring-1 ring-[#38152E] shadow-xs' 
+                      : 'bg-white/60 hover:bg-white border-[#FECDD3] hover:border-[#BA5C7B]'
                   }`}
                 >
                   <div>
                     <div className="flex items-center justify-between mb-2">
-                      <span className="font-mono text-xs font-bold text-[#A46114]">
+                      <span className="font-mono text-xs font-bold text-[#FB7185]">
                         {p.number}
                       </span>
                       <span className="text-[10px] font-mono text-[#333A36]/50">
@@ -526,7 +526,7 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
                       </span>
                     </div>
 
-                    <h4 className="text-xs font-serif font-bold text-[#123F38] mb-1 leading-snug line-clamp-1">
+                    <h4 className="text-xs font-serif font-bold text-[#7A1D36] mb-1 leading-snug line-clamp-1">
                       {p.shortTitle}
                     </h4>
 
@@ -535,11 +535,11 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
                     </p>
                   </div>
 
-                  <div className="mt-3 pt-2 border-t border-[#C9A45C]/15 flex items-center justify-between text-[11px]">
-                    <span className="font-semibold text-[#123F38]">
+                  <div className="mt-3 pt-2 border-t border-[#BA5C7B]/15 flex items-center justify-between text-[11px]">
+                    <span className="font-semibold text-[#7A1D36]">
                       {p.timeline}
                     </span>
-                    <span className="text-[#A46114] font-medium flex items-center gap-0.5">
+                    <span className="text-[#FB7185] font-medium flex items-center gap-0.5">
                       Explore Phase <ChevronRight className="w-3 h-3" />
                     </span>
                   </div>
@@ -553,12 +553,12 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
         {/* =====================================================================
             5. INSTITUTIONAL COLLABORATION CALLOUT
            ===================================================================== */}
-        <div className="mt-12 bg-white rounded-3xl p-6 sm:p-8 border border-[#C9A45C]/35 shadow-2xs flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="mt-12 bg-white rounded-3xl p-6 sm:p-8 border border-[#FECDD3] shadow-2xs flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="space-y-1.5 text-center sm:text-left">
-            <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#A46114] block">
+            <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#FB7185] block">
               {s.collaborateBadge}
             </span>
-            <h4 className="text-lg sm:text-xl font-serif text-[#123F38]">
+            <h4 className="text-lg sm:text-xl font-serif text-[#7A1D36]">
               {s.collaborateTitle}
             </h4>
             <p className="text-xs sm:text-sm text-[#333A36]/80 font-sans font-light max-w-xl leading-relaxed">
@@ -569,7 +569,7 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
           <button
             type="button"
             onClick={onRequestGuidance}
-            className="shrink-0 px-6 py-2.5 rounded-full bg-[#123F38] hover:bg-[#1B554C] text-white text-xs font-semibold tracking-wide transition-all shadow-xs cursor-pointer active:scale-95"
+            className="shrink-0 px-6 py-2.5 rounded-full bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] hover:from-[#6D28D9] hover:via-[#A21CAF] hover:to-[#E11D48] text-white shadow-sm text-xs font-semibold tracking-wide transition-all shadow-xs cursor-pointer active:scale-95"
           >
             {s.collaborateCta}
           </button>

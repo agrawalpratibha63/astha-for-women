@@ -53,7 +53,7 @@ export default function Footer({ t = {}, onRequestGuidance = () => {}, onOpenFou
   ];
 
   return (
-    <footer id="contact" className="bg-[#10332F] text-brand-ivory pt-16 pb-12 border-t border-brand-gold/25 relative overflow-hidden scroll-mt-20">
+    <footer id="contact" className="bg-gradient-to-b from-[#1E0B2B] via-[#160721] to-[#0D0414] text-brand-ivory pt-16 pb-12 border-t border-[#C026D3]/20 relative overflow-hidden scroll-mt-20">
       
       {/* Decorative Subtle Arch Bridge in Footer */}
       <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[800px] h-32 rounded-b-[100%] border-b border-brand-gold/15 pointer-events-none" />
@@ -216,7 +216,7 @@ export default function Footer({ t = {}, onRequestGuidance = () => {}, onOpenFou
               <button
                 type="button"
                 onClick={onRequestGuidance}
-                className="w-full py-2.5 rounded-xl bg-brand-gold hover:bg-white text-brand-charcoal font-semibold text-xs tracking-wide transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full py-2.5 rounded-xl bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] hover:from-[#6D28D9] hover:via-[#A21CAF] hover:to-[#E11D48] text-white font-semibold text-xs tracking-wide transition-all shadow-[0_8px_25px_rgba(192,38,211,0.35)] flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>{footer.confidentialCta || "Request Confidential Guidance"}</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />

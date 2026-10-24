@@ -81,7 +81,7 @@ export default function DonationCalculator({ t = {} }) {
           particleCount: 100,
           spread: 60,
           origin: { y: 0.6 },
-          colors: ['#10332F', '#C6A46A', '#DCE5DC', '#F2E6E0']
+          colors: ['#38152E', '#C46D86', '#DCE5DC', '#F2E6E0']
         });
       } catch {}
     }, 500);
@@ -291,7 +291,7 @@ export default function DonationCalculator({ t = {} }) {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-3.5 rounded-full bg-brand-teal hover:bg-brand-teal/90 text-white font-medium text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full py-3.5 rounded-full bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] hover:from-[#6D28D9] hover:via-[#A21CAF] hover:to-[#E11D48] text-white font-semibold text-xs sm:text-sm shadow-[0_8px_25px_rgba(192,38,211,0.32)] transition-all flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <Heart className="w-4 h-4 text-brand-gold" />
                   <span>

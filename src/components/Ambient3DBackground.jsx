@@ -43,10 +43,10 @@ export default function Ambient3DBackground() {
     const bounds = { x: 500, y: 600, z: 400 };
 
     const palette = [
-      { r: 201, g: 164, b: 92, alpha: 0.55 }, // Handloom Gold
-      { r: 217, g: 35, b: 45, alpha: 0.40 },  // Sindoor Crimson
-      { r: 235, g: 200, b: 120, alpha: 0.65 },// Shimmer Amber
-      { r: 255, g: 255, b: 255, alpha: 0.75 },// White Light
+      { r: 233, g: 30, b: 99, alpha: 0.50 },   // Radiant Rose (Hot Pink)
+      { r: 186, g: 104, b: 200, alpha: 0.45 }, // Soft Lavender
+      { r: 255, g: 128, b: 171, alpha: 0.60 }, // Coral Blossom
+      { r: 255, g: 255, b: 255, alpha: 0.85 }, // White Stardust
     ];
 
     const particles = [];

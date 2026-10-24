@@ -96,25 +96,25 @@ export default function Navbar({
       {/* =======================================================================
           1. TOP CRISIS & HELPLINE RIBBON (Continuous Moving Marquee Ticker)
          ======================================================================= */}
-      <div className="bg-[#0E2A25] text-white/90 text-xs py-1.5 px-3 sm:px-4 font-sans border-b border-[#C9A45C]/25 relative overflow-hidden flex items-center shadow-xs">
+      <div className="bg-gradient-to-r from-[#FFF5F7] via-[#FFFDFB] to-[#FFF7ED] text-[#7A1D36] text-xs py-2 px-3 sm:px-4 font-sans border-b border-[#FECDD3] relative overflow-hidden flex items-center shadow-xs">
         
         {/* Left Live Indicator */}
-        <div className="flex items-center gap-1.5 shrink-0 pr-3 z-10 bg-[#0E2A25] shadow-[6px_0_10px_#0E2A25]">
+        <div className="flex items-center gap-1.5 shrink-0 pr-3 z-10 bg-[#FFF5F7] shadow-[8px_0_12px_#FFF5F7]">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
-          <span className="text-[10px] font-bold tracking-wider uppercase text-[#E0BE76] hidden sm:inline">
+          <span className="text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-full bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] text-white shadow-2xs hidden sm:inline">
             {lang === 'hi' ? 'अपडेट' : lang === 'mr' ? 'अपडेट' : 'LIVE'}
           </span>
         </div>
 
         {/* Moving Marquee Container */}
         <div className="overflow-hidden flex-1 relative whitespace-nowrap" title="Hover to pause ticker">
-          <div className="animate-ticker-marquee text-[11px] sm:text-xs text-[#FAF7F0]/90">
+          <div className="animate-ticker-marquee text-[11px] sm:text-xs text-[#7A1D36] font-bold tracking-wide">
             {/* Set 1 */}
             <div className="inline-flex items-center gap-6 pr-6">
               {tickerItems.map((item, idx) => (
                 <span key={`t1-${idx}`} className="inline-flex items-center gap-2">
-                  <span className="text-[#C9A45C]">✦</span>
-                  <span className="font-medium">{item}</span>
+                  <span className="text-[#F43F5E] font-bold">✦</span>
+                  <span className="font-bold text-[#7A1D36]">{item}</span>
                 </span>
               ))}
             </div>
@@ -123,8 +123,8 @@ export default function Navbar({
             <div className="inline-flex items-center gap-6 pr-6" aria-hidden="true">
               {tickerItems.map((item, idx) => (
                 <span key={`t2-${idx}`} className="inline-flex items-center gap-2">
-                  <span className="text-[#C9A45C]">✦</span>
-                  <span className="font-medium">{item}</span>
+                  <span className="text-[#F43F5E] font-bold">✦</span>
+                  <span className="font-bold text-[#7A1D36]">{item}</span>
                 </span>
               ))}
             </div>
@@ -132,14 +132,14 @@ export default function Navbar({
         </div>
 
         {/* Right Pinned Actions: Quick Exit & Helpline */}
-        <div className="flex items-center gap-2 sm:gap-4 shrink-0 pl-3 z-10 bg-[#0E2A25] shadow-[-10px_0_12px_#0E2A25]">
-          <span className="text-[#FAF7F0]/70 hidden lg:inline font-mono text-[11px]">
+        <div className="flex items-center gap-2 sm:gap-4 shrink-0 pl-3 z-10 bg-[#FFF5F7] shadow-[8px_0_12px_#FFF5F7]">
+          <span className="text-[#7A1D36] font-bold hidden lg:inline font-mono text-[11px]">
             {footer.nationalHelpline || 'Helpline: 181 (Toll Free)'}
           </span>
           <button
             onClick={handleQuickExit}
             title={t.leavePageTooltip || 'Quickly hide this page and redirect to Google'}
-            className="text-[#E0BE76] hover:text-white transition-colors underline decoration-[#E0BE76]/40 cursor-pointer font-medium text-[11px] sm:text-xs focus:ring-1 focus:ring-[#C9A45C] outline-none rounded px-1 shrink-0"
+            className="text-[#E11D48] hover:text-[#BE123C] font-bold underline decoration-[#E11D48]/50 transition-colors cursor-pointer text-[11px] sm:text-xs focus:ring-1 focus:ring-[#F43F5E] outline-none rounded px-1 shrink-0"
           >
             {t.escKeyHint || 'Quick Exit (Esc)'}
           </button>
@@ -153,8 +153,8 @@ export default function Navbar({
       <nav 
         className={`w-full transition-all duration-200 border-b ${
           scrolled 
-            ? 'bg-[#FAF7F0]/95 backdrop-blur-md shadow-sm border-[#C9A45C]/20 py-2.5' 
-            : 'bg-[#FAF7F0] border-black/5 py-3.5'
+            ? 'bg-white/95 backdrop-blur-md shadow-sm border-[#FECDD3]/50 py-2.5' 
+            : 'bg-white/90 border-[#F8BBD0]/40 py-3.5'
         }`}
         aria-label="Main Navigation"
       >
@@ -165,7 +165,7 @@ export default function Navbar({
             <a 
               href="#" 
               onClick={(e) => { e.preventDefault(); onNavigateHome(); }}
-              className="flex items-center gap-3 group focus:ring-2 focus:ring-[#123F38] rounded-lg p-1 outline-none transition-transform"
+              className="flex items-center gap-3 group focus:ring-2 focus:ring-[#38152E] rounded-lg p-1 outline-none transition-transform"
             >
               <img 
                 src="/images/aastha-logo-transparent.png" 
@@ -185,7 +185,7 @@ export default function Navbar({
               <a 
                 href="#purpose" 
                 onClick={(e) => handleNavClick(e, 'purpose')} 
-                className="hover:text-[#123F38] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#C9A45C] hover:after:w-full after:transition-all focus:outline-none"
+                className="hover:text-[#38152E] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#BA5C7B] hover:after:w-full after:transition-all focus:outline-none"
               >
                 {nav.purpose || 'Our Purpose'}
               </a>
@@ -193,7 +193,7 @@ export default function Navbar({
               <a 
                 href="#how-we-help" 
                 onClick={(e) => handleNavClick(e, 'how-we-help')} 
-                className="hover:text-[#123F38] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#C9A45C] hover:after:w-full after:transition-all focus:outline-none"
+                className="hover:text-[#38152E] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#BA5C7B] hover:after:w-full after:transition-all focus:outline-none"
               >
                 {nav.howWeHelp || 'How We Help'}
               </a>
@@ -201,7 +201,7 @@ export default function Navbar({
               <button
                 type="button"
                 onClick={onOpenFounderPage}
-                className="hover:text-[#123F38] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#C9A45C] hover:after:w-full after:transition-all focus:outline-none cursor-pointer"
+                className="hover:text-[#38152E] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#BA5C7B] hover:after:w-full after:transition-all focus:outline-none cursor-pointer"
               >
                 {nav.founder || "Founder's Journey"}
               </button>
@@ -209,7 +209,7 @@ export default function Navbar({
               <a 
                 href="#updates" 
                 onClick={(e) => handleNavClick(e, 'updates')} 
-                className="hover:text-[#123F38] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#C9A45C] hover:after:w-full after:transition-all focus:outline-none"
+                className="hover:text-[#38152E] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#BA5C7B] hover:after:w-full after:transition-all focus:outline-none"
               >
                 {roadmapLabel}
               </a>
@@ -217,7 +217,7 @@ export default function Navbar({
               <a 
                 href="#contact" 
                 onClick={(e) => handleNavClick(e, 'contact')} 
-                className="hover:text-[#123F38] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#C9A45C] hover:after:w-full after:transition-all focus:outline-none"
+                className="hover:text-[#38152E] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#BA5C7B] hover:after:w-full after:transition-all focus:outline-none"
               >
                 {nav.contact || 'Contact'}
               </a>
@@ -232,7 +232,7 @@ export default function Navbar({
             <div 
               role="radiogroup" 
               aria-label={nav.selectLang || 'Select Language'}
-              className="inline-flex items-center bg-white/90 border border-[#C9A45C]/30 rounded-full p-0.5 shadow-2xs text-xs font-sans"
+              className="inline-flex items-center bg-white/90 border border-[#BA5C7B]/30 rounded-full p-0.5 shadow-2xs text-xs font-sans"
             >
               {languages.map((l) => {
                 const isSelected = lang === l.code;
@@ -245,8 +245,8 @@ export default function Navbar({
                     onClick={() => setLang(l.code)}
                     className={`px-2.5 py-1 rounded-full transition-all text-xs font-semibold cursor-pointer ${
                       isSelected 
-                        ? 'bg-[#123F38] text-white shadow-2xs' 
-                        : 'text-[#333A36]/70 hover:text-[#123F38] hover:bg-black/5'
+                        ? 'bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] text-white shadow-xs' 
+                        : 'text-[#7A1D36] hover:text-[#7C3AED] hover:bg-[#FAF5FF]'
                     }`}
                     title={l.fullLabel}
                   >
@@ -260,17 +260,17 @@ export default function Navbar({
             <button
               type="button"
               onClick={onOpenDonationQr}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white hover:bg-[#FAF7F0] text-[#123F38] border border-[#C9A45C]/40 hover:border-[#C9A45C] text-xs font-semibold transition-all shadow-2xs cursor-pointer active:scale-95"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#FFF5F7] to-[#FFF7ED] hover:bg-[#FFE4E6] text-[#E11D48] border border-[#FECDD3] hover:border-[#F43F5E] text-xs font-semibold transition-all shadow-2xs cursor-pointer active:scale-95"
               title="Donate / Support Aastha via UPI QR Code"
             >
-              <QrCode className="w-3.5 h-3.5 text-[#A46114]" />
+              <QrCode className="w-3.5 h-3.5 text-[#A03859]" />
               <span>{donateLabel}</span>
             </button>
 
             {/* 3. Primary CTA: Request Guidance */}
             <button
               onClick={onRequestGuidance}
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#123F38] hover:bg-[#1B554C] text-white text-xs font-semibold tracking-wide transition-all shadow-xs hover:shadow-md cursor-pointer active:scale-95"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] hover:from-[#6D28D9] hover:via-[#A21CAF] hover:to-[#E11D48] text-white text-xs font-semibold tracking-wide transition-all shadow-[0_4px_16px_rgba(192,38,211,0.35)] hover:shadow-lg cursor-pointer active:scale-95"
             >
               <span>{guidanceLabel}</span>
             </button>
@@ -280,13 +280,13 @@ export default function Navbar({
           {/* Mobile Hamburger Button */}
           <div className="flex lg:hidden items-center gap-2">
             {/* Mobile Language Switcher preview */}
-            <div className="md:hidden inline-flex items-center bg-white/80 border border-[#C9A45C]/30 rounded-full p-0.5 text-[11px]">
+            <div className="md:hidden inline-flex items-center bg-white/80 border border-[#BA5C7B]/30 rounded-full p-0.5 text-[11px]">
               {languages.map((l) => (
                 <button
                   key={l.code}
                   onClick={() => setLang(l.code)}
                   className={`px-2 py-0.5 rounded-full font-medium ${
-                    lang === l.code ? 'bg-[#123F38] text-white' : 'text-[#333A36]/70'
+                    lang === l.code ? 'bg-[#38152E] text-white' : 'text-[#333A36]/70'
                   }`}
                 >
                   {l.label}
@@ -296,7 +296,7 @@ export default function Navbar({
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-[#123F38] hover:bg-black/5 transition-colors focus:ring-2 focus:ring-[#123F38] outline-none cursor-pointer"
+              className="p-2 rounded-lg text-[#38152E] hover:bg-black/5 transition-colors focus:ring-2 focus:ring-[#38152E] outline-none cursor-pointer"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -307,13 +307,13 @@ export default function Navbar({
 
         {/* Mobile Dropdown Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-[#C9A45C]/20 bg-[#FAF7F0] px-5 py-6 shadow-xl space-y-4 animate-in slide-in-from-top-2">
+          <div className="lg:hidden border-t border-[#BA5C7B]/20 bg-[#FCF8F9] px-5 py-6 shadow-xl space-y-4 animate-in slide-in-from-top-2">
             
             <div className="flex flex-col space-y-3 font-sans text-sm font-medium text-[#333A36]">
               <a 
                 href="#purpose" 
                 onClick={(e) => handleNavClick(e, 'purpose')} 
-                className="py-2 border-b border-black/5 hover:text-[#123F38]"
+                className="py-2 border-b border-black/5 hover:text-[#38152E]"
               >
                 {nav.purpose || 'Our Purpose'}
               </a>
@@ -321,7 +321,7 @@ export default function Navbar({
               <a 
                 href="#how-we-help" 
                 onClick={(e) => handleNavClick(e, 'how-we-help')} 
-                className="py-2 border-b border-black/5 hover:text-[#123F38]"
+                className="py-2 border-b border-black/5 hover:text-[#38152E]"
               >
                 {nav.howWeHelp || 'How We Help'}
               </a>
@@ -329,16 +329,16 @@ export default function Navbar({
               <button
                 type="button"
                 onClick={() => { onOpenFounderPage(); setMobileMenuOpen(false); }}
-                className="py-2 border-b border-black/5 hover:text-[#123F38] text-left flex items-center justify-between"
+                className="py-2 border-b border-black/5 hover:text-[#38152E] text-left flex items-center justify-between"
               >
                 <span>{nav.founder || "Founder's Journey"}</span>
-                <BookOpen className="w-4 h-4 text-[#C9A45C]" />
+                <BookOpen className="w-4 h-4 text-[#BA5C7B]" />
               </button>
 
               <a 
                 href="#updates" 
                 onClick={(e) => handleNavClick(e, 'updates')} 
-                className="py-2 border-b border-black/5 hover:text-[#123F38]"
+                className="py-2 border-b border-black/5 hover:text-[#38152E]"
               >
                 {roadmapLabel}
               </a>
@@ -346,7 +346,7 @@ export default function Navbar({
               <a 
                 href="#contact" 
                 onClick={(e) => handleNavClick(e, 'contact')} 
-                className="py-2 border-b border-black/5 hover:text-[#123F38]"
+                className="py-2 border-b border-black/5 hover:text-[#38152E]"
               >
                 {nav.contact || 'Contact'}
               </a>
@@ -357,15 +357,15 @@ export default function Navbar({
               <button
                 type="button"
                 onClick={() => { onOpenDonationQr(); setMobileMenuOpen(false); }}
-                className="w-full py-2.5 rounded-full bg-white border border-[#C9A45C]/50 text-[#123F38] font-semibold text-xs flex items-center justify-center gap-2 shadow-2xs"
+                className="w-full py-2.5 rounded-full bg-white border border-[#BA5C7B]/50 text-[#38152E] font-semibold text-xs flex items-center justify-center gap-2 shadow-2xs"
               >
-                <QrCode className="w-4 h-4 text-[#A46114]" />
+                <QrCode className="w-4 h-4 text-[#A03859]" />
                 <span>{donateLabel}</span>
               </button>
 
               <button
                 onClick={() => { onRequestGuidance(); setMobileMenuOpen(false); }}
-                className="w-full py-3 rounded-full bg-[#123F38] text-white font-medium text-xs shadow-xs"
+                className="w-full py-3 rounded-full bg-[#38152E] text-white font-medium text-xs shadow-xs"
               >
                 {guidanceLabel}
               </button>

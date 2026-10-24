@@ -25,40 +25,40 @@ export default function FounderStory({
       name: 'Ground Leader Lens',
       subtitle: 'Authentic Editorial',
       badge: 'Grassroots Leader & Counselor • Pune, MH',
-      dotColor: 'bg-[#C89B52]',
-      badgeStyle: 'bg-black/50 border-[#C89B52]/40 text-[#F8F2E8]',
+      dotColor: 'bg-[#BA5C7B]',
+      badgeStyle: 'bg-black/50 border-[#BA5C7B]/40 text-[#FBF1F5]',
       imgFilter: 'contrast(100%) saturate(100%) brightness(100%)',
-      ringClass: 'ring-2 ring-[#C89B52]/40',
+      ringClass: 'ring-2 ring-[#BA5C7B]/40',
       glowStyle: 'shadow-xl',
-      backingClass: 'bg-[#123F3A]',
+      backingClass: 'bg-[#38152E]',
       backingRotate: '-rotate-1',
-      confettiColors: ['#C89B52', '#123F3A', '#FFFFFF']
+      confettiColors: ['#BA5C7B', '#38152E', '#FFFFFF']
     },
     {
       name: 'Compassion & Emotional Healing Lens',
       subtitle: 'Warm Empathy Glow',
       badge: '💛 Certified Counselor • 300+ Girls & Women Guided',
-      dotColor: 'bg-[#F7D070]',
-      badgeStyle: 'bg-[#59390B]/85 border-[#F7D070]/60 text-[#FFF2D6]',
+      dotColor: 'bg-[#F2B3C3]',
+      badgeStyle: 'bg-[#59390B]/85 border-[#F2B3C3]/60 text-[#FFF2D6]',
       imgFilter: 'contrast(108%) saturate(125%) brightness(104%) sepia(10%)',
-      ringClass: 'ring-4 ring-[#C89B52]',
+      ringClass: 'ring-4 ring-[#BA5C7B]',
       glowStyle: 'shadow-[0_0_40px_rgba(200,155,82,0.65)]',
       backingClass: 'bg-[#7C4A1E]',
       backingRotate: 'rotate-1',
-      confettiColors: ['#C89B52', '#F7D070', '#E5A93C', '#FFF2D6']
+      confettiColors: ['#BA5C7B', '#F2B3C3', '#E5A93C', '#FFF2D6']
     },
     {
       name: 'Crisis Mediator & Prison Outreach Lens',
       subtitle: 'Courage & Mediation',
       badge: '🛡️ Crisis Mediator • Yerawada Prison & Rural Clusters',
       dotColor: 'bg-[#55B5A6]',
-      badgeStyle: 'bg-[#072421]/90 border-[#55B5A6]/60 text-[#E0F3EE]',
+      badgeStyle: 'bg-[#200B1B]/90 border-[#55B5A6]/60 text-[#E0F3EE]',
       imgFilter: 'contrast(114%) saturate(110%) brightness(102%) hue-rotate(-8deg)',
-      ringClass: 'ring-4 ring-[#1B554C]',
+      ringClass: 'ring-4 ring-[#501E42]',
       glowStyle: 'shadow-[0_0_45px_rgba(18,63,58,0.75)]',
-      backingClass: 'bg-[#0B2E2A]',
+      backingClass: 'bg-[#240C20]',
       backingRotate: '-rotate-2',
-      confettiColors: ['#123F3A', '#1B554C', '#55B5A6', '#C89B52']
+      confettiColors: ['#38152E', '#501E42', '#55B5A6', '#BA5C7B']
     },
     {
       name: 'Dignity & Changemaker Advocate Lens',
@@ -71,7 +71,7 @@ export default function FounderStory({
       glowStyle: 'shadow-[0_0_45px_rgba(199,110,97,0.7)]',
       backingClass: 'bg-[#672720]',
       backingRotate: 'rotate-2',
-      confettiColors: ['#C76E61', '#E8927C', '#C89B52', '#FFFCF7']
+      confettiColors: ['#C76E61', '#E8927C', '#BA5C7B', '#FFFCF7']
     }
   ];
 
@@ -113,12 +113,12 @@ export default function FounderStory({
       preview: f.whyText1 || 'My decision to work for women comes from my own life experiences. In times of family crisis, women often endure isolation with no neutral, empathetic guidance.',
       detail: f.whyText2 || 'These experiences inspired me to dedicate my efforts to helping other women who may be facing similar struggles. I decided to work towards empowering women, supporting them in difficult times, and helping them build the confidence to live their lives with dignity and independence.',
       icon: Heart,
-      accentColor: '#C89B52', // Champagne Gold
+      accentColor: '#BA5C7B', // Champagne Gold
       shapeClass: 'rounded-tl-[3.25rem] rounded-br-[2.5rem] rounded-tr-2xl rounded-bl-2xl',
-      borderClass: 'border-[#C89B52]/45 hover:border-[#C89B52]/90',
-      badgeClass: 'bg-[#C89B52]/15 text-[#9A641B] border-[#C89B52]/35',
+      borderClass: 'border-[#BA5C7B]/45 hover:border-[#BA5C7B]/90',
+      badgeClass: 'bg-[#BA5C7B]/15 text-[#963252] border-[#BA5C7B]/35',
       glowClass: 'hover:shadow-[0_16px_35px_rgba(200,155,82,0.3)]',
-      gradientBg: 'bg-gradient-to-b from-[#FFFDF9] via-[#FAF5EC] to-[#F5ECE0]/60',
+      gradientBg: 'bg-gradient-to-b from-[#FFFDFE] via-[#FAF2F6] to-[#F5E6ED]/60',
       keyPoints: ['Personal resolve from lived struggle', 'Breaking generational silence', 'Safe confidential empathetic care']
     },
     {
@@ -140,7 +140,7 @@ export default function FounderStory({
       borderClass: 'border-[#C76E61]/45 hover:border-[#C76E61]/90',
       badgeClass: 'bg-[#C76E61]/15 text-[#9E392F] border-[#C76E61]/35',
       glowClass: 'hover:shadow-[0_16px_35px_rgba(199,110,97,0.3)]',
-      gradientBg: 'bg-gradient-to-b from-[#FFFDF9] via-[#FAF1EE] to-[#F7E5E2]/60',
+      gradientBg: 'bg-gradient-to-b from-[#FFFDFE] via-[#FAF1EE] to-[#F7E5E2]/60',
       keyPoints: ['MOU with Khadki Shikshan Sanstha (300+ Girls)', 'Karve Institute MSW student fieldwork', 'Exploring Sangli District & Police Station Desks']
     },
     {
@@ -156,12 +156,12 @@ export default function FounderStory({
       preview: f.visionText || 'To create a society where every woman feels confident, independent, and valued. A society where women live with dignity, courage, and hope.',
       detail: f.targetAudience || 'A society where women are empowered to overcome challenges such as domestic crisis, reclaim their identity, and live with dignity, courage, and hope through counseling, vocational skills, and peer solidarity.',
       icon: Shield,
-      accentColor: '#123F3A', // Deep Petrol Teal
+      accentColor: '#38152E', // Deep Petrol Teal
       shapeClass: 'rounded-t-[3.25rem] rounded-b-2xl',
-      borderClass: 'border-[#123F3A]/40 hover:border-[#123F3A]/85',
-      badgeClass: 'bg-[#123F3A]/15 text-[#123F3A] border-[#123F3A]/30',
+      borderClass: 'border-[#38152E]/40 hover:border-[#38152E]/85',
+      badgeClass: 'bg-[#38152E]/15 text-[#38152E] border-[#38152E]/30',
       glowClass: 'hover:shadow-[0_16px_35px_rgba(18,63,58,0.3)]',
-      gradientBg: 'bg-gradient-to-b from-[#FFFDF9] via-[#F2F7F6] to-[#E3EFEB]/60',
+      gradientBg: 'bg-gradient-to-b from-[#FFFDFE] via-[#F2F7F6] to-[#E3EFEB]/60',
       keyPoints: ['Livelihood sewing clusters', 'Inherent dignity & legal rights', 'Lifelong community sisterhood']
     }
   ];
@@ -169,12 +169,12 @@ export default function FounderStory({
   return (
     <section 
       id="about" 
-      className="py-20 lg:py-28 bg-[#F8F2E8] border-t border-[#C89B52]/20 relative overflow-hidden scroll-mt-20"
+      className="py-20 lg:py-28 bg-[#FBF1F5] border-t border-[#BA5C7B]/20 relative overflow-hidden scroll-mt-20"
       aria-label="About the Founder"
     >
       {/* Subtle Ambient Silk & Botanical Glows */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#C89B52]/10 rounded-full blur-3xl pointer-events-none -mr-28 -mt-28" />
-      <div className="absolute bottom-1/3 -left-28 w-96 h-96 bg-[#123F3A]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#BA5C7B]/10 rounded-full blur-3xl pointer-events-none -mr-28 -mt-28" />
+      <div className="absolute bottom-1/3 -left-28 w-96 h-96 bg-[#38152E]/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-16 lg:space-y-20">
 
@@ -190,10 +190,10 @@ export default function FounderStory({
             <button
               type="button"
               onClick={handlePhotoClick}
-              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFFCF7] border border-[#C89B52]/40 text-[#123F3A] text-[11px] font-sans font-medium mb-3 shadow-2xs hover:bg-[#C89B52]/10 transition-all cursor-pointer group"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFFCF7] border border-[#BA5C7B]/40 text-[#38152E] text-[11px] font-sans font-medium mb-3 shadow-2xs hover:bg-[#BA5C7B]/10 transition-all cursor-pointer group"
               title="Click photo to explore different field lenses"
             >
-              <RefreshCw className="w-3 h-3 text-[#C89B52] group-hover:rotate-180 transition-transform duration-500" />
+              <RefreshCw className="w-3 h-3 text-[#BA5C7B] group-hover:rotate-180 transition-transform duration-500" />
               <span>Click photo to cycle lens ({photoEffectIndex + 1}/4)</span>
             </button>
 
@@ -203,7 +203,7 @@ export default function FounderStory({
               tabIndex={0}
               aria-label={`Founder photo interactive lens: ${currentPhotoEffect.name}. Click to cycle effects.`}
               onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handlePhotoClick(e); } }}
-              className="relative group w-full max-w-sm sm:max-w-md mx-auto cursor-pointer select-none active:scale-[0.99] transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-[#C89B52] rounded-t-[140px] rounded-b-3xl"
+              className="relative group w-full max-w-sm sm:max-w-md mx-auto cursor-pointer select-none active:scale-[0.99] transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-[#BA5C7B] rounded-t-[140px] rounded-b-3xl"
             >
               
               {/* Dynamic Sculptural Backing Geometry */}
@@ -214,12 +214,12 @@ export default function FounderStory({
               
               {/* Champagne Gold Layered Offset Contour */}
               <div 
-                className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 w-full h-full rounded-t-[140px] rounded-b-3xl border-2 border-[#C89B52]/50 pointer-events-none transform translate-x-1.5 translate-y-1.5" 
+                className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 w-full h-full rounded-t-[140px] rounded-b-3xl border-2 border-[#BA5C7B]/50 pointer-events-none transform translate-x-1.5 translate-y-1.5" 
                 aria-hidden="true" 
               />
 
               {/* Main Photographic Arch Frame */}
-              <div className={`relative rounded-t-[140px] rounded-b-3xl overflow-hidden bg-[#1B554C] border-2 transition-all duration-500 z-10 ${currentPhotoEffect.ringClass}`}>
+              <div className={`relative rounded-t-[140px] rounded-b-3xl overflow-hidden bg-[#501E42] border-2 transition-all duration-500 z-10 ${currentPhotoEffect.ringClass}`}>
                 
                 {!photoError ? (
                   <img 
@@ -231,12 +231,12 @@ export default function FounderStory({
                     loading="lazy"
                   />
                 ) : (
-                  <div className="w-full h-96 bg-[#123F3A] flex flex-col items-center justify-center p-8 text-center text-[#FFFCF7]">
-                    <Users className="w-12 h-12 text-[#C89B52] mb-3 opacity-90" />
-                    <span className="font-serif text-lg font-medium text-[#F8F2E8]">
+                  <div className="w-full h-96 bg-[#38152E] flex flex-col items-center justify-center p-8 text-center text-[#FFFCF7]">
+                    <Users className="w-12 h-12 text-[#BA5C7B] mb-3 opacity-90" />
+                    <span className="font-serif text-lg font-medium text-[#FBF1F5]">
                       Simintini Shingade
                     </span>
-                    <span className="text-xs text-[#F8F2E8]/70 mt-1">
+                    <span className="text-xs text-[#FBF1F5]/70 mt-1">
                       Founder of Aastha for Women
                     </span>
                   </div>
@@ -253,7 +253,7 @@ export default function FounderStory({
                 {/* Floating Top-Right Mode Badge */}
                 <div className="absolute top-4 right-4 z-20">
                   <span className="inline-flex items-center gap-1 text-[10px] font-sans font-semibold tracking-wider uppercase px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-[#FFFCF7] border border-white/20 shadow-md">
-                    <Sparkles className="w-3 h-3 text-[#C89B52]" />
+                    <Sparkles className="w-3 h-3 text-[#BA5C7B]" />
                     <span>Mode {photoEffectIndex + 1}/4</span>
                   </span>
                 </div>
@@ -273,7 +273,7 @@ export default function FounderStory({
 
             {/* Micro Caption under Portrait */}
             <p className="text-[11px] text-[#252522]/60 font-sans mt-3 text-center lg:text-left">
-              ✦ Active Lens: <span className="font-semibold text-[#123F3A]">{currentPhotoEffect.name}</span>
+              ✦ Active Lens: <span className="font-semibold text-[#38152E]">{currentPhotoEffect.name}</span>
             </p>
 
           </div>
@@ -282,14 +282,14 @@ export default function FounderStory({
           <div className="lg:col-span-7 space-y-6 text-left">
             
             {/* Identity Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#C89B52]/15 border border-[#C89B52]/35 text-[#123F3A] text-xs font-semibold tracking-[0.22em] uppercase shadow-2xs">
-              <Sparkles className="w-3.5 h-3.5 text-[#C89B52]" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#BA5C7B]/15 border border-[#BA5C7B]/35 text-[#38152E] text-xs font-semibold tracking-[0.22em] uppercase shadow-2xs">
+              <Sparkles className="w-3.5 h-3.5 text-[#BA5C7B]" />
               <span>{f.badge || 'THE HEART BEHIND AASTHA'}</span>
             </div>
 
             {/* Founder Name */}
             <div>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-[#123F3A] font-normal tracking-tight leading-[1.1]">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-[#38152E] font-normal tracking-tight leading-[1.1]">
                 {f.name || 'Simintini Shingade'}
               </h2>
               <p className="text-sm sm:text-base text-[#C76E61] font-sans font-medium mt-2 tracking-wide">
@@ -298,8 +298,8 @@ export default function FounderStory({
             </div>
 
             {/* Meaningful Founder Statement Quote */}
-            <div className="relative pl-5 border-l-2 border-[#C89B52] py-1">
-              <p className="text-lg sm:text-xl font-serif italic text-[#123F3A] leading-relaxed">
+            <div className="relative pl-5 border-l-2 border-[#BA5C7B] py-1">
+              <p className="text-lg sm:text-xl font-serif italic text-[#38152E] leading-relaxed">
                 "{f.slogan || 'Every woman deserves a safe space to be heard, respected, and empowered to rebuild her life with confidence.'}"
               </p>
             </div>
@@ -319,19 +319,19 @@ export default function FounderStory({
               <button
                 type="button"
                 onClick={onOpenFounderPage}
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#123F3A] text-[#FFFCF7] hover:bg-[#1B554C] text-xs sm:text-sm font-medium tracking-wide shadow-sm hover:shadow-lg transition-all transform hover:-translate-y-0.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#123F3A] focus:ring-offset-2"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] text-white hover:from-[#6D28D9] hover:via-[#A21CAF] hover:to-[#E11D48] text-xs sm:text-sm font-semibold tracking-wide shadow-[0_8px_25px_rgba(192,38,211,0.32)] hover:shadow-lg transition-all transform hover:-translate-y-0.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#7C3AED] focus:ring-offset-2"
               >
-                <BookOpen className="w-4 h-4 text-[#C89B52]" />
+                <BookOpen className="w-4 h-4 text-[#BA5C7B]" />
                 <span>{f.readFullStory || 'Read Full Founder Journey →'}</span>
               </button>
 
               <button
                 type="button"
                 onClick={onRequestGuidance}
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-transparent hover:bg-[#C89B52]/10 text-[#123F3A] border border-[#123F3A]/30 hover:border-[#123F3A] text-xs sm:text-sm font-medium tracking-wide transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#123F3A]"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-[#FAF5FF] text-[#7A1D36] border border-[#FECDD3] hover:border-[#C026D3] text-xs sm:text-sm font-semibold tracking-wide transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#7C3AED]"
               >
                 <span>{f.cta || 'Speak with our counseling team'}</span>
-                <ArrowRight className="w-4 h-4 text-[#C89B52]" />
+                <ArrowRight className="w-4 h-4 text-[#BA5C7B]" />
               </button>
             </div>
 
@@ -348,12 +348,12 @@ export default function FounderStory({
           
           {/* Header Section */}
           <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14 space-y-3">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#C89B52]/15 border border-[#C89B52]/35 text-[#123F3A] text-xs font-semibold tracking-[0.22em] uppercase shadow-2xs">
-              <Flower2 className="w-3.5 h-3.5 text-[#C89B52]" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#BA5C7B]/15 border border-[#BA5C7B]/35 text-[#38152E] text-xs font-semibold tracking-[0.22em] uppercase shadow-2xs">
+              <Flower2 className="w-3.5 h-3.5 text-[#BA5C7B]" />
               <span>THE JOURNEY OF RESOLVE</span>
             </div>
             
-            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#123F3A] font-normal leading-tight tracking-tight">
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#38152E] font-normal leading-tight tracking-tight">
               From Personal Resilience to Grassroots Impact
             </h3>
             
@@ -365,7 +365,7 @@ export default function FounderStory({
           {/* Connected Pathway Stepper Ribbon (Desktop) */}
           <div className="max-w-4xl mx-auto mb-10 hidden md:block">
             <div className="relative flex items-center justify-between">
-              <div className="absolute left-10 right-10 top-1/2 -translate-y-1/2 h-0.5 bg-gradient-to-r from-[#C89B52]/50 via-[#C76E61]/50 to-[#123F3A]/50 z-0" />
+              <div className="absolute left-10 right-10 top-1/2 -translate-y-1/2 h-0.5 bg-gradient-to-r from-[#BA5C7B]/50 via-[#C76E61]/50 to-[#38152E]/50 z-0" />
               
               {milestones.map((step, sIdx) => {
                 const isExpanded = expandedMilestone === step.id;
@@ -383,7 +383,7 @@ export default function FounderStory({
                     >
                       {step.number}
                     </span>
-                    <span className="text-xs font-sans font-semibold text-[#123F3A]">
+                    <span className="text-xs font-sans font-semibold text-[#38152E]">
                       {step.tag}
                     </span>
                   </button>
@@ -404,7 +404,7 @@ export default function FounderStory({
                   className={`group relative ${item.shapeClass} ${item.gradientBg} border-2 ${item.borderClass} ${item.glowClass} shadow-md transition-all duration-500 flex flex-col justify-between overflow-hidden transform hover:-translate-y-2`}
                 >
                   {/* Card Header Media Window with Authentic Photography / Logo */}
-                  <div className={`relative aspect-[16/10] overflow-hidden ${item.isLogo ? 'bg-[#FFFDF7] flex items-center justify-center p-3 sm:p-4' : 'bg-[#1B554C]'}`}>
+                  <div className={`relative aspect-[16/10] overflow-hidden ${item.isLogo ? 'bg-[#FFFDF7] flex items-center justify-center p-3 sm:p-4' : 'bg-[#501E42]'}`}>
                     <img
                       src={item.image}
                       alt={item.imageAlt}
@@ -446,14 +446,14 @@ export default function FounderStory({
                         </span>
                       </div>
 
-                      <h4 className="text-xl sm:text-2xl font-serif font-bold text-[#123F3A] leading-snug group-hover:text-[#C89B52] transition-colors">
+                      <h4 className="text-xl sm:text-2xl font-serif font-bold text-[#38152E] leading-snug group-hover:text-[#BA5C7B] transition-colors">
                         {item.title}
                       </h4>
                     </div>
 
                     {/* Pull Quote */}
                     <div className="p-3.5 rounded-xl bg-white/85 border-l-4 shadow-2xs" style={{ borderLeftColor: item.accentColor }}>
-                      <p className="text-xs sm:text-[13px] font-serif italic text-[#123F3A] leading-relaxed">
+                      <p className="text-xs sm:text-[13px] font-serif italic text-[#38152E] leading-relaxed">
                         {item.quote}
                       </p>
                     </div>
@@ -476,19 +476,19 @@ export default function FounderStory({
                     </div>
 
                     {/* Interactive Drawer & Navigation */}
-                    <div className="pt-3 border-t border-[#C89B52]/20 mt-auto">
+                    <div className="pt-3 border-t border-[#BA5C7B]/20 mt-auto">
                       <button
                         type="button"
                         onClick={() => setExpandedMilestone(isExpanded ? null : item.id)}
                         aria-expanded={isExpanded}
-                        className="w-full flex items-center justify-between text-xs font-semibold text-[#123F3A] hover:text-[#C89B52] transition-colors py-1 cursor-pointer focus:outline-none rounded"
+                        className="w-full flex items-center justify-between text-xs font-semibold text-[#7A1D36] hover:text-[#F43F5E] transition-colors py-1 cursor-pointer focus:outline-none rounded"
                       >
                         <span className="flex items-center gap-1.5">
-                          <BookOpen className="w-3.5 h-3.5 text-[#C89B52]" />
+                          <BookOpen className="w-3.5 h-3.5 text-[#BA5C7B]" />
                           <span>{isExpanded ? 'Hide Chapter Notes' : 'Read Full Chapter Detail'}</span>
                         </span>
                         <ChevronDown 
-                          className={`w-4 h-4 text-[#C89B52] transform transition-transform duration-300 ${
+                          className={`w-4 h-4 text-[#BA5C7B] transform transition-transform duration-300 ${
                             isExpanded ? 'rotate-180' : ''
                           }`} 
                         />
@@ -496,7 +496,7 @@ export default function FounderStory({
 
                       {/* Expandable Content Area */}
                       {isExpanded && (
-                        <div className="mt-3.5 p-4 rounded-xl bg-white/95 border border-[#C89B52]/25 shadow-sm space-y-3 animate-fade-in">
+                        <div className="mt-3.5 p-4 rounded-xl bg-white/95 border border-[#BA5C7B]/25 shadow-sm space-y-3 animate-fade-in">
                           <p className="text-xs text-[#252522]/85 leading-relaxed font-sans">
                             {item.detail}
                           </p>
@@ -504,7 +504,7 @@ export default function FounderStory({
                           <button
                             type="button"
                             onClick={onOpenFounderPage}
-                            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#123F3A] hover:text-[#C89B52] underline decoration-[#C89B52] underline-offset-4 cursor-pointer"
+                            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#F43F5E] hover:text-[#FB7185] underline decoration-[#C026D3] underline-offset-4 cursor-pointer"
                           >
                             <span>Open interactive Founder Story studio →</span>
                           </button>

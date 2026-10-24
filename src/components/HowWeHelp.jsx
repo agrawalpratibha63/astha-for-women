@@ -33,7 +33,7 @@ export default function HowWeHelp({ t, onRequestGuidance }) {
           {h.steps.map((step, idx) => (
             <div
               key={idx}
-              className="p-8 rounded-3xl bg-[#FAF7F0] border border-charcoal/10 hover:border-amber-600/30 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
+              className="p-8 rounded-3xl bg-[#FCF8F9] border border-charcoal/10 hover:border-amber-600/30 hover:shadow-lg transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
             >
               {/* Subtle top indicator */}
               <div className="flex items-center justify-between mb-6">
@@ -63,7 +63,7 @@ export default function HowWeHelp({ t, onRequestGuidance }) {
         </div>
 
         {/* Reassurance Banner & Direct CTA */}
-        <div className="max-w-3xl mx-auto bg-[#FAF7F0] p-6 sm:p-8 rounded-3xl border border-charcoal/10 text-center flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="max-w-3xl mx-auto bg-[#FCF8F9] p-6 sm:p-8 rounded-3xl border border-charcoal/10 text-center flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="text-left">
             <h4 className="text-base font-serif font-bold text-charcoal mb-1">
               {t.quickEmergency.title}
@@ -74,7 +74,7 @@ export default function HowWeHelp({ t, onRequestGuidance }) {
           </div>
           <button
             onClick={onRequestGuidance}
-            className="shrink-0 px-6 py-3 rounded-xl bg-[#141312] hover:bg-neutral-800 text-white font-medium text-sm transition-all shadow-xs flex items-center gap-2 cursor-pointer"
+            className="shrink-0 px-6 py-3 rounded-xl bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] hover:from-[#6D28D9] hover:via-[#A21CAF] hover:to-[#E11D48] text-white font-medium text-sm transition-all shadow-[0_8px_25px_rgba(192,38,211,0.32)] flex items-center gap-2 cursor-pointer"
           >
             <span>{t.hero.ctaPrimary}</span>
             <ArrowRight className="w-4 h-4" />

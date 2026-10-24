@@ -49,8 +49,8 @@ export default function OurPurpose({
       desc: p.principle1Desc || "Honoring every woman's story, emotions, and self-respect without condition or stigma.",
       detail: p.principle1Detail || "At Aastha, dignity means never treating a woman's crisis as a personal failure. We provide safe, non-judgmental spaces where feelings are validated and personal privacy is unconditionally protected.",
       icon: Shield,
-      accent: 'border-[#C78A32]/40',
-      tagColor: 'text-[#C78A32] bg-[#C78A32]/10'
+      accent: 'border-[#BA5C7B]/40',
+      tagColor: 'text-[#BA5C7B] bg-[#BA5C7B]/10'
     },
     {
       id: 1,
@@ -85,7 +85,7 @@ export default function OurPurpose({
       detail: p.step1Detail || 'Our first priority is emotional containment and psychological safety. In a 1-on-1 private setting, women can unpack trauma, marital strife, or family pressure without fear of community exposure or blame.',
       icon: MessageCircle,
       themeColor: '#A8B9A0', // Sage
-      badgeClass: 'bg-[#A8B9A0]/20 text-[#103D39] border-[#A8B9A0]/50',
+      badgeClass: 'bg-[#A8B9A0]/20 text-[#38152E] border-[#A8B9A0]/50',
       image: '/images/aastha-young-women-group.jpg',
       alt: 'Step 01 - Be Heard: Community gathering of young women, college youth and changemakers'
     },
@@ -110,8 +110,8 @@ export default function OurPurpose({
       concept: p.step3Concept || 'Sustainable Self-Reliance',
       detail: p.step3Detail || 'We bridge the gap between emotional healing and real-world autonomy. Through vocational linkages, legal awareness, and self-help peer groups, women build long-term confidence and dignity.',
       icon: Sparkles,
-      themeColor: '#C78A32', // Saffron Gold
-      badgeClass: 'bg-[#C78A32]/15 text-[#C78A32] border-[#C78A32]/40',
+      themeColor: '#BA5C7B', // Saffron Gold
+      badgeClass: 'bg-[#BA5C7B]/15 text-[#BA5C7B] border-[#BA5C7B]/40',
       image: '/images/aastha-women-sunrise-walking.jpg',
       alt: 'Step 03 - Move Forward: Women walking at sunrise toward empowerment, dignity and self-reliance'
     }
@@ -126,13 +126,13 @@ export default function OurPurpose({
 
       {/* =========================================================================
           SECTION ONE: OUR PURPOSE HERO (Asymmetric Editorial Layout)
-          Warm Ivory base (#F7F0E5), Arch Photographic Container, Authentic Photo
+          Warm Ivory base (#FBF1F5), Arch Photographic Container, Authentic Photo
          ========================================================================= */}
-      <div className="relative py-20 lg:py-28 bg-[#F7F0E5] border-t border-[#C78A32]/20">
+      <div className="relative py-20 lg:py-28 bg-[#FCFAFD] border-t border-[#FECDD3]">
         
         {/* Subtle Silk & Botanical Curved Line SVG Overlay */}
         <div className="absolute inset-0 pointer-events-none opacity-25 overflow-hidden -z-0">
-          <svg viewBox="0 0 1200 800" fill="none" className="w-full h-full text-[#C78A32]">
+          <svg viewBox="0 0 1200 800" fill="none" className="w-full h-full text-[#BA5C7B]">
             <path 
               d="M-100 200 C300 100, 600 450, 1300 250" 
               stroke="currentColor" 
@@ -155,18 +155,18 @@ export default function OurPurpose({
             <div className="lg:col-span-7 space-y-6">
               
               {/* Eyebrow Badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#C78A32]/15 border border-[#C78A32]/35 text-[#103D39] text-xs font-semibold tracking-[0.22em] uppercase shadow-xs">
-                <Leaf className="w-3.5 h-3.5 text-[#C78A32]" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#FAF5FF] to-[#FFF1F2] border border-[#FECDD3] text-[#F43F5E] font-bold text-xs font-semibold tracking-[0.22em] uppercase shadow-xs">
+                <Leaf className="w-3.5 h-3.5 text-[#BA5C7B]" />
                 <span>{p.eyebrow || 'OUR PURPOSE'}</span>
               </div>
 
               {/* Serif Headline with Saffron Gold Underline */}
-              <h2 className="text-3xl sm:text-5xl lg:text-[3.5rem] font-serif text-[#103D39] font-normal tracking-tight leading-[1.14]">
+              <h2 className="text-3xl sm:text-5xl lg:text-[3.5rem] font-serif text-[#2B1822] font-bold font-normal tracking-tight leading-[1.14]">
                 {p.headlinePrefix || 'Every woman deserves to feel '}
-                <span className="relative inline-block text-[#C78A32] italic font-normal">
+                <span className="relative inline-block text-[#BA5C7B] italic font-normal">
                   {p.headlineHighlight || 'safe, seen, and strong.'}
                   <svg 
-                    className="absolute -bottom-1.5 left-0 w-full h-2.5 text-[#C78A32]/70" 
+                    className="absolute -bottom-1.5 left-0 w-full h-2.5 text-[#BA5C7B]/70" 
                     viewBox="0 0 200 8" 
                     fill="none" 
                     preserveAspectRatio="none"
@@ -183,11 +183,11 @@ export default function OurPurpose({
               </h2>
 
               {/* Supporting Editorial Narrative */}
-              <div className="space-y-4 text-base sm:text-lg text-[#242522]/90 leading-relaxed font-sans max-w-2xl">
-                <p className="font-medium text-[#103D39]">
+              <div className="space-y-4 text-base sm:text-lg text-[#2B1822] font-medium leading-relaxed font-sans max-w-2xl">
+                <p className="font-medium text-[#38152E]">
                   {p.subheadline || 'A space to be heard. A path towards independence.'}
                 </p>
-                <p className="text-sm sm:text-base text-[#242522]/80 leading-relaxed font-light">
+                <p className="text-sm sm:text-base text-[#4A3840] font-normal leading-relaxed font-light">
                   {p.whyHeadline || 'No woman should have to face a difficult moment alone.'}{' '}
                   {p.whySub || 'Through confidential psychological counseling, pre-marital guidance, crisis mediation, and vocational self-reliance, Aastha builds a protective bridge from isolation to self-sustaining dignity.'}
                 </p>
@@ -198,17 +198,17 @@ export default function OurPurpose({
                 <button
                   type="button"
                   onClick={onOpenGuidance}
-                  className="inline-flex items-center gap-2.5 px-6 sm:px-7 py-3.5 rounded-full bg-[#103D39] text-[#FFFCF7] hover:bg-[#0c2f2c] text-sm font-medium tracking-wide transition-all shadow-sm hover:shadow-lg transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#103D39] focus:ring-offset-2 cursor-pointer"
+                  className="inline-flex items-center gap-2.5 px-6 sm:px-7 py-3.5 rounded-full bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] hover:from-[#E11D48] hover:via-[#F43F5E] hover:to-[#EA580C] text-white shadow-[0_8px_25px_rgba(244,63,94,0.35)] text-sm font-medium tracking-wide transition-all shadow-sm hover:shadow-lg transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#38152E] focus:ring-offset-2 cursor-pointer"
                   aria-label="Request confidential guidance from Aastha counselors"
                 >
                   <span>{p.closingCtaPrimary || 'Request guidance'}</span>
-                  <ArrowRight className="w-4 h-4 text-[#C78A32]" />
+                  <ArrowRight className="w-4 h-4 text-white" />
                 </button>
 
                 <button
                   type="button"
                   onClick={() => scrollToAnchor('purpose-pathway')}
-                  className="inline-flex items-center gap-2 px-6 sm:px-7 py-3.5 rounded-full bg-transparent hover:bg-[#C78A32]/10 text-[#242522] border border-[#242522]/35 hover:border-[#103D39] text-sm font-medium tracking-wide transition-all focus:outline-none focus:ring-2 focus:ring-[#103D39] cursor-pointer"
+                  className="inline-flex items-center gap-2 px-6 sm:px-7 py-3.5 rounded-full bg-white hover:bg-[#FFF5F7] text-[#7A1D36] border border-[#FECDD3] hover:border-[#F43F5E] shadow-2xs hover:border-[#38152E] text-sm font-medium tracking-wide transition-all focus:outline-none focus:ring-2 focus:ring-[#38152E] cursor-pointer"
                 >
                   <span>{p.ctaApproach || 'Our approach'}</span>
                   <ArrowUpRight className="w-4 h-4 text-[#242522]/70" />
@@ -217,7 +217,7 @@ export default function OurPurpose({
 
               {/* Ground Intervention Note */}
               <div className="pt-1 flex items-center gap-2 text-xs text-[#242522]/70 italic font-serif">
-                <Flower2 className="w-3.5 h-3.5 text-[#C78A32] shrink-0" />
+                <Flower2 className="w-3.5 h-3.5 text-[#BA5C7B] shrink-0" />
                 <span>Ground intervention across Pune and rural communities in Maharashtra.</span>
               </div>
 
@@ -229,7 +229,7 @@ export default function OurPurpose({
                 
                 {/* Layered Decorative Elements: Saffron Ring & Terracotta Offset Contour */}
                 <div 
-                  className="absolute -top-6 -left-6 w-32 h-32 rounded-full border border-[#C78A32]/35 border-dashed pointer-events-none hidden sm:block" 
+                  className="absolute -top-6 -left-6 w-32 h-32 rounded-full border border-[#BA5C7B]/35 border-dashed pointer-events-none hidden sm:block" 
                   aria-hidden="true" 
                 />
                 <div 
@@ -238,7 +238,7 @@ export default function OurPurpose({
                 />
 
                 {/* Main Arch-Shaped Photographic Container */}
-                <div className="relative rounded-t-[140px] rounded-b-3xl overflow-hidden bg-[#103D39]/10 border-2 border-[#C78A32]/40 shadow-xl group">
+                <div className="relative rounded-t-[140px] rounded-b-3xl overflow-hidden bg-[#38152E]/10 border-2 border-[#BA5C7B]/40 shadow-xl group">
                   {!photoError ? (
                     <img
                       src="/images/simintini-classroom-balsuraksha.jpg"
@@ -248,12 +248,12 @@ export default function OurPurpose({
                       loading="lazy"
                     />
                   ) : (
-                    <div className="w-full h-96 bg-[#103D39] flex flex-col items-center justify-center p-8 text-center text-[#FFFCF7]">
-                      <Users className="w-12 h-12 text-[#C78A32] mb-3 opacity-90" />
-                      <span className="font-serif text-lg font-medium text-[#F7F0E5] mb-1">
+                    <div className="w-full h-96 bg-[#38152E] flex flex-col items-center justify-center p-8 text-center text-[#FFFCF7]">
+                      <Users className="w-12 h-12 text-[#BA5C7B] mb-3 opacity-90" />
+                      <span className="font-serif text-lg font-medium text-[#FBF1F5] mb-1">
                         Grassroots Community Circle
                       </span>
-                      <span className="text-xs text-[#F7F0E5]/70 max-w-xs">
+                      <span className="text-xs text-[#FBF1F5]/70 max-w-xs">
                         {p.photoCaptionA || 'Pune Community Circle — Grassroots Psychological Healing & Trust Building'}
                       </span>
                     </div>
@@ -262,8 +262,8 @@ export default function OurPurpose({
                   {/* Gentle Scrim Overlay & Authentic Caption Badge */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#242522]/90 via-[#242522]/30 to-transparent opacity-90 pointer-events-none" />
                   <div className="absolute bottom-0 inset-x-0 p-5 text-white">
-                    <p className="text-xs font-medium tracking-wide text-[#F7F0E5] leading-snug drop-shadow-sm flex items-start gap-2">
-                      <span className="w-2 h-2 rounded-full bg-[#C78A32] shrink-0 mt-1" />
+                    <p className="text-xs font-medium tracking-wide text-[#FBF1F5] leading-snug drop-shadow-sm flex items-start gap-2">
+                      <span className="w-2 h-2 rounded-full bg-[#BA5C7B] shrink-0 mt-1" />
                       <span>{p.photoCaptionA || 'Pune Community Circle — Grassroots Psychological Healing & Trust Building'}</span>
                     </p>
                   </div>
@@ -279,26 +279,26 @@ export default function OurPurpose({
 
       {/* =========================================================================
           SECTION TWO: FOUNDATIONAL CONVICTION (Statement Section)
-          Deep Petrol Teal (#103D39), Expressive Serif Typography,
+          Deep Petrol Teal (#38152E), Expressive Serif Typography,
           Editorial 3-Column Value Treatment with Accessible Inline Reveals
          ========================================================================= */}
-      <div className="relative py-20 sm:py-24 lg:py-28 bg-[#103D39] text-[#FFFCF7] overflow-hidden">
+      <div className="relative py-20 sm:py-24 lg:py-28 bg-gradient-to-b from-[#FFF5F7] via-[#FFFDFB] to-[#FFF7ED] text-[#2B1822] border-t border-[#FECDD3] overflow-hidden">
         
         {/* Subtle Watermark Orbital Background */}
-        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#C78A32]/10 blur-3xl pointer-events-none" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#BA5C7B]/10 blur-3xl pointer-events-none" />
         <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-[#A8B9A0]/10 blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
           {/* Statement Header */}
           <div className="max-w-3xl mb-14 lg:mb-16">
-            <span className="inline-block text-xs font-semibold tracking-[0.25em] uppercase text-[#C78A32] mb-3">
+            <span className="inline-block text-xs font-semibold tracking-[0.25em] uppercase text-[#F43F5E] font-bold mb-3">
               {p.beliefEyebrow || 'FOUNDATIONAL CONVICTION'}
             </span>
-            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#FFFCF7] font-normal leading-tight italic">
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-[#7A1D36] font-semibold leading-tight italic">
               "{p.beliefHeadline || "Strength doesn't always look loud."}"
             </h3>
-            <p className="mt-4 text-base sm:text-lg text-[#F7F0E5]/85 font-light leading-relaxed font-sans">
+            <p className="mt-4 text-base sm:text-lg text-[#4A3840] font-normal leading-relaxed font-sans">
               {p.beliefSub || 'Sometimes, it begins with one conversation, one safe space, one person who listens.'}
             </p>
           </div>
@@ -312,42 +312,42 @@ export default function OurPurpose({
               return (
                 <div 
                   key={item.id}
-                  className={`rounded-2xl bg-[#0c2f2c]/80 backdrop-blur-xs border transition-all duration-300 flex flex-col justify-between p-6 sm:p-7 relative ${
+                  className={`rounded-2xl bg-white/95 backdrop-blur-xs border transition-all duration-300 flex flex-col justify-between p-6 sm:p-7 relative shadow-sm ${
                     isExpanded 
-                      ? 'border-[#C78A32] shadow-lg shadow-black/20 ring-1 ring-[#C78A32]/50' 
-                      : 'border-[#C78A32]/25 hover:border-[#C78A32]/60'
+                      ? 'border-[#F43F5E] shadow-md ring-2 ring-[#F43F5E]/20' 
+                      : 'border-[#FECDD3] hover:border-[#F43F5E] hover:shadow-md'
                   }`}
                 >
                   <div>
                     {/* Header: Serif Number & Glyph */}
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-2xl font-serif font-light text-[#C78A32]">
+                      <span className="text-2xl font-serif font-bold text-[#F43F5E]">
                         {item.number}
                       </span>
-                      <div className="w-10 h-10 rounded-xl bg-[#103D39] border border-[#C78A32]/30 text-[#C78A32] flex items-center justify-center">
+                      <div className="w-10 h-10 rounded-xl bg-gradient-to-r from-[#FAF5FF] to-[#FFF1F2] border border-[#FECDD3] text-[#F43F5E] flex items-center justify-center">
                         <IconComp className="w-5 h-5" />
                       </div>
                     </div>
 
                     {/* Principle Title */}
-                    <h4 className="text-xl sm:text-2xl font-serif font-medium text-[#FFFCF7] mb-2.5">
+                    <h4 className="text-xl sm:text-2xl font-serif font-bold text-[#7A1D36] mb-2.5">
                       {item.title}
                     </h4>
 
                     {/* Concise Statement */}
-                    <p className="text-xs sm:text-sm text-[#F7F0E5]/85 leading-relaxed font-light font-sans mb-4">
+                    <p className="text-xs sm:text-sm text-[#4A3840] leading-relaxed font-normal font-sans mb-4">
                       {item.desc}
                     </p>
                   </div>
 
                   {/* Interactive Inline Reveal Accordion */}
-                  <div className="pt-4 border-t border-[#C78A32]/20">
+                  <div className="pt-4 border-t border-[#BA5C7B]/20">
                     <button
                       type="button"
                       onClick={() => setExpandedPrinciple(isExpanded ? null : item.id)}
                       aria-expanded={isExpanded}
                       aria-controls={`principle-panel-${item.id}`}
-                      className="w-full flex items-center justify-between text-xs font-medium text-[#C78A32] hover:text-[#FFFCF7] transition-colors py-1 cursor-pointer focus:outline-none focus:ring-1 focus:ring-[#C78A32] rounded"
+                      className="w-full flex items-center justify-between text-xs font-medium text-[#BA5C7B] hover:text-[#FFFCF7] transition-colors py-1 cursor-pointer focus:outline-none focus:ring-1 focus:ring-[#BA5C7B] rounded"
                     >
                       <span>
                         {isExpanded 
@@ -370,7 +370,7 @@ export default function OurPurpose({
                         isExpanded ? 'max-h-56 opacity-100 mt-3 pt-3 border-t border-white/10' : 'max-h-0 opacity-0'
                       }`}
                     >
-                      <p className="text-xs text-[#F7F0E5]/90 leading-relaxed font-sans bg-[#103D39]/80 p-3.5 rounded-xl border border-[#C78A32]/20">
+                      <p className="text-xs text-[#FBF1F5]/90 leading-relaxed font-sans bg-[#FAF5FF] text-[#2B1822] font-medium p-3.5 rounded-xl border border-[#FECDD3]">
                         {item.detail}
                       </p>
                     </div>
@@ -392,16 +392,16 @@ export default function OurPurpose({
          ========================================================================= */}
       <div 
         id="purpose-pathway" 
-        className="relative py-20 sm:py-24 lg:py-28 bg-[#F7F0E5] border-t border-[#C78A32]/20 scroll-mt-20"
+        className="relative py-20 sm:py-24 lg:py-28 bg-[#FCFAFD] border-t border-[#FECDD3] scroll-mt-20"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-14 lg:mb-18">
-            <span className="inline-block text-xs font-semibold tracking-[0.22em] uppercase text-[#C78A32] mb-2.5">
+            <span className="inline-block text-xs font-semibold tracking-[0.22em] uppercase text-[#BA5C7B] mb-2.5">
               {p.approachEyebrow || 'OUR THREE-STEP JOURNEY'}
             </span>
-            <h3 className="text-2xl sm:text-4xl lg:text-5xl font-serif text-[#103D39] font-normal leading-tight">
+            <h3 className="text-2xl sm:text-4xl lg:text-5xl font-serif text-[#2B1822] font-bold font-normal leading-tight">
               {p.approachHeadline || 'A Thoughtful Pathway from Isolation to Autonomy'}
             </h3>
             <p className="mt-3 text-xs sm:text-sm text-[#242522]/70 font-sans max-w-xl mx-auto">
@@ -414,7 +414,7 @@ export default function OurPurpose({
             
             {/* Desktop Horizontal Connecting Track */}
             <div 
-              className="hidden md:block absolute top-[52px] left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-[#A8B9A0] via-[#A84F49] to-[#C78A32] opacity-60 z-0" 
+              className="hidden md:block absolute top-[52px] left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-[#A8B9A0] via-[#A84F49] to-[#BA5C7B] opacity-60 z-0" 
               aria-hidden="true"
             />
 
@@ -439,15 +439,15 @@ export default function OurPurpose({
                     aria-expanded={isActive}
                     aria-controls={`step-detail-${step.id}`}
                     aria-label={`Step ${step.number}: ${step.title}`}
-                    className={`rounded-2xl transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between text-left cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#103D39] ${
+                    className={`rounded-2xl transition-all duration-300 p-6 sm:p-7 flex flex-col justify-between text-left cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#38152E] ${
                       isActive
-                        ? 'bg-[#FFFCF7] border-2 border-[#103D39] shadow-xl transform -translate-y-1'
-                        : 'bg-[#FFFCF7]/70 hover:bg-[#FFFCF7] border border-[#C78A32]/30 hover:border-[#103D39]/50 shadow-xs'
+                        ? 'bg-[#FFFCF7] border-2 border-[#38152E] shadow-xl transform -translate-y-1'
+                        : 'bg-[#FFFCF7]/70 hover:bg-[#FFFCF7] border border-[#BA5C7B]/30 hover:border-[#38152E]/50 shadow-xs'
                     }`}
                   >
                     <div>
                       {/* Embedded Authentic Photograph */}
-                      <div className="relative h-44 sm:h-52 rounded-xl overflow-hidden mb-4 border border-[#C78A32]/25 bg-black/10 shadow-xs group/img">
+                      <div className="relative h-44 sm:h-52 rounded-xl overflow-hidden mb-4 border border-[#BA5C7B]/25 bg-black/10 shadow-xs group/img">
                         <img 
                           src={step.image} 
                           alt={step.alt}
@@ -479,7 +479,7 @@ export default function OurPurpose({
 
                         {/* Bottom Tag & Title on photo */}
                         <div className="absolute bottom-2.5 left-3 right-3 text-white">
-                          <span className="text-[10px] font-mono uppercase tracking-wider text-[#F7D070] block drop-shadow-xs">
+                          <span className="text-[10px] font-mono uppercase tracking-wider text-[#F2B3C3] block drop-shadow-xs">
                             {step.concept}
                           </span>
                           <h4 className="text-base sm:text-lg font-serif font-medium text-white line-clamp-1 drop-shadow-sm">
@@ -507,10 +507,10 @@ export default function OurPurpose({
                         role="region"
                         aria-label={`${step.title} clinical methodology`}
                         className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                          isActive ? 'max-h-48 opacity-100 mt-4 pt-4 border-t border-[#C78A32]/25' : 'max-h-0 opacity-0'
+                          isActive ? 'max-h-48 opacity-100 mt-4 pt-4 border-t border-[#BA5C7B]/25' : 'max-h-0 opacity-0'
                         }`}
                       >
-                        <p className="text-xs text-[#242522]/85 leading-relaxed font-sans bg-[#F7F0E5] p-3 rounded-xl border border-[#C78A32]/20">
+                        <p className="text-xs text-[#242522]/85 leading-relaxed font-sans bg-[#FBF1F5] p-3 rounded-xl border border-[#BA5C7B]/20">
                           {step.detail}
                         </p>
                       </div>

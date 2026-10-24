@@ -71,7 +71,7 @@ export default function FounderPage({
           particleCount: 25,
           spread: 60,
           origin: { x: 0.7, y: 0.5 },
-          colors: ['#C89B52', '#F7D070', '#123F3A', '#FFFFFF']
+          colors: ['#BA5C7B', '#F2B3C3', '#38152E', '#FFFFFF']
         });
       }
     } catch (e) {}
@@ -92,27 +92,27 @@ export default function FounderPage({
     {
       name: 'Ground Leader Lens',
       badge: 'Grassroots Leader • Pune, MH',
-      dot: 'bg-[#C89B52]',
+      dot: 'bg-[#BA5C7B]',
       filter: 'contrast(100%) saturate(100%) brightness(100%)',
-      ring: 'ring-2 ring-[#C89B52]/40',
+      ring: 'ring-2 ring-[#BA5C7B]/40',
       glow: 'shadow-lg',
-      border: 'border-[#C89B52]/40'
+      border: 'border-[#BA5C7B]/40'
     },
     {
       name: 'Compassion & Healing Lens',
       badge: '💛 Certified Counselor • 250+ Women Guided',
-      dot: 'bg-[#F7D070]',
+      dot: 'bg-[#F2B3C3]',
       filter: 'contrast(108%) saturate(125%) brightness(104%) sepia(10%)',
-      ring: 'ring-4 ring-[#C89B52]',
+      ring: 'ring-4 ring-[#BA5C7B]',
       glow: 'shadow-[0_0_35px_rgba(200,155,82,0.6)]',
-      border: 'border-[#F7D070]'
+      border: 'border-[#F2B3C3]'
     },
     {
       name: 'Crisis Outreach Lens',
       badge: '🛡️ Crisis Mediator • Yerawada Prison & Slums',
       dot: 'bg-[#55B5A6]',
       filter: 'contrast(114%) saturate(110%) brightness(102%) hue-rotate(-8deg)',
-      ring: 'ring-4 ring-[#1B554C]',
+      ring: 'ring-4 ring-[#501E42]',
       glow: 'shadow-[0_0_35px_rgba(18,63,58,0.7)]',
       border: 'border-[#55B5A6]'
     },
@@ -139,7 +139,7 @@ export default function FounderPage({
         particleCount: 18,
         spread: 50,
         origin: { x, y },
-        colors: ['#C89B52', '#F7D070', '#123F3A'],
+        colors: ['#BA5C7B', '#F2B3C3', '#38152E'],
         ticks: 150
       });
     } catch (err) {}
@@ -247,7 +247,7 @@ export default function FounderPage({
   ];
 
   return (
-    <div className="min-h-screen bg-[#F7F2E9] text-[#20211F] pt-2 sm:pt-4 pb-12 selection:bg-[#C89B52]/30 selection:text-[#103D39] relative overflow-hidden font-sans">
+    <div className="min-h-screen bg-[#F7F2E9] text-[#20211F] pt-2 sm:pt-4 pb-12 selection:bg-[#BA5C7B]/30 selection:text-[#38152E] relative overflow-hidden font-sans">
       
       {/* Self-contained Keyframes for Progress Bar Animation */}
       <style>{`
@@ -258,27 +258,27 @@ export default function FounderPage({
       `}</style>
 
       {/* Ambient Silk Atmosphere Glows */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 rounded-full bg-[#C89B52]/10 blur-3xl pointer-events-none -z-0" />
-      <div className="absolute bottom-10 left-10 w-96 h-96 rounded-full bg-[#103D39]/6 blur-3xl pointer-events-none -z-0" />
+      <div className="absolute top-0 right-1/4 w-96 h-96 rounded-full bg-[#BA5C7B]/10 blur-3xl pointer-events-none -z-0" />
+      <div className="absolute bottom-10 left-10 w-96 h-96 rounded-full bg-[#38152E]/6 blur-3xl pointer-events-none -z-0" />
 
       {/* =========================================================================
           TOP COMPACT STREAMLINED CONTROL & NAVIGATION STRIP
          ========================================================================= */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-3 border-b border-[#C89B52]/20 mb-3 sm:mb-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-3 border-b border-[#BA5C7B]/20 mb-3 sm:mb-4">
         
         {/* Left: Back to Home + Page Badge */}
         <div className="flex items-center gap-3">
           <button
             type="button"
             onClick={onBackToHome}
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#103D39] hover:text-[#C89B52] bg-white hover:bg-[#F7F2E9] border border-[#C89B52]/30 px-3.5 py-1.5 rounded-full transition-all shadow-2xs cursor-pointer group"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#38152E] hover:text-[#BA5C7B] bg-white hover:bg-[#F7F2E9] border border-[#BA5C7B]/30 px-3.5 py-1.5 rounded-full transition-all shadow-2xs cursor-pointer group"
           >
             <ArrowLeft className="w-3.5 h-3.5 transform group-hover:-translate-x-1 transition-transform" />
             <span>{fp.backBtn || '← Back to Home'}</span>
           </button>
           
-          <span className="text-xs font-serif text-[#103D39] font-medium hidden sm:inline-flex items-center gap-1.5">
-            <Flower2 className="w-3.5 h-3.5 text-[#C89B52]" />
+          <span className="text-xs font-serif text-[#38152E] font-medium hidden sm:inline-flex items-center gap-1.5">
+            <Flower2 className="w-3.5 h-3.5 text-[#BA5C7B]" />
             <span>Simintini Shingade • Founder Journey</span>
           </span>
         </div>
@@ -290,20 +290,20 @@ export default function FounderPage({
             onClick={togglePlayJourney}
             className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-sans font-medium transition-all cursor-pointer border shadow-2xs ${
               isPlaying
-                ? 'bg-[#C89B52] text-[#103D39] border-[#C89B52] font-semibold ring-2 ring-[#C89B52]/40 shadow-sm'
-                : 'bg-white hover:bg-[#F7F2E9] text-[#103D39] border-[#C89B52]/30'
+                ? 'bg-[#BA5C7B] text-[#38152E] border-[#BA5C7B] font-semibold ring-2 ring-[#BA5C7B]/40 shadow-sm'
+                : 'bg-white hover:bg-[#F7F2E9] text-[#38152E] border-[#BA5C7B]/30'
             }`}
             title="Automatically advance through all 5 cards"
           >
             {isPlaying ? (
               <>
-                <Pause className="w-3.5 h-3.5 text-[#103D39]" />
+                <Pause className="w-3.5 h-3.5 text-[#38152E]" />
                 <span>Auto-Playing (Card {activeChapter + 1}/5)</span>
-                <span className="w-1.5 h-1.5 rounded-full bg-[#103D39] animate-ping ml-0.5" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#38152E] animate-ping ml-0.5" />
               </>
             ) : (
               <>
-                <Play className="w-3.5 h-3.5 text-[#C89B52]" />
+                <Play className="w-3.5 h-3.5 text-[#BA5C7B]" />
                 <span>Play Journey (Auto-Advance)</span>
               </>
             )}
@@ -315,19 +315,19 @@ export default function FounderPage({
               const el = document.getElementById('two-pillars');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white hover:bg-[#F7F2E9] text-[#103D39] hover:text-[#C89B52] border border-[#C89B52]/30 text-xs font-medium tracking-wide shadow-2xs transition-all cursor-pointer"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white hover:bg-[#F7F2E9] text-[#38152E] hover:text-[#BA5C7B] border border-[#BA5C7B]/30 text-xs font-medium tracking-wide shadow-2xs transition-all cursor-pointer"
             title="Jump to Mission & Vision Pillars"
           >
-            <Compass className="w-3.5 h-3.5 text-[#C89B52]" />
+            <Compass className="w-3.5 h-3.5 text-[#BA5C7B]" />
             <span className="hidden sm:inline">The Two Pillars</span>
           </button>
 
           <button
             type="button"
             onClick={onOpenGuidance}
-            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#103D39] text-[#FFFCF7] hover:bg-[#1B554C] text-xs font-medium tracking-wide shadow-2xs transition-all cursor-pointer"
+            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#38152E] text-[#FFFCF7] hover:bg-[#501E42] text-xs font-medium tracking-wide shadow-2xs transition-all cursor-pointer"
           >
-            <Shield className="w-3 h-3 text-[#C89B52]" />
+            <Shield className="w-3 h-3 text-[#BA5C7B]" />
             <span>{t.hero?.ctaGuidance || 'Request Guidance'}</span>
           </button>
         </div>
@@ -351,21 +351,21 @@ export default function FounderPage({
                 onClick={() => handleSelectChapter(idx)}
                 className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-sans transition-all duration-300 cursor-pointer whitespace-nowrap border shrink-0 ${
                   isActive
-                    ? 'bg-[#103D39] text-[#FFFCF7] border-[#C89B52] shadow-md ring-2 ring-[#C89B52]/40 font-semibold transform -translate-y-0.5'
-                    : 'bg-white/90 hover:bg-white text-[#20211F]/80 border-[#C89B52]/25 shadow-2xs'
+                    ? 'bg-[#38152E] text-[#FFFCF7] border-[#BA5C7B] shadow-md ring-2 ring-[#BA5C7B]/40 font-semibold transform -translate-y-0.5'
+                    : 'bg-white/90 hover:bg-white text-[#20211F]/80 border-[#BA5C7B]/25 shadow-2xs'
                 }`}
               >
                 <span 
                   className={`w-5 h-5 rounded-md flex items-center justify-center text-[10px] font-mono ${
-                    isActive ? 'bg-[#C89B52] text-[#103D39] font-bold' : 'bg-[#C89B52]/15 text-[#C89B52]'
+                    isActive ? 'bg-[#BA5C7B] text-[#38152E] font-bold' : 'bg-[#BA5C7B]/15 text-[#BA5C7B]'
                   }`}
                 >
                   {petal.number}
                 </span>
-                <IconComp className={`w-3.5 h-3.5 ${isActive ? 'text-[#F7D070]' : 'text-[#C89B52]'}`} />
+                <IconComp className={`w-3.5 h-3.5 ${isActive ? 'text-[#F2B3C3]' : 'text-[#BA5C7B]'}`} />
                 <span>{petal.title}</span>
                 {isActive && isPlaying && (
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#F7D070] animate-ping" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#F2B3C3] animate-ping" />
                 )}
               </button>
             );
@@ -384,16 +384,16 @@ export default function FounderPage({
           {/* ---------------------------------------------------------------------
               LEFT COLUMN (4 cols): Sculptural Founder Arch, Lenses & Stepper
              --------------------------------------------------------------------- */}
-          <div className="lg:col-span-4 rounded-3xl bg-white/80 border border-[#C89B52]/30 p-5 shadow-xs flex flex-col justify-between">
+          <div className="lg:col-span-4 rounded-3xl bg-white/80 border border-[#BA5C7B]/30 p-5 shadow-xs flex flex-col justify-between">
             
             <div>
               {/* Photo Frame Header */}
-              <div className="flex items-center justify-between mb-3 pb-2 border-b border-[#C89B52]/20">
-                <span className="text-[10px] font-sans font-semibold tracking-wider uppercase text-[#C89B52] flex items-center gap-1">
+              <div className="flex items-center justify-between mb-3 pb-2 border-b border-[#BA5C7B]/20">
+                <span className="text-[10px] font-sans font-semibold tracking-wider uppercase text-[#BA5C7B] flex items-center gap-1">
                   <Camera className="w-3 h-3" />
                   <span>Click Photo to Cycle Lens</span>
                 </span>
-                <span className="text-[10px] font-mono text-[#103D39] font-medium">
+                <span className="text-[10px] font-mono text-[#38152E] font-medium">
                   {photoLens + 1}/4
                 </span>
               </div>
@@ -405,22 +405,22 @@ export default function FounderPage({
                 tabIndex={0}
                 aria-label={`Founder photo lens: ${photoLenses[photoLens].name}. Click to switch lens.`}
                 onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handlePhotoClick(e); } }}
-                className="relative group w-full max-w-[260px] sm:max-w-[280px] mx-auto cursor-pointer select-none active:scale-[0.99] transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-[#C89B52] rounded-t-[120px] rounded-b-2xl"
+                className="relative group w-full max-w-[260px] sm:max-w-[280px] mx-auto cursor-pointer select-none active:scale-[0.99] transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-[#BA5C7B] rounded-t-[120px] rounded-b-2xl"
               >
                 {/* Backing Geometry */}
                 <div 
-                  className={`absolute -inset-2 rounded-t-[120px] rounded-b-2xl bg-[#103D39] transform -rotate-1 group-hover:rotate-0 transition-all duration-700 ${photoLenses[photoLens].glow}`}
+                  className={`absolute -inset-2 rounded-t-[120px] rounded-b-2xl bg-[#38152E] transform -rotate-1 group-hover:rotate-0 transition-all duration-700 ${photoLenses[photoLens].glow}`}
                   aria-hidden="true" 
                 />
 
                 {/* Layered Gold Contour */}
                 <div 
-                  className="absolute -top-1.5 -right-1.5 w-full h-full rounded-t-[120px] rounded-b-2xl border-2 border-[#C89B52]/50 pointer-events-none transform translate-x-1 translate-y-1" 
+                  className="absolute -top-1.5 -right-1.5 w-full h-full rounded-t-[120px] rounded-b-2xl border-2 border-[#BA5C7B]/50 pointer-events-none transform translate-x-1 translate-y-1" 
                   aria-hidden="true" 
                 />
 
                 {/* Main Image */}
-                <div className={`relative rounded-t-[120px] rounded-b-2xl overflow-hidden bg-[#1B554C] border-2 transition-all duration-500 z-10 ${photoLenses[photoLens].ring}`}>
+                <div className={`relative rounded-t-[120px] rounded-b-2xl overflow-hidden bg-[#501E42] border-2 transition-all duration-500 z-10 ${photoLenses[photoLens].ring}`}>
                   <img
                     src="/images/founder-simintini.jpg"
                     alt="Simintini Shingade - Founder of Aastha for Women"
@@ -450,36 +450,36 @@ export default function FounderPage({
             </div>
 
             {/* Stepper Navigation */}
-            <div className="mt-4 pt-3 border-t border-[#C89B52]/20 space-y-2">
+            <div className="mt-4 pt-3 border-t border-[#BA5C7B]/20 space-y-2">
               <div className="flex items-center justify-between text-[11px] text-[#20211F]/70 font-sans">
-                <span className="flex items-center gap-1 text-[#103D39] font-medium">
-                  <MapPin className="w-3 h-3 text-[#C89B52]" />
+                <span className="flex items-center gap-1 text-[#38152E] font-medium">
+                  <MapPin className="w-3 h-3 text-[#BA5C7B]" />
                   <span>Pune • Yerawada • Kadepur</span>
                 </span>
-                <span className="text-[#C89B52] font-semibold">250+ Women Guided</span>
+                <span className="text-[#BA5C7B] font-semibold">250+ Women Guided</span>
               </div>
 
               <div className="flex items-center justify-between gap-2 pt-1">
                 <button
                   type="button"
                   onClick={handlePrevChapter}
-                  className="flex-1 inline-flex items-center justify-center gap-1 py-1.5 px-2.5 rounded-lg bg-white hover:bg-[#C89B52]/10 border border-[#C89B52]/30 text-xs font-sans text-[#103D39] font-medium transition-all cursor-pointer"
+                  className="flex-1 inline-flex items-center justify-center gap-1 py-1.5 px-2.5 rounded-lg bg-white hover:bg-[#BA5C7B]/10 border border-[#BA5C7B]/30 text-xs font-sans text-[#38152E] font-medium transition-all cursor-pointer"
                 >
-                  <ChevronLeft className="w-3 h-3 text-[#C89B52]" />
+                  <ChevronLeft className="w-3 h-3 text-[#BA5C7B]" />
                   <span>Prev</span>
                 </button>
 
-                <span className="text-xs font-mono font-bold text-[#103D39] px-2">
+                <span className="text-xs font-mono font-bold text-[#38152E] px-2">
                   {activeChapter + 1} / 5
                 </span>
 
                 <button
                   type="button"
                   onClick={handleNextChapter}
-                  className="flex-1 inline-flex items-center justify-center gap-1 py-1.5 px-2.5 rounded-lg bg-[#103D39] hover:bg-[#1B554C] text-xs font-sans text-white font-medium transition-all shadow-2xs cursor-pointer"
+                  className="flex-1 inline-flex items-center justify-center gap-1 py-1.5 px-2.5 rounded-lg bg-[#38152E] hover:bg-[#501E42] text-xs font-sans text-white font-medium transition-all shadow-2xs cursor-pointer"
                 >
                   <span>Next</span>
-                  <ChevronRight className="w-3 h-3 text-[#C89B52]" />
+                  <ChevronRight className="w-3 h-3 text-[#BA5C7B]" />
                 </button>
               </div>
             </div>
@@ -490,21 +490,21 @@ export default function FounderPage({
           {/* ---------------------------------------------------------------------
               RIGHT COLUMN (8 cols): Interactive Dynamic Chapter Canvas
              --------------------------------------------------------------------- */}
-          <div className="lg:col-span-8 rounded-3xl bg-white/95 border border-[#C89B52]/35 p-5 sm:p-7 shadow-sm flex flex-col justify-between relative overflow-hidden transition-all duration-500">
+          <div className="lg:col-span-8 rounded-3xl bg-white/95 border border-[#BA5C7B]/35 p-5 sm:p-7 shadow-sm flex flex-col justify-between relative overflow-hidden transition-all duration-500">
             
             {/* Watermark quote */}
             <div className="absolute -bottom-6 -right-6 opacity-5 pointer-events-none select-none">
-              <Quote className="w-40 h-40 text-[#C89B52]" />
+              <Quote className="w-40 h-40 text-[#BA5C7B]" />
             </div>
 
             <div className="relative z-10 space-y-4">
               
               {/* Dynamic Auto-Play Progress Bar (Active when playing) */}
               {isPlaying && (
-                <div className="w-full bg-[#C89B52]/20 h-1.5 rounded-full overflow-hidden mb-2">
+                <div className="w-full bg-[#BA5C7B]/20 h-1.5 rounded-full overflow-hidden mb-2">
                   <div 
                     key={progressKey}
-                    className="bg-gradient-to-r from-[#C89B52] via-[#F7D070] to-[#C89B52] h-full rounded-full"
+                    className="bg-gradient-to-r from-[#BA5C7B] via-[#F2B3C3] to-[#BA5C7B] h-full rounded-full"
                     style={{ animation: 'progressFillAnim 3800ms linear forwards' }}
                   />
                 </div>
@@ -512,11 +512,11 @@ export default function FounderPage({
 
               {/* Category Pill & Chapter Label */}
               <div className="flex items-center justify-between gap-2">
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#C89B52]/15 border border-[#C89B52]/30 text-[10px] font-sans font-semibold tracking-wider uppercase text-[#103D39]">
-                  <Sparkles className="w-3 h-3 text-[#C89B52]" />
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#BA5C7B]/15 border border-[#BA5C7B]/30 text-[10px] font-sans font-semibold tracking-wider uppercase text-[#38152E]">
+                  <Sparkles className="w-3 h-3 text-[#BA5C7B]" />
                   <span>{petals[activeChapter].category}</span>
                 </span>
-                <span className="text-xs font-mono font-bold text-[#C89B52]">
+                <span className="text-xs font-mono font-bold text-[#BA5C7B]">
                   CHAPTER {petals[activeChapter].number} OF 05
                 </span>
               </div>
@@ -524,12 +524,12 @@ export default function FounderPage({
               {/* CHAPTER 1 */}
               {activeChapter === 0 && (
                 <div className="space-y-3.5 animate-fade-in transition-all duration-400">
-                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif text-[#103D39] font-normal leading-snug">
+                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif text-[#38152E] font-normal leading-snug">
                     {fp.chapter1Title || 'Chapter 1: The Crucible of Experience'}
                   </h2>
 
-                  <div className="p-3.5 sm:p-4 rounded-xl bg-[#F7F2E9] border-l-4 border-[#C89B52] shadow-2xs">
-                    <p className="text-sm sm:text-base font-serif italic text-[#103D39] leading-relaxed">
+                  <div className="p-3.5 sm:p-4 rounded-xl bg-[#F7F2E9] border-l-4 border-[#BA5C7B] shadow-2xs">
+                    <p className="text-sm sm:text-base font-serif italic text-[#38152E] leading-relaxed">
                       "{f.slogan || 'Every woman deserves a safe space to be heard, respected, and empowered to rebuild her life with confidence.'}"
                     </p>
                   </div>
@@ -539,7 +539,7 @@ export default function FounderPage({
                   </p>
 
                   {/* Featured Grassroots Classroom Documentary Photo */}
-                  <div className="relative rounded-2xl overflow-hidden border border-[#C89B52]/30 shadow-xs max-h-56 my-3 group">
+                  <div className="relative rounded-2xl overflow-hidden border border-[#BA5C7B]/30 shadow-xs max-h-56 my-3 group">
                     <img
                       src="/images/simintini-classroom-balsuraksha.jpg"
                       alt="Simintini Shingade - Bal Suraksha & Grassroots Women Education Session"
@@ -548,13 +548,13 @@ export default function FounderPage({
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
                     <div className="absolute bottom-2.5 left-3 right-3 text-white text-[11px] font-sans flex items-center justify-between">
-                      <span className="font-medium text-[#F7D070] drop-shadow-xs">📍 Bal Suraksha & Community Classroom Session</span>
+                      <span className="font-medium text-[#F2B3C3] drop-shadow-xs">📍 Bal Suraksha & Community Classroom Session</span>
                       <span className="text-[10px] text-white/80">Maharashtra</span>
                     </div>
                   </div>
 
                   <div className="pt-1 flex flex-wrap items-center gap-2">
-                    <span className="text-[10.5px] font-semibold text-[#103D39] bg-[#C89B52]/15 px-2.5 py-1 rounded-md border border-[#C89B52]/30">
+                    <span className="text-[10.5px] font-semibold text-[#38152E] bg-[#BA5C7B]/15 px-2.5 py-1 rounded-md border border-[#BA5C7B]/30">
                       ✦ Personal Trials Converted to Public Sanctuary
                     </span>
                     <span className="text-[10.5px] text-[#20211F]/60">
@@ -567,7 +567,7 @@ export default function FounderPage({
               {/* CHAPTER 2 */}
               {activeChapter === 1 && (
                 <div className="space-y-3.5 animate-fade-in transition-all duration-400">
-                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif text-[#103D39] font-normal leading-snug">
+                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif text-[#38152E] font-normal leading-snug">
                     {fp.chapter2Title || 'Chapter 2: Walking into the Unseen Margins'}
                   </h2>
 
@@ -585,8 +585,8 @@ export default function FounderPage({
                           onClick={() => setActiveMarginSite(sIdx)}
                           className={`text-[11px] px-2.5 py-1 rounded-lg transition-all cursor-pointer border ${
                             activeMarginSite === sIdx
-                              ? 'bg-[#103D39] text-[#FFFCF7] font-semibold border-[#103D39] shadow-xs'
-                              : 'bg-white hover:bg-[#F7F2E9] text-[#20211F]/80 border-[#C89B52]/30'
+                              ? 'bg-[#38152E] text-[#FFFCF7] font-semibold border-[#38152E] shadow-xs'
+                              : 'bg-white hover:bg-[#F7F2E9] text-[#20211F]/80 border-[#BA5C7B]/30'
                           }`}
                         >
                           <span>{site.title}</span>
@@ -594,7 +594,7 @@ export default function FounderPage({
                       ))}
                     </div>
 
-                    <div className="rounded-xl overflow-hidden border border-[#C89B52]/30 bg-[#F7F2E9] grid grid-cols-1 sm:grid-cols-12 shadow-2xs">
+                    <div className="rounded-xl overflow-hidden border border-[#BA5C7B]/30 bg-[#F7F2E9] grid grid-cols-1 sm:grid-cols-12 shadow-2xs">
                       <div className="sm:col-span-5 h-36 sm:h-auto">
                         <img
                           src={marginSites[activeMarginSite].image}
@@ -607,7 +607,7 @@ export default function FounderPage({
                         <span className="text-[9.5px] font-mono uppercase tracking-wider text-[#C76E61] font-semibold">
                           {marginSites[activeMarginSite].tag}
                         </span>
-                        <h4 className="text-xs sm:text-sm font-serif font-bold text-[#103D39]">
+                        <h4 className="text-xs sm:text-sm font-serif font-bold text-[#38152E]">
                           {marginSites[activeMarginSite].title}
                         </h4>
                         <p className="text-[11px] text-[#20211F]/80 leading-relaxed font-sans">
@@ -622,7 +622,7 @@ export default function FounderPage({
               {/* CHAPTER 3 */}
               {activeChapter === 2 && (
                 <div className="space-y-3.5 animate-fade-in transition-all duration-400">
-                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif text-[#103D39] font-normal leading-snug">
+                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif text-[#38152E] font-normal leading-snug">
                     {fp.chapter3Title || 'Chapter 3: The Sanctuary of Aastha'}
                   </h2>
 
@@ -631,44 +631,44 @@ export default function FounderPage({
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1">
-                    <div className="p-3 rounded-xl bg-[#F7F2E9] border border-[#C89B52]/25 space-y-1">
-                      <span className="text-[9px] font-mono text-[#C89B52] font-semibold">STEP 01</span>
-                      <h4 className="text-xs font-serif font-bold text-[#103D39]">Pre-Marital Awareness</h4>
+                    <div className="p-3 rounded-xl bg-[#F7F2E9] border border-[#BA5C7B]/25 space-y-1">
+                      <span className="text-[9px] font-mono text-[#BA5C7B] font-semibold">STEP 01</span>
+                      <h4 className="text-xs font-serif font-bold text-[#38152E]">Pre-Marital Awareness</h4>
                       <p className="text-[10.5px] text-[#20211F]/75 leading-relaxed font-sans">
                         Equipping college girls and youth with boundary awareness and emotional resilience.
                       </p>
                     </div>
 
-                    <div className="p-3 rounded-xl bg-[#F7F2E9] border border-[#C89B52]/25 space-y-1">
-                      <span className="text-[9px] font-mono text-[#C89B52] font-semibold">STEP 02</span>
-                      <h4 className="text-xs font-serif font-bold text-[#103D39]">Crisis Mediation</h4>
+                    <div className="p-3 rounded-xl bg-[#F7F2E9] border border-[#BA5C7B]/25 space-y-1">
+                      <span className="text-[9px] font-mono text-[#BA5C7B] font-semibold">STEP 02</span>
+                      <h4 className="text-xs font-serif font-bold text-[#38152E]">Crisis Mediation</h4>
                       <p className="text-[10.5px] text-[#20211F]/75 leading-relaxed font-sans">
                         100% confidential emotional healing and marital conflict navigation.
                       </p>
                     </div>
 
-                    <div className="p-3 rounded-xl bg-[#F7F2E9] border border-[#C89B52]/25 space-y-1">
-                      <span className="text-[9px] font-mono text-[#C89B52] font-semibold">STEP 03</span>
-                      <h4 className="text-xs font-serif font-bold text-[#103D39]">Economic Autonomy</h4>
+                    <div className="p-3 rounded-xl bg-[#F7F2E9] border border-[#BA5C7B]/25 space-y-1">
+                      <span className="text-[9px] font-mono text-[#BA5C7B] font-semibold">STEP 03</span>
+                      <h4 className="text-xs font-serif font-bold text-[#38152E]">Economic Autonomy</h4>
                       <p className="text-[10.5px] text-[#20211F]/75 leading-relaxed font-sans">
                         Practical tailoring and micro-enterprise to eliminate dependent vulnerability.
                       </p>
                     </div>
                   </div>
 
-                  <div className="p-2.5 rounded-lg bg-[#103D39]/5 border border-[#103D39]/15 flex items-center justify-around text-center">
+                  <div className="p-2.5 rounded-lg bg-[#38152E]/5 border border-[#38152E]/15 flex items-center justify-around text-center">
                     <div>
-                      <div className="text-sm font-serif font-bold text-[#103D39]">250+</div>
+                      <div className="text-sm font-serif font-bold text-[#38152E]">250+</div>
                       <div className="text-[9px] text-[#20211F]/70 uppercase">Lives Touched</div>
                     </div>
-                    <div className="w-px h-5 bg-[#C89B52]/30" />
+                    <div className="w-px h-5 bg-[#BA5C7B]/30" />
                     <div>
-                      <div className="text-sm font-serif font-bold text-[#103D39]">100%</div>
+                      <div className="text-sm font-serif font-bold text-[#38152E]">100%</div>
                       <div className="text-[9px] text-[#20211F]/70 uppercase">Confidential</div>
                     </div>
-                    <div className="w-px h-5 bg-[#C89B52]/30" />
+                    <div className="w-px h-5 bg-[#BA5C7B]/30" />
                     <div>
-                      <div className="text-sm font-serif font-bold text-[#103D39]">5+</div>
+                      <div className="text-sm font-serif font-bold text-[#38152E]">5+</div>
                       <div className="text-[9px] text-[#20211F]/70 uppercase">Field Clusters</div>
                     </div>
                   </div>
@@ -678,7 +678,7 @@ export default function FounderPage({
               {/* CHAPTER 4 */}
               {activeChapter === 3 && (
                 <div className="space-y-3.5 animate-fade-in transition-all duration-400">
-                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif text-[#103D39] font-normal leading-snug">
+                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif text-[#38152E] font-normal leading-snug">
                     {fp.valuesTitle || 'Core Principles Guiding Every Step'}
                   </h2>
 
@@ -692,20 +692,20 @@ export default function FounderPage({
                       return (
                         <div
                           key={sIdx}
-                          className={`p-3 bg-[#F7F2E9] border border-[#C89B52]/30 hover:border-[#C89B52] shadow-2xs hover:shadow-sm transition-all duration-300 flex flex-col justify-between group ${shield.shapeClass}`}
+                          className={`p-3 bg-[#F7F2E9] border border-[#BA5C7B]/30 hover:border-[#BA5C7B] shadow-2xs hover:shadow-sm transition-all duration-300 flex flex-col justify-between group ${shield.shapeClass}`}
                         >
                           <div>
-                            <div className="w-7 h-7 rounded-lg bg-[#103D39]/10 group-hover:bg-[#103D39] text-[#103D39] group-hover:text-[#F7D070] flex items-center justify-center mb-2 transition-colors">
+                            <div className="w-7 h-7 rounded-lg bg-[#38152E]/10 group-hover:bg-[#38152E] text-[#38152E] group-hover:text-[#F2B3C3] flex items-center justify-center mb-2 transition-colors">
                               <IconComp className="w-3.5 h-3.5" />
                             </div>
-                            <h4 className="text-xs font-serif font-bold text-[#103D39] mb-1">
+                            <h4 className="text-xs font-serif font-bold text-[#38152E] mb-1">
                               {shield.title}
                             </h4>
                             <p className="text-[10.5px] text-[#20211F]/75 leading-relaxed font-sans">
                               {shield.desc}
                             </p>
                           </div>
-                          <div className="mt-2 pt-1.5 border-t border-[#C89B52]/15 text-[9.5px] font-serif italic text-[#C89B52]">
+                          <div className="mt-2 pt-1.5 border-t border-[#BA5C7B]/15 text-[9.5px] font-serif italic text-[#BA5C7B]">
                             {shield.highlight}
                           </div>
                         </div>
@@ -718,14 +718,14 @@ export default function FounderPage({
               {/* CHAPTER 5 */}
               {activeChapter === 4 && (
                 <div className="space-y-3.5 animate-fade-in transition-all duration-400">
-                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif text-[#103D39] font-normal leading-snug">
+                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-serif text-[#38152E] font-normal leading-snug">
                     {fp.messageTitle || 'A Personal Message to Every Sister'}
                   </h2>
 
-                  <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-[#103D39] to-[#0A2421] text-[#FFFCF7] border border-[#C89B52]/40 shadow-md space-y-2.5 relative overflow-hidden">
-                    <Quote className="absolute top-2 right-2 w-16 h-16 text-[#C89B52]/10 pointer-events-none" />
+                  <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-[#2E1065] via-[#4A0E4E] to-[#1E082A] text-[#FFFCF7] border border-[#C084FC]/40 shadow-md space-y-2.5 relative overflow-hidden">
+                    <Quote className="absolute top-2 right-2 w-16 h-16 text-[#BA5C7B]/10 pointer-events-none" />
                     
-                    <p className="text-xs sm:text-sm font-serif italic text-[#F7D070] leading-relaxed">
+                    <p className="text-xs sm:text-sm font-serif italic text-[#F2B3C3] leading-relaxed">
                       "{fp.messageP1 || 'If you are reading this while feeling trapped, exhausted, or unseen—please hear me: you are not broken, and you do not have to carry this burden alone.'}"
                     </p>
                     
@@ -734,14 +734,14 @@ export default function FounderPage({
                     </p>
 
                     <div className="pt-2 border-t border-white/15 flex items-center justify-between text-xs">
-                      <span className="font-serif italic text-[#C89B52] text-xs sm:text-sm">
+                      <span className="font-serif italic text-[#BA5C7B] text-xs sm:text-sm">
                         — Simintini Shingade
                       </span>
                       <a 
                         href="mailto:asthaforwomen@gmail.com"
-                        className="text-[#FFFCF7]/80 hover:text-white underline decoration-[#C89B52] underline-offset-4 flex items-center gap-1 text-[10.5px]"
+                        className="text-[#FFFCF7]/80 hover:text-white underline decoration-[#BA5C7B] underline-offset-4 flex items-center gap-1 text-[10.5px]"
                       >
-                        <Mail className="w-3 h-3 text-[#C89B52]" />
+                        <Mail className="w-3 h-3 text-[#BA5C7B]" />
                         <span>asthaforwomen@gmail.com</span>
                       </a>
                     </div>
@@ -751,14 +751,14 @@ export default function FounderPage({
                     <button
                       type="button"
                       onClick={onOpenGuidance}
-                      className="px-4 py-2 rounded-full bg-[#C89B52] text-[#103D39] hover:bg-white text-xs font-semibold tracking-wide shadow-xs transition-all cursor-pointer"
+                      className="px-4 py-2 rounded-full bg-[#BA5C7B] text-[#38152E] hover:bg-white text-xs font-semibold tracking-wide shadow-xs transition-all cursor-pointer"
                     >
                       {fp.ctaContact || 'Reach Out for Confidential Counseling'}
                     </button>
                     <button
                       type="button"
                       onClick={onBackToHome}
-                      className="px-3.5 py-2 rounded-full bg-white hover:bg-[#F7F2E9] text-[#103D39] border border-[#103D39]/30 text-xs font-medium tracking-wide transition-all cursor-pointer"
+                      className="px-3.5 py-2 rounded-full bg-white hover:bg-[#F7F2E9] text-[#38152E] border border-[#38152E]/30 text-xs font-medium tracking-wide transition-all cursor-pointer"
                     >
                       <span>Return to Homepage</span>
                     </button>
@@ -769,14 +769,14 @@ export default function FounderPage({
             </div>
 
             {/* Bottom Status & Next Shortcut */}
-            <div className="mt-4 pt-3 border-t border-[#C89B52]/20 flex items-center justify-between text-[11px] text-[#20211F]/70 font-sans">
-              <span className="italic font-serif text-[#103D39]">
+            <div className="mt-4 pt-3 border-t border-[#BA5C7B]/20 flex items-center justify-between text-[11px] text-[#20211F]/70 font-sans">
+              <span className="italic font-serif text-[#38152E]">
                 “Compassion without pity. Dignity without condition.”
               </span>
               <button
                 type="button"
                 onClick={handleNextChapter}
-                className="font-medium text-[#C89B52] hover:text-[#103D39] inline-flex items-center gap-1 cursor-pointer"
+                className="font-medium text-[#BA5C7B] hover:text-[#38152E] inline-flex items-center gap-1 cursor-pointer"
               >
                 <span>Chapter {activeChapter + 1} of 5</span>
                 <ChevronRight className="w-3 h-3" />
@@ -791,24 +791,24 @@ export default function FounderPage({
             THE TWO PILLARS OF AASTHA (Organizational Compass & Horizon Architecture)
             Integrated into Founder's Journey Page
            ========================================================================= */}
-        <div id="two-pillars" className="mt-10 sm:mt-14 relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#0B2623] via-[#103D39] to-[#0A201E] text-[#FFFCF7] p-6 sm:p-10 lg:p-14 shadow-2xl border-2 border-[#C89B52]/40 scroll-mt-20">
+        <div id="two-pillars" className="mt-10 sm:mt-14 relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#1E082A] via-[#2E1065] to-[#12051A] text-[#FFFCF7] p-6 sm:p-10 lg:p-14 shadow-2xl border-2 border-[#C084FC]/40 scroll-mt-20">
           
           {/* Ambient Lighting Orbs */}
-          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#C89B52]/15 blur-3xl pointer-events-none" />
+          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#BA5C7B]/15 blur-3xl pointer-events-none" />
           <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-[#C76E61]/15 blur-3xl pointer-events-none" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-[#1B554C]/25 blur-3xl pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-[#501E42]/25 blur-3xl pointer-events-none" />
 
           {/* Large Champagne Gold Decorative Watermark */}
           <div className="absolute top-6 right-8 opacity-10 pointer-events-none select-none" aria-hidden="true">
-            <Quote className="w-36 h-36 text-[#C89B52]" />
+            <Quote className="w-36 h-36 text-[#BA5C7B]" />
           </div>
 
           <div className="relative z-10 space-y-8">
             
             {/* Top Interactive Perspective Switcher */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-[#C89B52]/25">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-[#BA5C7B]/25">
               <div>
-                <span className="text-[11px] font-sans font-semibold tracking-[0.22em] uppercase text-[#C89B52]">
+                <span className="text-[11px] font-sans font-semibold tracking-[0.22em] uppercase text-[#BA5C7B]">
                   ORGANIZATIONAL COMPASS
                 </span>
                 <h3 className="text-xl sm:text-2xl font-serif text-[#FFFCF7] mt-0.5">
@@ -817,14 +817,14 @@ export default function FounderPage({
               </div>
 
               {/* View Switcher Pills */}
-              <div className="flex items-center p-1 rounded-full bg-black/40 backdrop-blur-md border border-[#C89B52]/35 shadow-inner">
+              <div className="flex items-center p-1 rounded-full bg-black/40 backdrop-blur-md border border-[#BA5C7B]/35 shadow-inner">
                 <button
                   type="button"
                   onClick={() => setPanelView('dual')}
                   className={`px-3.5 py-1.5 rounded-full text-xs font-sans font-medium transition-all duration-300 cursor-pointer ${
                     panelView === 'dual'
-                      ? 'bg-[#C89B52] text-[#123F3A] font-semibold shadow-md'
-                      : 'text-[#F8F2E8]/70 hover:text-white'
+                      ? 'bg-[#BA5C7B] text-[#38152E] font-semibold shadow-md'
+                      : 'text-[#FBF1F5]/70 hover:text-white'
                   }`}
                 >
                   <span>✦ Dual Horizon</span>
@@ -834,8 +834,8 @@ export default function FounderPage({
                   onClick={() => setPanelView('mission')}
                   className={`px-3.5 py-1.5 rounded-full text-xs font-sans font-medium transition-all duration-300 cursor-pointer ${
                     panelView === 'mission'
-                      ? 'bg-[#C89B52] text-[#123F3A] font-semibold shadow-md'
-                      : 'text-[#F8F2E8]/70 hover:text-white'
+                      ? 'bg-[#BA5C7B] text-[#38152E] font-semibold shadow-md'
+                      : 'text-[#FBF1F5]/70 hover:text-white'
                   }`}
                 >
                   <span>🌿 Mission</span>
@@ -845,8 +845,8 @@ export default function FounderPage({
                   onClick={() => setPanelView('vision')}
                   className={`px-3.5 py-1.5 rounded-full text-xs font-sans font-medium transition-all duration-300 cursor-pointer ${
                     panelView === 'vision'
-                      ? 'bg-[#C89B52] text-[#123F3A] font-semibold shadow-md'
-                      : 'text-[#F8F2E8]/70 hover:text-white'
+                      ? 'bg-[#BA5C7B] text-[#38152E] font-semibold shadow-md'
+                      : 'text-[#FBF1F5]/70 hover:text-white'
                   }`}
                 >
                   <span>🌟 Vision</span>
@@ -861,34 +861,34 @@ export default function FounderPage({
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
                   
                   {/* Left Glass Card: Core Mission (6 cols) */}
-                  <div className="lg:col-span-6 rounded-2xl bg-[#09221F]/80 backdrop-blur-md p-6 sm:p-8 border border-[#C89B52]/30 hover:border-[#C89B52]/60 shadow-lg flex flex-col justify-between transition-all duration-300 group hover:-translate-y-1">
+                  <div className="lg:col-span-6 rounded-2xl bg-[#240C20]/80 backdrop-blur-md p-6 sm:p-8 border border-[#BA5C7B]/30 hover:border-[#BA5C7B]/60 shadow-lg flex flex-col justify-between transition-all duration-300 group hover:-translate-y-1">
                     <div className="space-y-4">
                       <div className="flex items-center justify-between">
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#C89B52]/20 border border-[#C89B52]/40 text-[11px] font-semibold tracking-wider uppercase text-[#F7D070]">
-                          <Leaf className="w-3 h-3 text-[#F7D070]" />
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#BA5C7B]/20 border border-[#BA5C7B]/40 text-[11px] font-semibold tracking-wider uppercase text-[#F2B3C3]">
+                          <Leaf className="w-3 h-3 text-[#F2B3C3]" />
                           <span>OUR CORE MISSION</span>
                         </span>
-                        <span className="text-[11px] font-mono text-[#C89B52]/80">01 / CRISIS TO HEALING</span>
+                        <span className="text-[11px] font-mono text-[#BA5C7B]/80">01 / CRISIS TO HEALING</span>
                       </div>
 
-                      <h4 className="text-2xl sm:text-3xl font-serif text-[#FFFCF7] font-normal leading-snug group-hover:text-[#F7D070] transition-colors">
+                      <h4 className="text-2xl sm:text-3xl font-serif text-[#FFFCF7] font-normal leading-snug group-hover:text-[#F2B3C3] transition-colors">
                         Sanctuary, Healing & Self-Sustaining Autonomy
                       </h4>
 
                       {/* Pull Quote Box */}
-                      <div className="p-3.5 rounded-xl bg-black/30 border-l-2 border-[#C89B52] text-xs sm:text-sm italic text-[#F8F2E8]/90 font-serif leading-relaxed">
+                      <div className="p-3.5 rounded-xl bg-black/30 border-l-2 border-[#BA5C7B] text-xs sm:text-sm italic text-[#FBF1F5]/90 font-serif leading-relaxed">
                         "To provide a confidential sanctuary where women under social and domestic pressure find guidance, emotional strength, and non-judgmental support."
                       </div>
 
-                      <p className="text-xs sm:text-sm text-[#F8F2E8]/80 font-light leading-relaxed font-sans">
+                      <p className="text-xs sm:text-sm text-[#FBF1F5]/80 font-light leading-relaxed font-sans">
                         {f.whyStartedText || "Aastha for Women was started to support women who live under social and family pressure and often lack guidance and support."}{' '}
                         {f.introText || "Through counseling, guidance, and training, our goal is to support women in overcoming life's challenges and creating a stronger, confident future for themselves."}
                       </p>
                     </div>
 
                     {/* Mission Action Pills */}
-                    <div className="pt-5 mt-5 border-t border-[#C89B52]/20">
-                      <div className="text-[10px] font-semibold uppercase tracking-wider text-[#C89B52] mb-2">
+                    <div className="pt-5 mt-5 border-t border-[#BA5C7B]/20">
+                      <div className="text-[10px] font-semibold uppercase tracking-wider text-[#BA5C7B] mb-2">
                         Core Directives on the Ground:
                       </div>
                       <div className="flex flex-wrap gap-2">
@@ -903,8 +903,8 @@ export default function FounderPage({
                             onClick={() => setActiveActionPill(activeActionPill === pill.title ? null : pill.title)}
                             className={`text-[11px] px-2.5 py-1 rounded-md transition-all cursor-pointer border ${
                               activeActionPill === pill.title
-                                ? 'bg-[#C89B52] text-[#123F3A] font-semibold border-[#C89B52]'
-                                : 'bg-white/5 hover:bg-white/10 text-[#F8F2E8] border-white/15'
+                                ? 'bg-[#BA5C7B] text-[#38152E] font-semibold border-[#BA5C7B]'
+                                : 'bg-white/5 hover:bg-white/10 text-[#FBF1F5] border-white/15'
                             }`}
                           >
                             <span>{pill.title}</span>
@@ -914,7 +914,7 @@ export default function FounderPage({
 
                       {/* Pill Mini-Explainer */}
                       {activeActionPill && (
-                        <p className="mt-2 text-[11px] text-[#F7D070] italic font-sans bg-black/40 p-2 rounded-lg border border-[#C89B52]/30 animate-fade-in">
+                        <p className="mt-2 text-[11px] text-[#F2B3C3] italic font-sans bg-black/40 p-2 rounded-lg border border-[#BA5C7B]/30 animate-fade-in">
                           ✦ {activeActionPill}: Active across Yerawada, Wadarwadi, Kadepur, Khadki Shikshan Sanstha (MOU) & Sangli District.
                         </p>
                       )}
@@ -922,33 +922,33 @@ export default function FounderPage({
                   </div>
 
                   {/* Right Glass Card: Foundational Vision (6 cols) */}
-                  <div className="lg:col-span-6 rounded-2xl bg-[#09221F]/80 backdrop-blur-md p-6 sm:p-8 border border-[#C89B52]/30 hover:border-[#C89B52]/60 shadow-lg flex flex-col justify-between transition-all duration-300 group hover:-translate-y-1">
+                  <div className="lg:col-span-6 rounded-2xl bg-[#240C20]/80 backdrop-blur-md p-6 sm:p-8 border border-[#BA5C7B]/30 hover:border-[#BA5C7B]/60 shadow-lg flex flex-col justify-between transition-all duration-300 group hover:-translate-y-1">
                     <div className="space-y-4">
                       <div className="flex items-center justify-between">
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#C89B52]/20 border border-[#C89B52]/40 text-[11px] font-semibold tracking-wider uppercase text-[#F7D070]">
-                          <Sparkles className="w-3 h-3 text-[#F7D070]" />
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#BA5C7B]/20 border border-[#BA5C7B]/40 text-[11px] font-semibold tracking-wider uppercase text-[#F2B3C3]">
+                          <Sparkles className="w-3 h-3 text-[#F2B3C3]" />
                           <span>FOUNDATIONAL VISION</span>
                         </span>
-                        <span className="text-[11px] font-mono text-[#C89B52]/80">02 / LONG-TERM DIGNITY</span>
+                        <span className="text-[11px] font-mono text-[#BA5C7B]/80">02 / LONG-TERM DIGNITY</span>
                       </div>
 
-                      <h4 className="text-2xl sm:text-3xl font-serif text-[#FFFCF7] font-normal leading-snug group-hover:text-[#F7D070] transition-colors">
+                      <h4 className="text-2xl sm:text-3xl font-serif text-[#FFFCF7] font-normal leading-snug group-hover:text-[#F2B3C3] transition-colors">
                         An Equitable Society Where Every Woman Thrives
                       </h4>
 
                       {/* Pull Quote Box */}
-                      <div className="p-3.5 rounded-xl bg-black/30 border-l-2 border-[#C89B52] text-xs sm:text-sm italic text-[#F8F2E8]/90 font-serif leading-relaxed">
+                      <div className="p-3.5 rounded-xl bg-black/30 border-l-2 border-[#BA5C7B] text-xs sm:text-sm italic text-[#FBF1F5]/90 font-serif leading-relaxed">
                         "A society where silence is transformed into sovereignty, domestic fear is eliminated, and every woman owns her dignity."
                       </div>
 
-                      <p className="text-xs sm:text-sm text-[#F8F2E8]/80 font-light leading-relaxed font-sans">
+                      <p className="text-xs sm:text-sm text-[#FBF1F5]/80 font-light leading-relaxed font-sans">
                         {f.visionText || "To create a society where every woman feels confident, independent, and valued. A society where women are empowered to overcome challenges such as domestic crisis, build their own identity, and live with dignity, courage, and hope."}
                       </p>
                     </div>
 
                     {/* Vision Strategic Horizons */}
-                    <div className="pt-5 mt-5 border-t border-[#C89B52]/20">
-                      <div className="text-[10px] font-semibold uppercase tracking-wider text-[#C89B52] mb-2">
+                    <div className="pt-5 mt-5 border-t border-[#BA5C7B]/20">
+                      <div className="text-[10px] font-semibold uppercase tracking-wider text-[#BA5C7B] mb-2">
                         Long-Term Societal Transformation:
                       </div>
                       <div className="flex flex-wrap gap-2">
@@ -963,8 +963,8 @@ export default function FounderPage({
                             onClick={() => setActiveActionPill(activeActionPill === pill.title ? null : pill.title)}
                             className={`text-[11px] px-2.5 py-1 rounded-md transition-all cursor-pointer border ${
                               activeActionPill === pill.title
-                                ? 'bg-[#C89B52] text-[#123F3A] font-semibold border-[#C89B52]'
-                                : 'bg-white/5 hover:bg-white/10 text-[#F8F2E8] border-white/15'
+                                ? 'bg-[#BA5C7B] text-[#38152E] font-semibold border-[#BA5C7B]'
+                                : 'bg-white/5 hover:bg-white/10 text-[#FBF1F5] border-white/15'
                             }`}
                           >
                             <span>{pill.title}</span>
@@ -974,7 +974,7 @@ export default function FounderPage({
 
                       {/* Pill Mini-Explainer */}
                       {activeActionPill && (
-                        <p className="mt-2 text-[11px] text-[#F7D070] italic font-sans bg-black/40 p-2 rounded-lg border border-[#C89B52]/30 animate-fade-in">
+                        <p className="mt-2 text-[11px] text-[#F2B3C3] italic font-sans bg-black/40 p-2 rounded-lg border border-[#BA5C7B]/30 animate-fade-in">
                           ✦ {activeActionPill}: The structural goal behind every counseling session.
                         </p>
                       )}
@@ -984,12 +984,12 @@ export default function FounderPage({
                 </div>
 
                 {/* Central Horizon Nexus Ribbon */}
-                <div className="hidden sm:flex items-center justify-center gap-3 py-2 px-4 rounded-xl bg-black/30 border border-[#C89B52]/20 text-[11px] text-[#F8F2E8]/85 font-sans">
-                  <span className="font-medium text-[#C89B52]">Mission (Immediate Sanctuary & Healing)</span>
-                  <span className="w-8 h-px bg-[#C89B52]/50" />
-                  <span className="w-2 h-2 rounded-full bg-[#C89B52] animate-ping" />
-                  <span className="w-8 h-px bg-[#C89B52]/50" />
-                  <span className="font-medium text-[#F7D070]">Vision (Long-Term Autonomy & Dignity)</span>
+                <div className="hidden sm:flex items-center justify-center gap-3 py-2 px-4 rounded-xl bg-black/30 border border-[#BA5C7B]/20 text-[11px] text-[#FBF1F5]/85 font-sans">
+                  <span className="font-medium text-[#BA5C7B]">Mission (Immediate Sanctuary & Healing)</span>
+                  <span className="w-8 h-px bg-[#BA5C7B]/50" />
+                  <span className="w-2 h-2 rounded-full bg-[#BA5C7B] animate-ping" />
+                  <span className="w-8 h-px bg-[#BA5C7B]/50" />
+                  <span className="font-medium text-[#F2B3C3]">Vision (Long-Term Autonomy & Dignity)</span>
                 </div>
 
               </div>
@@ -997,16 +997,16 @@ export default function FounderPage({
 
             {/* MISSION FOCUSED VIEW */}
             {panelView === 'mission' && (
-              <div className="space-y-6 animate-fade-in transition-all duration-500 rounded-2xl bg-[#09221F]/90 backdrop-blur-md p-7 sm:p-10 border border-[#C89B52]/40 shadow-xl">
+              <div className="space-y-6 animate-fade-in transition-all duration-500 rounded-2xl bg-[#240C20]/90 backdrop-blur-md p-7 sm:p-10 border border-[#BA5C7B]/40 shadow-xl">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C89B52]/20 border border-[#C89B52]/40 text-xs font-semibold tracking-wider uppercase text-[#F7D070]">
-                    <Leaf className="w-3.5 h-3.5 text-[#F7D070]" />
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#BA5C7B]/20 border border-[#BA5C7B]/40 text-xs font-semibold tracking-wider uppercase text-[#F2B3C3]">
+                    <Leaf className="w-3.5 h-3.5 text-[#F2B3C3]" />
                     <span>DEEP DIVE: OUR CORE MISSION</span>
                   </div>
                   <button
                     type="button"
                     onClick={() => setPanelView('vision')}
-                    className="inline-flex items-center gap-1.5 text-xs text-[#C89B52] hover:text-[#F7D070] cursor-pointer"
+                    className="inline-flex items-center gap-1.5 text-xs text-[#BA5C7B] hover:text-[#F2B3C3] cursor-pointer"
                   >
                     <span>Explore Vision instead →</span>
                   </button>
@@ -1016,31 +1016,31 @@ export default function FounderPage({
                   Sanctuary, Healing & Self-Sustaining Autonomy
                 </h4>
 
-                <p className="text-sm sm:text-base text-[#F8F2E8]/90 font-light leading-relaxed font-sans max-w-3xl">
+                <p className="text-sm sm:text-base text-[#FBF1F5]/90 font-light leading-relaxed font-sans max-w-3xl">
                   {f.whyStartedText || "Aastha for Women was started to support women who live under social and family pressure and often lack guidance and support."}{' '}
                   {f.introText || "Through counseling, guidance, and training, our goal is to support women in overcoming life's challenges and creating a stronger, confident future for themselves."}
                 </p>
 
                 {/* 3 Step Mission Field Methodology */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-[#C89B52]/20">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-[#BA5C7B]/20">
                   <div className="p-4 rounded-xl bg-black/30 border border-white/10 space-y-2">
-                    <span className="text-xs font-mono text-[#C89B52]">STEP 01</span>
+                    <span className="text-xs font-mono text-[#BA5C7B]">STEP 01</span>
                     <h5 className="text-base font-serif font-medium text-white">Safe Confidential Intake</h5>
-                    <p className="text-xs text-[#F8F2E8]/75 leading-relaxed font-sans">
+                    <p className="text-xs text-[#FBF1F5]/75 leading-relaxed font-sans">
                       Providing a private sanctuary where women can speak freely without stigma or familial retribution.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-black/30 border border-white/10 space-y-2">
-                    <span className="text-xs font-mono text-[#C89B52]">STEP 02</span>
+                    <span className="text-xs font-mono text-[#BA5C7B]">STEP 02</span>
                     <h5 className="text-base font-serif font-medium text-white">Trauma De-escalation & Mediation</h5>
-                    <p className="text-xs text-[#F8F2E8]/75 leading-relaxed font-sans">
+                    <p className="text-xs text-[#FBF1F5]/75 leading-relaxed font-sans">
                       Empathetic psychological counseling, marital dispute navigation, and confidence restoration.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-black/30 border border-white/10 space-y-2">
-                    <span className="text-xs font-mono text-[#C89B52]">STEP 03</span>
+                    <span className="text-xs font-mono text-[#BA5C7B]">STEP 03</span>
                     <h5 className="text-base font-serif font-medium text-white">Sustainable Livelihood Bridges</h5>
-                    <p className="text-xs text-[#F8F2E8]/75 leading-relaxed font-sans">
+                    <p className="text-xs text-[#FBF1F5]/75 leading-relaxed font-sans">
                       Practical skills, legal rights awareness, and peer solidarity groups that cement financial independence.
                     </p>
                   </div>
@@ -1050,16 +1050,16 @@ export default function FounderPage({
 
             {/* VISION FOCUSED VIEW */}
             {panelView === 'vision' && (
-              <div className="space-y-6 animate-fade-in transition-all duration-500 rounded-2xl bg-[#09221F]/90 backdrop-blur-md p-7 sm:p-10 border border-[#C89B52]/40 shadow-xl">
+              <div className="space-y-6 animate-fade-in transition-all duration-500 rounded-2xl bg-[#240C20]/90 backdrop-blur-md p-7 sm:p-10 border border-[#BA5C7B]/40 shadow-xl">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C89B52]/20 border border-[#C89B52]/40 text-xs font-semibold tracking-wider uppercase text-[#F7D070]">
-                    <Sparkles className="w-3.5 h-3.5 text-[#F7D070]" />
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#BA5C7B]/20 border border-[#BA5C7B]/40 text-xs font-semibold tracking-wider uppercase text-[#F2B3C3]">
+                    <Sparkles className="w-3.5 h-3.5 text-[#F2B3C3]" />
                     <span>DEEP DIVE: FOUNDATIONAL VISION</span>
                   </div>
                   <button
                     type="button"
                     onClick={() => setPanelView('mission')}
-                    className="inline-flex items-center gap-1.5 text-xs text-[#C89B52] hover:text-[#F7D070] cursor-pointer"
+                    className="inline-flex items-center gap-1.5 text-xs text-[#BA5C7B] hover:text-[#F2B3C3] cursor-pointer"
                   >
                     <span>← Explore Mission instead</span>
                   </button>
@@ -1069,30 +1069,30 @@ export default function FounderPage({
                   An Equitable Society Where Every Woman Thrives
                 </h4>
 
-                <p className="text-sm sm:text-base text-[#F8F2E8]/90 font-light leading-relaxed font-sans max-w-3xl">
+                <p className="text-sm sm:text-base text-[#FBF1F5]/90 font-light leading-relaxed font-sans max-w-3xl">
                   {f.visionText || "To create a society where every woman feels confident, independent, and valued. A society where women are empowered to overcome challenges such as domestic crisis, build their own identity, and live with dignity, courage, and hope."}
                 </p>
 
                 {/* 3 Societal Pillars */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-[#C89B52]/20">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-[#BA5C7B]/20">
                   <div className="p-4 rounded-xl bg-black/30 border border-white/10 space-y-2">
-                    <span className="text-xs font-mono text-[#C89B52]">PILLAR 01</span>
+                    <span className="text-xs font-mono text-[#BA5C7B]">PILLAR 01</span>
                     <h5 className="text-base font-serif font-medium text-white">Breaking Generational Silence</h5>
-                    <p className="text-xs text-[#F8F2E8]/75 leading-relaxed font-sans">
+                    <p className="text-xs text-[#FBF1F5]/75 leading-relaxed font-sans">
                       Transforming cultural norms so domestic abuse and mental health distress are addressed openly with respect.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-black/30 border border-white/10 space-y-2">
-                    <span className="text-xs font-mono text-[#C89B52]">PILLAR 02</span>
+                    <span className="text-xs font-mono text-[#BA5C7B]">PILLAR 02</span>
                     <h5 className="text-base font-serif font-medium text-white">Inherent Dignity & Sovereignty</h5>
-                    <p className="text-xs text-[#F8F2E8]/75 leading-relaxed font-sans">
+                    <p className="text-xs text-[#FBF1F5]/75 leading-relaxed font-sans">
                       Every woman reclaiming ownership over her choices, bodily integrity, and future without fear.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-black/30 border border-white/10 space-y-2">
-                    <span className="text-xs font-mono text-[#C89B52]">PILLAR 03</span>
+                    <span className="text-xs font-mono text-[#BA5C7B]">PILLAR 03</span>
                     <h5 className="text-base font-serif font-medium text-white">Universal Grassroots Inclusion</h5>
-                    <p className="text-xs text-[#F8F2E8]/75 leading-relaxed font-sans">
+                    <p className="text-xs text-[#FBF1F5]/75 leading-relaxed font-sans">
                       Ensuring rural women, slum dwellers, and incarcerated women have equal access to justice, healing, and growth.
                     </p>
                   </div>
@@ -1101,12 +1101,12 @@ export default function FounderPage({
             )}
 
             {/* Bottom Fieldwork Footnote */}
-            <div className="pt-6 border-t border-[#C89B52]/25 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#F8F2E8]/75 font-sans">
+            <div className="pt-6 border-t border-[#BA5C7B]/25 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#FBF1F5]/75 font-sans">
               <div className="flex items-center gap-2">
-                <Flower2 className="w-4 h-4 text-[#C89B52] shrink-0" />
+                <Flower2 className="w-4 h-4 text-[#BA5C7B] shrink-0" />
                 <span>Verified ground presence: Pune, Yerawada Central Prison, Wadarwadi Slum, Kadepur, Khadki Shikshan Sanstha (MOU Signed), Karve Institute Fieldwork & Exploring Sangli District.</span>
               </div>
-              <span className="font-serif italic text-[#C89B52]">
+              <span className="font-serif italic text-[#BA5C7B]">
                 Compassion without pity. Dignity without condition.
               </span>
             </div>

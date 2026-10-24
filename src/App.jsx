@@ -99,7 +99,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#FAF7F0] text-brand-charcoal flex flex-col selection:bg-brand-gold/25 selection:text-brand-teal font-sans antialiased overflow-x-hidden">
+    <div className="relative min-h-screen bg-[#FCF8F9] text-brand-charcoal flex flex-col selection:bg-brand-gold/25 selection:text-brand-teal font-sans antialiased overflow-x-hidden">
       
       {/* Global 3D Ambient Motion Layer: Floating sacred constellation particles across the entire homepage */}
       <Ambient3DBackground />

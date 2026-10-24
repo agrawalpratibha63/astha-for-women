@@ -8,11 +8,11 @@ export default {
     extend: {
       colors: {
         brand: {
-          ivory: '#F8F5EF',
-          teal: '#10332F',
-          gold: '#C6A46A',
+          ivory: '#FCFAFD',
+          teal: '#2E1065',
+          gold: '#C026D3',
           sage: '#DCE5DC',
-          blush: '#F2E6E0',
+          blush: '#FAF5FF',
           charcoal: '#20211F',
           muted: '#686760',
         },
@@ -26,12 +26,12 @@ export default {
           700: '#9B131B',
         },
         ochre: {
-          DEFAULT: '#C7A46A',
+          DEFAULT: '#C46D86',
           50: '#FDF8F0',
           100: '#FBF0DE',
           200: '#F6E1BD',
-          500: '#C7A46A',
-          600: '#B58542',
+          500: '#C46D86',
+          600: '#B85372',
           700: '#9B6C2E',
         },
         charcoal: {
@@ -42,13 +42,13 @@ export default {
         },
         silk: {
           DEFAULT: '#F7F2E9',
-          warm: '#F2ECE1',
-          linen: '#EBE3D3',
+          warm: '#F6E8EE',
+          linen: '#F2DCE5',
         },
         forest: {
-          DEFAULT: '#174F4A',
-          light: '#E3E9E2',
-          dark: '#0F3834',
+          DEFAULT: '#3B0764',
+          light: '#F5F3FF',
+          dark: '#2E1065',
         }
       },
       fontFamily: {

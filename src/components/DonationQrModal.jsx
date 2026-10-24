@@ -94,11 +94,11 @@ export default function DonationQrModal({ isOpen, onClose, t = {}, lang = 'en' }
       aria-labelledby="donation-qr-title"
     >
       <div 
-        className="bg-[#FAF7F0] rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border-2 border-[#C9A45C]/40 relative my-6 animate-scale-up"
+        className="bg-[#FCF8F9] rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border-2 border-[#BA5C7B]/40 relative my-6 animate-scale-up"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Header Strip */}
-        <div className="bg-[#10332F] text-white p-5 sm:p-6 relative text-center">
+        <div className="bg-[#38152E] text-white p-5 sm:p-6 relative text-center">
           <button
             type="button"
             onClick={onClose}
@@ -108,8 +108,8 @@ export default function DonationQrModal({ isOpen, onClose, t = {}, lang = 'en' }
             <X className="w-5 h-5" />
           </button>
 
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#C9A45C]/25 text-[#F7D070] text-[11px] font-semibold uppercase tracking-wider mb-2 border border-[#C9A45C]/40">
-            <Heart className="w-3.5 h-3.5 fill-[#F7D070]" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#BA5C7B]/25 text-[#F2B3C3] text-[11px] font-semibold uppercase tracking-wider mb-2 border border-[#BA5C7B]/40">
+            <Heart className="w-3.5 h-3.5 fill-[#F2B3C3]" />
             <span>{s.badge}</span>
           </div>
 
@@ -126,9 +126,9 @@ export default function DonationQrModal({ isOpen, onClose, t = {}, lang = 'en' }
         <div className="p-6 space-y-5">
           
           {/* Centered High-Res QR Code Card */}
-          <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#C9A45C]/35 shadow-sm text-center flex flex-col items-center">
+          <div className="bg-white rounded-2xl p-4 sm:p-5 border border-[#BA5C7B]/35 shadow-sm text-center flex flex-col items-center">
             
-            <div className="relative max-w-[280px] w-full rounded-xl overflow-hidden border-2 border-[#10332F]/15 shadow-inner bg-white p-2">
+            <div className="relative max-w-[280px] w-full rounded-xl overflow-hidden border-2 border-[#38152E]/15 shadow-inner bg-white p-2">
               <img 
                 src="/images/aastha-upi-qr.png" 
                 alt="Bank of Maharashtra Aastha Samajik Sanstha UPI QR Code" 
@@ -137,12 +137,12 @@ export default function DonationQrModal({ isOpen, onClose, t = {}, lang = 'en' }
             </div>
 
             {/* Quick UPI ID Copy Box */}
-            <div className="mt-4 w-full bg-[#FAF7F0] rounded-xl p-3 border border-[#C9A45C]/30 flex items-center justify-between gap-2">
+            <div className="mt-4 w-full bg-[#FCF8F9] rounded-xl p-3 border border-[#BA5C7B]/30 flex items-center justify-between gap-2">
               <div className="text-left overflow-hidden">
-                <span className="text-[10px] font-sans font-bold uppercase tracking-wider text-[#A46114] block">
+                <span className="text-[10px] font-sans font-bold uppercase tracking-wider text-[#A03859] block">
                   {s.upiLabel}
                 </span>
-                <span className="text-xs sm:text-sm font-mono font-bold text-[#10332F] truncate block select-all">
+                <span className="text-xs sm:text-sm font-mono font-bold text-[#38152E] truncate block select-all">
                   {upiId}
                 </span>
               </div>
@@ -153,7 +153,7 @@ export default function DonationQrModal({ isOpen, onClose, t = {}, lang = 'en' }
                 className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer shrink-0 shadow-2xs ${
                   copied 
                     ? 'bg-emerald-600 text-white' 
-                    : 'bg-[#10332F] hover:bg-[#1B554C] text-white'
+                    : 'bg-[#38152E] hover:bg-[#501E42] text-white'
                 }`}
               >
                 {copied ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
@@ -164,9 +164,9 @@ export default function DonationQrModal({ isOpen, onClose, t = {}, lang = 'en' }
           </div>
 
           {/* Bank & Sanstha Verification Note */}
-          <div className="bg-white/80 rounded-2xl p-4 border border-[#C9A45C]/25 space-y-2 text-xs">
-            <div className="flex items-center gap-2 text-[#10332F] font-bold">
-              <Building2 className="w-4 h-4 text-[#A46114]" />
+          <div className="bg-white/80 rounded-2xl p-4 border border-[#BA5C7B]/25 space-y-2 text-xs">
+            <div className="flex items-center gap-2 text-[#38152E] font-bold">
+              <Building2 className="w-4 h-4 text-[#A03859]" />
               <span>{sansthaName}</span>
             </div>
             <div className="text-[#333A36]/80 flex items-center justify-between text-[11px]">
@@ -176,7 +176,7 @@ export default function DonationQrModal({ isOpen, onClose, t = {}, lang = 'en' }
                 <span>Verified Sanstha</span>
               </span>
             </div>
-            <div className="pt-2 border-t border-[#C9A45C]/20 text-[11px] text-[#333A36]/70 leading-relaxed font-light">
+            <div className="pt-2 border-t border-[#BA5C7B]/20 text-[11px] text-[#333A36]/70 leading-relaxed font-light">
               {s.transparentDesc}
             </div>
           </div>
@@ -186,7 +186,7 @@ export default function DonationQrModal({ isOpen, onClose, t = {}, lang = 'en' }
             <button
               type="button"
               onClick={onClose}
-              className="px-6 py-2 rounded-full bg-[#10332F] hover:bg-[#1B554C] text-white text-xs font-medium tracking-wide transition-all cursor-pointer shadow-xs"
+              className="px-6 py-2.5 rounded-full bg-gradient-to-r from-[#F43F5E] via-[#FB7185] to-[#FB923C] hover:from-[#6D28D9] hover:via-[#A21CAF] hover:to-[#E11D48] text-white text-xs font-semibold tracking-wide transition-all cursor-pointer shadow-xs"
             >
               <span>{s.closeBtn}</span>
             </button>
