@@ -10,6 +10,7 @@ import CommunityFuturePlan from './components/CommunityFuturePlan';
 import DonationQrModal from './components/DonationQrModal';
 import Footer from './components/Footer';
 import RequestGuidanceModal from './components/RequestGuidanceModal';
+import Ambient3DBackground from './components/Ambient3DBackground';
 import { translations } from './i18n/translations';
 
 export default function App() {
@@ -98,8 +99,11 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-brand-ivory text-brand-charcoal flex flex-col selection:bg-brand-gold/25 selection:text-brand-teal font-sans antialiased">
+    <div className="relative min-h-screen bg-[#FAF7F0] text-brand-charcoal flex flex-col selection:bg-brand-gold/25 selection:text-brand-teal font-sans antialiased overflow-x-hidden">
       
+      {/* Global 3D Ambient Motion Layer: Floating sacred constellation particles across the entire homepage */}
+      <Ambient3DBackground />
+
       {/* Top Navbar with English | हिन्दी | मराठी Switcher, Quick Exit, and Guidance CTA */}
       <Navbar
         lang={lang}
@@ -113,7 +117,7 @@ export default function App() {
       />
 
       {/* Main Experience View Switcher */}
-      <main className="flex-1">
+      <main className="flex-1 relative z-10">
         {currentView === 'founder' ? (
           /* Dedicated Founder Page: The Heart Behind Aastha */
           <FounderPage
