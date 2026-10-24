@@ -296,21 +296,6 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
       partner: 'Aastha Community Circles'
     },
     {
-      id: 'womens-day-yerawada',
-      title: currentLang === 'hi' 
-        ? 'भावनात्मक उपचार एवं आत्मसम्मान पुनरुद्धार सत्र' 
-        : currentLang === 'mr' 
-        ? 'भावनिक उपचार व स्वाभिमान जागरण समुपदेशन वर्ग' 
-        : 'Transformative Emotional Healing & Mental Health Circles',
-      image: '/images/yerawada-jail-2.jpg',
-      aspectRatio: 'aspect-4/3',
-      tag: currentLang === 'hi' ? 'मानसिक उपचार' : currentLang === 'mr' ? 'भावनिक समुपदेशन' : 'Emotional Healing',
-      date: 'Healing Circles',
-      beneficiaries: currentLang === 'hi' ? 'कठिन परिस्थितियों से गुजर रहीं महिलाएं।' : currentLang === 'mr' ? 'कठीण परिस्थितीत अडकलेल्या महिला.' : 'Women navigating distress and challenging circumstances.',
-      actionTaken: currentLang === 'hi' ? 'गरिमा संकल्प, कानूनी जागरूकता और भावनात्मक उपचार सत्र।' : currentLang === 'mr' ? 'कायदेशीर मार्गदर्शन, स्वाभिमान व भावनिक समुपदेशन सत्र.' : 'Transformative empowerment and dignity program featuring legal aid and emotional healing.',
-      partner: 'Welfare Coordination'
-    },
-    {
       id: 'raincoat-blanket-relief',
       title: currentLang === 'hi' 
         ? 'शीतकालीन कंबल, आवश्यक राशन एवं मानवीय सहायता' 

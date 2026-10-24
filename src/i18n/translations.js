@@ -278,7 +278,7 @@ export const translations = {
           title: "Women's Day at Yerawada Central Jail",
           location: "Yerawada, Pune",
           desc: "A special empowerment and counseling program conducted inside Yerawada Central Prison for female inmates, bringing hope, legal understanding, and dignity.",
-          image: "/images/yerawada-jail-2.jpg"
+          image: "/images/yerawada-prison-gate-group.jpg"
         },
         {
           id: 2,
@@ -420,7 +420,7 @@ export const translations = {
           title: "Annual Women's Day at Yerawada Central Prison",
           location: "Yerawada Central Jail, Pune",
           desc: "Transformative Women's Day program inside Yerawada Central Jail for female inmates, featuring dignity oaths, legal counseling, and emotional healing circles.",
-          image: "/images/yerawada-jail-2.jpg",
+          image: "/images/yerawada-prison-gate-group.jpg",
           partner: "Maharashtra Prison Welfare Department",
           tag: "Prison Outreach"
         },
@@ -891,7 +891,7 @@ export const translations = {
           title: "यरवदा मध्यवर्ती कारागार में महिला दिवस",
           location: "यरवदा, पुणे",
           desc: "यरवदा जेल में महिला बंदियों के लिए विशेष सक्षमीकरण, कानूनी समझ और भावात्मक परामर्श कार्यक्रम।",
-          image: "/images/yerawada-jail-2.jpg"
+          image: "/images/yerawada-prison-gate-group.jpg"
         },
         {
           id: 2,
@@ -1350,7 +1350,7 @@ export const translations = {
           title: "येरवडा मध्यवर्ती कारागृहात महिला दिन",
           location: "येरवडा, पुणे",
           desc: "येरवडा कारागृहातील महिला कैद्यांसाठी विशेष सक्षमीकरण, समुपदेशन आणि कायदेशीर जागृती कार्यक्रम.",
-          image: "/images/yerawada-jail-2.jpg"
+          image: "/images/yerawada-prison-gate-group.jpg"
         },
         {
           id: 2,
