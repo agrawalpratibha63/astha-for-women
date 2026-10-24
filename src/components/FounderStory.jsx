@@ -37,7 +37,7 @@ export default function FounderStory({
     {
       name: 'Compassion & Emotional Healing Lens',
       subtitle: 'Warm Empathy Glow',
-      badge: '💛 Certified Counselor • 250+ Women Guided',
+      badge: '💛 Certified Counselor • 300+ Girls & Women Guided',
       dotColor: 'bg-[#F7D070]',
       badgeStyle: 'bg-[#59390B]/85 border-[#F7D070]/60 text-[#FFF2D6]',
       imgFilter: 'contrast(108%) saturate(125%) brightness(104%) sepia(10%)',
@@ -141,7 +141,7 @@ export default function FounderStory({
       badgeClass: 'bg-[#C76E61]/15 text-[#9E392F] border-[#C76E61]/35',
       glowClass: 'hover:shadow-[0_16px_35px_rgba(199,110,97,0.3)]',
       gradientBg: 'bg-gradient-to-b from-[#FFFDF9] via-[#FAF1EE] to-[#F7E5E2]/60',
-      keyPoints: ['Yerawada Central Prison circles', 'Wadarwadi slum counseling sessions', 'Pre-marital youth guidance']
+      keyPoints: ['MOU with Khadki Shikshan Sanstha (300+ Girls)', 'Karve Institute MSW student fieldwork', 'Exploring Sangli District & Police Station Desks']
     },
     {
       id: 2,

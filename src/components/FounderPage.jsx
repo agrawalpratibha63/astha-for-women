@@ -915,7 +915,7 @@ export default function FounderPage({
                       {/* Pill Mini-Explainer */}
                       {activeActionPill && (
                         <p className="mt-2 text-[11px] text-[#F7D070] italic font-sans bg-black/40 p-2 rounded-lg border border-[#C89B52]/30 animate-fade-in">
-                          ✦ {activeActionPill}: Active across Yerawada, Wadarwadi, Kadepur & Khadki College field workshops.
+                          ✦ {activeActionPill}: Active across Yerawada, Wadarwadi, Kadepur, Khadki Shikshan Sanstha (MOU) & Sangli District.
                         </p>
                       )}
                     </div>
@@ -1104,7 +1104,7 @@ export default function FounderPage({
             <div className="pt-6 border-t border-[#C89B52]/25 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#F8F2E8]/75 font-sans">
               <div className="flex items-center gap-2">
                 <Flower2 className="w-4 h-4 text-[#C89B52] shrink-0" />
-                <span>Verified ground presence: Pune, Yerawada Central Prison, Wadarwadi Slum Community, Kadepur Rural Cluster & Khadki College Pune.</span>
+                <span>Verified ground presence: Pune, Yerawada Central Prison, Wadarwadi Slum, Kadepur, Khadki Shikshan Sanstha (MOU Signed), Karve Institute Fieldwork & Exploring Sangli District.</span>
               </div>
               <span className="font-serif italic text-[#C89B52]">
                 Compassion without pity. Dignity without condition.

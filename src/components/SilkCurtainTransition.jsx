@@ -14,10 +14,10 @@ export default function SilkCurtainTransition({ t = {}, onOpenFounderPage = null
 
   const milestones = [
     {
-      num: stats.stat1Number || "250+",
-      label: stats.stat1Label || "Women Connected & Supported",
-      tag: "SANCTUARY CARE",
-      desc: stats.stat1Desc || "Direct confidential emotional and crisis mediation sessions.",
+      num: stats.stat1Number || "300+",
+      label: stats.stat1Label || "Adolescent Girls & Women Connected",
+      tag: "SANCTUARY & CAMPUS",
+      desc: stats.stat1Desc || "Direct guidance circles, pre-marriage orientation, and confidential emotional support.",
       icon: Users,
       accent: "#A8B9A0", // Sage
       badgeBg: "bg-[#A8B9A0]/25 text-[#103D39]",
@@ -29,10 +29,10 @@ export default function SilkCurtainTransition({ t = {}, onOpenFounderPage = null
       cornerFlourish: "top-0 left-0 border-t-2 border-l-2 rounded-tl-[3rem] border-[#A8B9A0]/70"
     },
     {
-      num: stats.stat2Number || "10+",
-      label: stats.stat2Label || "Awareness & Guidance Programs",
-      tag: "YOUTH & COMMUNITY",
-      desc: stats.stat2Desc || "Community workshops across Yerawada, Wadarwadi, Kadepur & Khadki College.",
+      num: stats.stat2Number || "25+",
+      label: stats.stat2Label || "Volunteers Engaged on Ground",
+      tag: "VOLUNTEER FORCE",
+      desc: stats.stat2Desc || "Dedicated community volunteers & student advocates driving fieldwork across Maharashtra.",
       icon: TrendingUp,
       accent: "#C78A32", // Saffron
       badgeBg: "bg-[#C78A32]/25 text-[#C78A32]",
@@ -59,10 +59,10 @@ export default function SilkCurtainTransition({ t = {}, onOpenFounderPage = null
       cornerFlourish: "top-0 inset-x-0 border-t-2 rounded-t-[3.25rem] border-[#103D39]/60"
     },
     {
-      num: stats.stat4Number || "7+",
-      label: stats.stat4Label || "Grassroots Places Visited",
-      tag: "GROUND REACH",
-      desc: stats.stat4Desc || "Direct field interventions across correctional facilities, colleges, urban slums, and rural clusters.",
+      num: stats.stat4Number || "8+",
+      label: stats.stat4Label || "Grassroots Regions & Cities Explored",
+      tag: "SANGLI & REGIONAL REACH",
+      desc: stats.stat4Desc || "Direct field interventions across Pune, Sangli District, Satara, and rural clusters.",
       icon: HeartHandshake,
       accent: "#A84F49", // Terracotta
       badgeBg: "bg-[#A84F49]/25 text-[#A84F49]",
@@ -73,13 +73,14 @@ export default function SilkCurtainTransition({ t = {}, onOpenFounderPage = null
       numberColor: "text-[#883631]",
       cornerFlourish: "top-0 right-0 border-t-2 border-r-2 rounded-tr-[3rem] border-[#A84F49]/70",
       places: stats.stat4Places || [
-        "Yerawada Central Prison",
-        "Wadarwadi Slum Community",
-        "Kadepur Rural Cluster",
-        "Khadki College Pune — Adolescent Girl Empowerment",
-        "Pune, Sangli & Satara — Raincoat Distribution Drive",
-        "Alandi & Sangvi Camps",
-        "Rural Maharashtra Villages"
+        "Khadki Shikshan Sanstha (MOU Signed) — 300+ Girls Guided",
+        "Karve Institute of Social Service — 2 MSW Students Joined Fieldwork",
+        "Sangli District & Miraj — Expanding Footprint & Youth Advocacy Exploration",
+        "Yerawada Central Prison — Women's Healing & Legal Literacy",
+        "Wadarwadi Slum Community — Mediation & Cloud Kitchens",
+        "Kadepur Rural Cluster — Livelihoods & Women's Collectives",
+        "Pune, Sangli & Satara — Monsoon Relief & Humanitarian Drives",
+        "Alandi & Sangvi Camps"
       ]
     },
   ];

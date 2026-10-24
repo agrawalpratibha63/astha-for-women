@@ -62,37 +62,89 @@ export default function Navbar({
   const guidanceLabel = lang === 'hi' ? 'मार्गदर्शन प्राप्त करें' : lang === 'mr' ? 'मार्गदर्शन मिळवा' : 'Request Guidance';
   const roadmapLabel = lang === 'hi' ? 'रोडमैप २०२६–२७' : lang === 'mr' ? 'आगामी रोडमॅप' : 'Roadmap 2026–27';
 
+  const tickerItems = lang === 'hi' ? [
+    'गोपनीय मार्गदर्शन एवं २४x७ हेल्पलाइन: ८८०१०६६००७',
+    'राष्ट्रीय महिला हेल्पलाइन: १८१ (टोल-फ्री व निःशुल्क)',
+    '३००+ बालिकाओं व युवतियों से सीधा संपर्क (Connected with 300+ Girls)',
+    'खडकी शिक्षण संस्था के साथ समझौता ज्ञापन (MOU with Khadki Shikshan Sanstha)',
+    'फील्ड वर्क: कर्वे समाज सेवा संस्थान से २ एमएसडब्ल्यू छात्र शामिल',
+    'सांगली जिले में विस्तार एवं ज़मीनी कार्य (Exploring Sangli District)',
+    'भावी योजना: पुलिस स्टेशनों एवं सरकारी स्कूलों में परामर्श केंद्र शुरू करना',
+    'समर्पित स्वयंसेवक सक्रिय (Volunteers Engaged)'
+  ] : lang === 'mr' ? [
+    'गोपनीय मार्गदर्शन व २४x७ हेल्पलाइन: ८८०१०६६००७',
+    'राष्ट्रीय महिला हेल्पलाइन: १८१ (टोल-फ्री व मोफत)',
+    '३००+ तरुणी व विद्यार्थिनींशी प्रत्यक्ष संवाद (Connected with 300+ Girls)',
+    'खडकी शिक्षण संस्थेसोबत सामंजस्य करार (MOU with Khadki Shikshan Sanstha)',
+    'फील्ड वर्क: कर्वे समाज सेवा संस्थेतून २ एमएसडब्ल्यू विद्यार्थी सहभागी',
+    'सांगली जिल्हा विस्तार व सामाजिक कार्य (Exploring Sangli District)',
+    'आगामी संकल्प: पोलिस ठाणी व सरकारी शाळांमध्ये समुपदेशन केंद्र सुरू करणे',
+    'सक्रिय स्वयंसेवक सहभागी (Volunteers Engaged)'
+  ] : [
+    'Confidential Guidance & Women Crisis Support • 24x7 Helpline: 8801066007',
+    'National Women Helpline: 181 (Toll Free)',
+    'Connected with 300+ Adolescent Girls & Young Women',
+    'Formal MOU Signed with Khadki Shikshan Sanstha',
+    'Field Work: 2 MSW Students Joined from Karve Institute of Social Service',
+    'Expanding Footprint: Exploring Sangli District & Rural Clusters',
+    'Future Plan: Starting Counselling Centres at Police Stations & Government Schools',
+    'Dedicated Volunteers Engaged on Ground'
+  ];
+
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300">
       {/* =======================================================================
-          1. TOP CRISIS & HELPLINE RIBBON (Discreet, high-contrast, essential)
+          1. TOP CRISIS & HELPLINE RIBBON (Continuous Moving Marquee Ticker)
          ======================================================================= */}
-      <div className="bg-[#0E2A25] text-white/90 text-xs py-1.5 px-4 font-sans border-b border-[#C9A45C]/20">
-        <div className="max-w-7xl mx-auto w-full flex items-center justify-between gap-3 text-[11px] sm:text-xs">
-          
-          {/* Left: Discreet safety reassurance */}
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
-            <span className="font-medium text-[#FAF7F0]/90 truncate">
-              {t.helplineText || 'Confidential Guidance & Women Crisis Support • 24x7 Helpline'}
-            </span>
-          </div>
-
-          {/* Right: National helpline + Quick Exit */}
-          <div className="flex items-center gap-3 sm:gap-5 shrink-0">
-            <span className="text-[#FAF7F0]/70 hidden md:inline font-mono">
-              {footer.nationalHelpline || 'Helpline: 181 (Toll Free)'}
-            </span>
-            <button
-              onClick={handleQuickExit}
-              title={t.leavePageTooltip || 'Quickly hide this page and redirect to Google'}
-              className="text-[#E0BE76] hover:text-white transition-colors underline decoration-[#E0BE76]/40 cursor-pointer font-medium focus:ring-1 focus:ring-[#C9A45C] outline-none rounded px-1"
-            >
-              {t.escKeyHint || 'Quick Exit (Esc)'}
-            </button>
-          </div>
-
+      <div className="bg-[#0E2A25] text-white/90 text-xs py-1.5 px-3 sm:px-4 font-sans border-b border-[#C9A45C]/25 relative overflow-hidden flex items-center shadow-xs">
+        
+        {/* Left Live Indicator */}
+        <div className="flex items-center gap-1.5 shrink-0 pr-3 z-10 bg-[#0E2A25] shadow-[6px_0_10px_#0E2A25]">
+          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+          <span className="text-[10px] font-bold tracking-wider uppercase text-[#E0BE76] hidden sm:inline">
+            {lang === 'hi' ? 'अपडेट' : lang === 'mr' ? 'अपडेट' : 'LIVE'}
+          </span>
         </div>
+
+        {/* Moving Marquee Container */}
+        <div className="overflow-hidden flex-1 relative whitespace-nowrap" title="Hover to pause ticker">
+          <div className="animate-ticker-marquee text-[11px] sm:text-xs text-[#FAF7F0]/90">
+            {/* Set 1 */}
+            <div className="inline-flex items-center gap-6 pr-6">
+              {tickerItems.map((item, idx) => (
+                <span key={`t1-${idx}`} className="inline-flex items-center gap-2">
+                  <span className="text-[#C9A45C]">✦</span>
+                  <span className="font-medium">{item}</span>
+                </span>
+              ))}
+            </div>
+
+            {/* Set 2 (Identical duplicate for seamless continuous infinite loop) */}
+            <div className="inline-flex items-center gap-6 pr-6" aria-hidden="true">
+              {tickerItems.map((item, idx) => (
+                <span key={`t2-${idx}`} className="inline-flex items-center gap-2">
+                  <span className="text-[#C9A45C]">✦</span>
+                  <span className="font-medium">{item}</span>
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Right Pinned Actions: Quick Exit & Helpline */}
+        <div className="flex items-center gap-2 sm:gap-4 shrink-0 pl-3 z-10 bg-[#0E2A25] shadow-[-10px_0_12px_#0E2A25]">
+          <span className="text-[#FAF7F0]/70 hidden lg:inline font-mono text-[11px]">
+            {footer.nationalHelpline || 'Helpline: 181 (Toll Free)'}
+          </span>
+          <button
+            onClick={handleQuickExit}
+            title={t.leavePageTooltip || 'Quickly hide this page and redirect to Google'}
+            className="text-[#E0BE76] hover:text-white transition-colors underline decoration-[#E0BE76]/40 cursor-pointer font-medium text-[11px] sm:text-xs focus:ring-1 focus:ring-[#C9A45C] outline-none rounded px-1 shrink-0"
+          >
+            {t.escKeyHint || 'Quick Exit (Esc)'}
+          </button>
+        </div>
+
       </div>
 
       {/* =======================================================================

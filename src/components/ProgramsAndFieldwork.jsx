@@ -253,17 +253,32 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
     {
       id: 'khadki-college',
       title: currentLang === 'hi' 
-        ? 'किशोरी सशक्तिकरण, आत्मसम्मान व संवाद कार्यशाला' 
+        ? '३००+ छात्राओं से संपर्क — किशोरी सशक्तिकरण व संवाद कार्यशाला' 
         : currentLang === 'mr' 
-        ? 'किशोरवयीन मुलींचे सक्षमीकरण व स्वाभिमान कार्यशाळा' 
-        : 'Adolescent Girl Resilience & Emotional Boundary Workshop',
+        ? '३००+ विद्यार्थिनींशी संवाद — किशोरवयीन मुलींचे सक्षमीकरण कार्यशाळा' 
+        : '300+ Girls Connected — Adolescent Girl Resilience & Boundary Workshop',
       image: '/images/pre-marriage-girls-group.jpg',
       aspectRatio: 'aspect-16/10',
-      tag: currentLang === 'hi' ? 'युवा संबल' : currentLang === 'mr' ? 'युवा सक्षमीकरण' : 'Youth Resilience',
+      tag: currentLang === 'hi' ? 'MOU समझौता' : currentLang === 'mr' ? 'MOU करार' : 'MOU Partnership',
       date: 'Campus Leadership',
-      beneficiaries: currentLang === 'hi' ? 'कॉलेज छात्राएं और पहली पीढ़ी की युवा शिक्षार्थी।' : currentLang === 'mr' ? 'महाविद्यालयीन तरुणी व पहिल्या पिढीतील विद्यार्थिनी.' : 'Adolescent college girls and first-generation learners.',
-      actionTaken: currentLang === 'hi' ? 'छात्राओं के लिए आत्मसम्मान, भावनात्मक सीमाओं और स्वस्थ संवाद पर केंद्रित विशेष कार्यशाला।' : currentLang === 'mr' ? 'विद्यार्थिनींसाठी स्वाभिमान, भावनिक संतुलन आणि निरोगी संवादावर विशेष कार्यशाळा.' : 'Special psychological resilience workshop for adolescent girls, focusing on self-worth and emotional boundaries.',
-      partner: 'Youth Guidance Cell'
+      beneficiaries: currentLang === 'hi' ? '३०० से अधिक कॉलेज छात्राएं एवं पहली पीढ़ी की युवा शिक्षार्थी।' : currentLang === 'mr' ? '३०० हून अधिक महाविद्यालयीन तरुणी व पहिल्या पिढीतील विद्यार्थिनी.' : 'Over 300+ adolescent girls and college students empowered across life leadership circles.',
+      actionTaken: currentLang === 'hi' ? 'खडकी शिक्षण संस्था के साथ हस्ताक्षरित औपचारिक MOU के तहत, आस्था ने ३०० से अधिक छात्राओं के लिए आत्मसम्मान और भावनात्मक परिपक्वता सत्र आयोजित किए।' : currentLang === 'mr' ? 'खडकी शिक्षण संस्थेसोबत झालेल्या सामंजस्य करारांतर्गत (MOU), आस्थाने ३०० हून अधिक तरुणींसाठी स्वाभिमान आणि भावनिक समुपदेशन सत्रे घेतली.' : 'Under an official MOU with Khadki Shikshan Sanstha, Aastha conducted comprehensive life skills and psychological resilience workshops directly guiding over 300+ young women.',
+      partner: 'MOU with Khadki Shikshan Sanstha'
+    },
+    {
+      id: 'karve-fieldwork-msw',
+      title: currentLang === 'hi' 
+        ? 'ज़मीनी फील्ड वर्क: कर्वे समाज सेवा संस्थान से २ एमएसडब्ल्यू छात्र शामिल' 
+        : currentLang === 'mr' 
+        ? 'प्रत्यक्ष क्षेत्रकार्य: कर्वे समाज सेवा संस्थेतून २ एमएसडब्ल्यू विद्यार्थी सहभागी' 
+        : 'Ground Field Work: 2 MSW Students Join from Karve Institute of Social Service',
+      image: '/images/page_4_img_2_Im1.jpg',
+      aspectRatio: 'aspect-4/3',
+      tag: currentLang === 'hi' ? 'फील्ड वर्क' : currentLang === 'mr' ? 'क्षेत्रकार्य' : 'Academic Fieldwork',
+      date: 'Social Work Internship',
+      beneficiaries: currentLang === 'hi' ? '२ एमएसडब्ल्यू छात्र, आंगनवाड़ी कार्यकर्ता एवं स्लम बस्तियों की माताएं।' : currentLang === 'mr' ? '२ एमएसडब्ल्यू पदव्युत्तर विद्यार्थी, अंगणवाडी सेविका व वस्तीतील माता.' : '2 MSW student interns, Anganwadi workers, and community mothers.',
+      actionTaken: currentLang === 'hi' ? 'प्रतिष्ठित कर्वे समाज सेवा संस्थान (Karve Institute of Social Service) से २ एमएसडब्ल्यू छात्रों ने आस्था के साथ जुड़कर बस्तियों में घरेलू तनाव स्क्रीनिंग और ज़मीनी फील्ड वर्क का कार्य किया।' : currentLang === 'mr' ? 'प्रतिष्ठित कर्वे समाज सेवा संस्थेतील २ एमएसडब्ल्यू पदव्युत्तर विद्यार्थ्यांनी आस्थासोबत प्रत्यक्ष वस्त्यांमध्ये कौटुंबिक तणाव सर्वेक्षण व क्षेत्रकार्य पूर्ण केले.' : '2 postgraduate MSW social work students from Karve Institute of Social Service joined Aastha on the ground for intensive community casework, domestic screening, and field intervention.',
+      partner: 'Karve Institute of Social Service (Pune)'
     },
     {
       id: 'kadepur-womens-day',
@@ -343,17 +358,17 @@ export default function ProgramsAndFieldwork({ t = {}, lang = 'en', onRequestGui
     {
       id: 'cyda-meeting',
       title: currentLang === 'hi' 
-        ? 'ज़मीनी अधिकार संबल एवं रणनीतिक सहयोग बैठक' 
+        ? 'सांगली जिले में विस्तार: ज़मीनी अधिकार संबल एवं रणनीतिक सहयोग बैठक' 
         : currentLang === 'mr' 
-        ? 'महिला हक्क व सामाजिक न्यायासाठी धोरणात्मक बैठक' 
-        : 'Grassroots Alliances & Gender Rights Advocacy Meeting',
+        ? 'सांगली जिल्ह्यात विस्तार: महिला हक्क व सामाजिक न्यायासाठी धोरणात्मक बैठक' 
+        : 'Exploring Sangli District: Grassroots Alliances & Gender Advocacy',
       image: '/images/community-meeting-street.jpg',
       aspectRatio: 'aspect-16/10',
-      tag: currentLang === 'hi' ? 'रणनीतिक सहयोग' : currentLang === 'mr' ? 'धोरणात्मक भागीदारी' : 'Community Advocacy',
+      tag: currentLang === 'hi' ? 'सांगली विस्तार' : currentLang === 'mr' ? 'सांगली विस्तार' : 'Exploring Sangli',
       date: 'Strategic Alliance',
-      beneficiaries: currentLang === 'hi' ? 'ग्रामीण युवा कार्यकर्ता और स्थानीय समुदाय प्रेरक।' : currentLang === 'mr' ? 'ग्रामीण युवा कार्यकर्ते आणि स्थानिक महिला संघटक.' : 'Community organizers and youth gender advocates.',
-      actionTaken: currentLang === 'hi' ? 'महिला अधिकार व संबल अभियान को विस्तार देने हेतु संयुक्त रणनीतिक समन्वय बैठक।' : currentLang === 'mr' ? 'महिला सक्षमीकरणाचा विस्तार करण्यासाठी संयुक्त धोरणात्मक बैठक.' : 'Strategic coordination meeting to expand community-led gender advocacy.',
-      partner: 'Grassroots Advocacy Network'
+      beneficiaries: currentLang === 'hi' ? 'सांगली जिले के ग्रामीण युवा कार्यकर्ता, स्वयंसेवक और स्थानीय समुदाय प्रेरक।' : currentLang === 'mr' ? 'सांगली जिल्ह्यातील ग्रामीण युवा कार्यकर्ते, स्वयंसेवक आणि स्थानिक महिला संघटक.' : 'Exploring Sangli District clusters, youth volunteers, and local women organizers.',
+      actionTaken: currentLang === 'hi' ? 'सांगली जिले में संस्था का विस्तार करते हुए सीवायडीए (CYDA) के साथ मिलकर युवा स्वयंसेवकों और महिला संबल केंद्रों की स्थापना पर रणनीति बनाई गई।' : currentLang === 'mr' ? 'सांगली जिल्ह्यात आस्थाचा विस्तार करत CYDA सोबत मिळून युवा स्वयंसेवक आणि महिला आधार केंद्रांची उभारणी करण्यात आली.' : 'Expanding our geographical footprint into Sangli District through grassroots coordination with CYDA, establishing youth volunteer networks and community crisis intervention points.',
+      partner: 'CYDA & Sangli District Grassroots Alliance'
     }
   ], [currentLang]);
 

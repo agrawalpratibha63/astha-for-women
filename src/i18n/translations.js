@@ -117,26 +117,27 @@ export const translations = {
     stats: {
       title: "Real Ground Milestones",
       subtitle: "Every number represents a woman whose life is moving forward with dignity",
-      stat1Number: "250+",
-      stat1Label: "Women Connected & Supported",
-      stat1Desc: "Across urban communities, rural villages, and correctional institutions",
-      stat2Number: "10+",
-      stat2Label: "Awareness & Guidance Programs",
-      stat2Desc: "Conducted at colleges, community halls, and village clusters",
+      stat1Number: "300+",
+      stat1Label: "Adolescent Girls & Women Connected",
+      stat1Desc: "Empowered through guidance circles, pre-marriage sessions, and confidential support",
+      stat2Number: "25+",
+      stat2Label: "Volunteers Engaged on Ground",
+      stat2Desc: "Dedicated community volunteers & student advocates driving fieldwork across Maharashtra",
       stat3Number: "100%",
       stat3Label: "Confidential Counselling",
-      stat3Desc: "Empathetic emotional support, pre-marital & marital crisis care",
-      stat4Number: "7+",
-      stat4Label: "Grassroots Places Visited",
-      stat4Desc: "Direct field interventions across correctional facilities, colleges, urban slums, and rural clusters",
+      stat3Desc: "Empathetic emotional support, pre-marital guidance & crisis mediation",
+      stat4Number: "8+",
+      stat4Label: "Grassroots Regions & Cities Explored",
+      stat4Desc: "Direct field interventions across Pune, Sangli District, Satara, and rural clusters",
       stat4Places: [
-        "Yerawada Central Prison",
-        "Wadarwadi Slum Community",
-        "Kadepur Rural Cluster",
-        "Khadki College Pune — Adolescent Girl Empowerment",
-        "Pune, Sangli & Satara — Raincoat Distribution Drive",
-        "Alandi & Sangvi Camps",
-        "Rural Maharashtra Villages"
+        "Khadki Shikshan Sanstha (MOU Signed) — 300+ Girls Guided",
+        "Karve Institute of Social Service — 2 MSW Students Joined Fieldwork",
+        "Sangli District & Miraj — Expanding Footprint & Youth Advocacy Exploration",
+        "Yerawada Central Prison — Women's Healing & Legal Literacy",
+        "Wadarwadi Slum Community — Mediation & Cloud Kitchens",
+        "Kadepur Rural Cluster — Livelihoods & Women's Collectives",
+        "Pune, Sangli & Satara — Monsoon Relief & Humanitarian Drives",
+        "Alandi & Sangvi Camps"
       ]
     },
     founder: {
@@ -515,6 +516,14 @@ export const translations = {
         {
           title: "Dedicated Counselling Support System",
           desc: "A structured crisis intervention team across Maharashtra for immediate mental health support."
+        },
+        {
+          title: "Counselling Centres at Police Stations",
+          desc: "Establishing specialized crisis mediation and women's counseling desks at local police stations to resolve domestic disputes and prevent violence with dignity."
+        },
+        {
+          title: "Guidance Desks in Government Schools",
+          desc: "Setting up dedicated mental health, confidence building, and emotional safety counseling desks in Government schools for adolescent girls."
         }
       ]
     },
@@ -974,6 +983,14 @@ export const translations = {
         {
           title: "समर्पित परामर्श सहायता प्रणाली",
           desc: "महाराष्ट्र भर में संकटग्रस्त महिलाओं को तुरंत सहायता देने के लिए विशेष हेल्पलाइन व टीम।"
+        },
+        {
+          title: "पुलिस स्टेशनों में परामर्श केंद्र",
+          desc: "पारिवारिक तनाव व घरेलू विवादों के संवेदनशील व गरिमापूर्ण समाधान हेतु पुलिस स्टेशनों में विशेष महिला परामर्श केंद्र स्थापित करना।"
+        },
+        {
+          title: "सरकारी स्कूलों में परामर्श व संबल केंद्र",
+          desc: "वंचित पृष्ठभूमि की बालिकाओं के मानसिक स्वास्थ्य, आत्मसम्मान व सुरक्षा मार्गदर्शन हेतु सरकारी स्कूलों में निःशुल्क परामर्श केंद्र शुरू करना।"
         }
       ]
     },
@@ -1433,6 +1450,14 @@ export const translations = {
         {
           title: "कायमस्वरूपी समुपदेशन सहाय्य प्रणाली",
           desc: "संकटात सापडलेल्या महिलांना त्वरित मार्गदर्शन मिळण्यासाठी विशेष हेल्पलाईन व तज्ज्ञ समुपदेशक पथक."
+        },
+        {
+          title: "पोलिस ठाण्यांमध्ये समुपदेशन केंद्र",
+          desc: "कौटुंबिक वाद व महिलांच्या तक्रारींवर संवेदनशील व सन्माननीय तोडगा काढण्यासाठी स्थानिक पोलिस ठाण्यांमध्ये समुपदेशन केंद्र सुरू करणे."
+        },
+        {
+          title: "सरकारी शाळांमध्ये समुपदेशन केंद्र",
+          desc: "वंचित घटकातील किशोरवयीन विद्यार्थिनींच्या मानसिक सक्षमता, स्वाभिमान व सुरक्षिततेसाठी सरकारी शाळांमध्ये विनामूल्य समुपदेशन केंद्र सुरू करणे."
         }
       ]
     },

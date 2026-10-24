@@ -103,17 +103,20 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
       isPoster: false,
       icon: <Compass className="w-4 h-4 text-[#C9A45C]" />,
       deliverables: currentLang === 'hi' ? [
-        'कॉलेज एनएसएस (NSS) विंग्स के साथ विशेष संवाद कार्यशालाएं',
-        'घरेलू तनाव व कानूनी अधिकारों पर व्यावहारिक संदर्शिका',
-        'ग्रामीण पंचायतों में निःशुल्क विवाहपूर्व परामर्श डेस्क'
+        'खडकी शिक्षण संस्था के साथ औपचारिक MOU एवं ३००+ बालिकाओं का सशक्तिकरण',
+        'सरकारी स्कूलों (Government Schools) में छात्राओं हेतु मानसिक स्वास्थ्य व सुरक्षा परामर्श केंद्र प्रारंभ करना',
+        'कॉलेज एनएसएस (NSS) विंग्स व ग्रामीण पंचायतों में निःशुल्क मार्गदर्शन डेस्क',
+        'घरेलू तनाव व कानूनी अधिकारों पर व्यावहारिक संदर्शिका'
       ] : currentLang === 'mr' ? [
+        'खडकी शिक्षण संस्थेसोबत सामंजस्य करार (MOU) व ३००+ विद्यार्थिनींचे समुपदेशन',
+        'सरकारी शाळांमध्ये (Government Schools) विद्यार्थिनींसाठी मानसिक स्वास्थ्य व समुपदेशन केंद्र सुरू करणे',
         'महाविद्यालयीन एनएसएस (NSS) सोबत विशेष मार्गदर्शन शिबिरे',
-        'कौटुंबिक तणाव व कायदेशीर हक्कांवर माहिती पुस्तिका',
-        'ग्रामीण भागात विनामूल्य विवाहपूर्व समुपदेशन कक्ष'
+        'कौटुंबिक तणाव व कायदेशीर हक्कांवर माहिती पुस्तिका'
       ] : [
-        'Collaborative workshops with college NSS youth boards',
-        'Practical handbooks on emotional resilience and legal awareness',
-        'Free confidential guidance desks in peri-urban and rural clusters'
+        'Institutional student guidance under formal MOU with Khadki Shikshan Sanstha (300+ Girls)',
+        'Starting Mental Health & Safety Counselling Centres in Government Schools for adolescent girls',
+        'Collaborative workshops with college NSS youth boards and rural community halls',
+        'Practical handbooks on emotional resilience and legal awareness'
       ]
     },
     {
@@ -220,15 +223,18 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
       isPoster: true,
       icon: <ShieldCheck className="w-4 h-4 text-[#123F38]" />,
       deliverables: currentLang === 'hi' ? [
-        'ज़मीनी प्रशिक्षित काउंसलर मोबाइल टीम की त्वरित तैनाती',
+        'घरेलू विवादों के संवेदनशील व गरिमापूर्ण समाधान हेतु पुलिस स्टेशनों (Police Stations) में विशेष महिला परामर्श केंद्र शुरू करना',
+        'पुणे, सांगली जिला और पश्चिमी महाराष्ट्र में त्वरित संकट निवारण काउंसलर मोबाइल टीम',
         'आपातकालीन सुरक्षित आश्रय (Safe Shelter) ट्रांजिट नेटवर्क',
         'आत्महत्या रोकथाम व आघात (Trauma) हीलिंग सहायता'
       ] : currentLang === 'mr' ? [
-        'प्रशिक्षित समुपदेशकांची त्वरित फिरती टीम',
+        'कौटुंबिक वाद सोडवण्यासाठी व हिंसाचार रोखण्यासाठी पोलिस ठाण्यांमध्ये (Police Stations) विशेष समुपदेशन केंद्र सुरू करणे',
+        'पुणे, सांगली जिल्हा व पश्चिम महाराष्ट्रात त्वरित संकट निवारण फिरते समुपदेशक पथक',
         'तातडीचा सुरक्षित निवारा (Safe Shelter) नेटवर्क',
         'आत्महत्या प्रतिबंध व मानसिक स्वास्थ्य उपचार'
       ] : [
-        'Rapid-response mobile counseling task force across districts',
+        "Starting specialized Women's Crisis Mediation & Counselling Centres at Police Stations to resolve domestic disputes and prevent violence with dignity",
+        'Rapid-response mobile counseling task force across Pune, Sangli District, and Western Maharashtra',
         'Emergency safe-shelter and legal transit partnerships',
         'Trauma-informed mental health and suicide prevention circles'
       ]
@@ -265,6 +271,30 @@ export default function CommunityFuturePlan({ t = {}, lang = 'en', onRequestGuid
           <p className="text-xs sm:text-sm text-[#333A36]/80 leading-relaxed font-sans font-light">
             {s.subtitle}
           </p>
+        </div>
+
+        {/* Flagship Future Goals Callout Banner */}
+        <div className="max-w-4xl mx-auto mb-8 bg-[#123F38]/5 border border-[#C9A45C]/35 rounded-2xl p-4 sm:p-4 text-center shadow-2xs">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-[13px] font-sans font-medium text-[#123F38]">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#123F38] text-white text-[10px] font-bold tracking-wider uppercase">
+              <Sparkles className="w-3 h-3 text-[#E0BE76]" />
+              <span>{currentLang === 'hi' ? 'भावी संकल्प' : currentLang === 'mr' ? 'आगामी संकल्प' : 'EXPANSION GOALS'}</span>
+            </span>
+            <span className="flex items-center gap-1">
+              <span>🏛️</span>
+              <span className="font-semibold">{currentLang === 'hi' ? 'पुलिस स्टेशनों में परामर्श केंद्र' : currentLang === 'mr' ? 'पोलिस ठाण्यांमध्ये समुपदेशन केंद्र' : 'Counselling Centres at Police Stations'}</span>
+            </span>
+            <span className="text-[#C9A45C]">•</span>
+            <span className="flex items-center gap-1">
+              <span>🏫</span>
+              <span className="font-semibold">{currentLang === 'hi' ? 'सरकारी स्कूलों में संबल डेस्क' : currentLang === 'mr' ? 'सरकारी शाळांमध्ये समुपदेशन केंद्र' : 'Guidance Desks in Government Schools'}</span>
+            </span>
+            <span className="text-[#C9A45C]">•</span>
+            <span className="flex items-center gap-1">
+              <span>🤝</span>
+              <span className="font-semibold">{currentLang === 'hi' ? 'खडकी शिक्षण संस्था MOU (३००+ छात्राएं)' : currentLang === 'mr' ? 'खडकी शिक्षण संस्था MOU (३००+ विद्यार्थिनी)' : 'MOU with Khadki Shikshan Sanstha (300+ Girls)'}</span>
+            </span>
+          </div>
         </div>
 
 
